@@ -190,6 +190,9 @@
     }
   }
 }
+body {
+  font-family: "Poppins", sans-serif;
+}
 .section-padded {
   display: flex;
   align-items: center;
@@ -205,7 +208,7 @@
   border-radius: 9999px;
   background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(6px);
-  transition: background 0.2s ease;
+  transition: background 0.3s ease;
 }
 .heroSwiper .swiper-button-prev:hover, .heroSwiper .swiper-button-next:hover {
   background: rgba(0, 0, 0, 0.55);
@@ -213,6 +216,121 @@
 .heroSwiper .swiper-button-prev::after, .heroSwiper .swiper-button-next::after {
   font-size: 18px;
   font-weight: 700;
+}
+.news-logo-section {
+  height: 67px;
+  overflow: hidden;
+  border-top: 1px solid #a6b0ba;
+  border-bottom: 1px solid #a6b0ba;
+  background: #fff;
+}
+.logoSwiper, .logoSwiper .swiper-wrapper {
+  height: 100%;
+}
+.logoSwiper .swiper-wrapper {
+  align-items: center;
+  transition-timing-function: linear !important;
+}
+.news-logo-slide {
+  width: auto !important;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: clamp(24px, 3vw, 42px);
+  padding-left: clamp(24px, 3vw, 42px);
+}
+.news-logo-img {
+  width: auto;
+  max-width: 170px;
+  height: 43px;
+  object-fit: contain;
+  display: block;
+  flex: 0 0 auto;
+}
+.news-logo-html {
+  height: 43px;
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+.db-logo {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+  color: #181818;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 0.88;
+  text-align: center;
+}
+.db-logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 14px;
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: #f59a22;
+}
+.ndtv-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #c9c9c9;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1;
+}
+.ndtv-logo span {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #cd4353, #9c2434);
+  color: #fff;
+  font-size: 13px;
+}
+.news-logo-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 9999px;
+  flex: 0 0 auto;
+  background: #d8a3aa;
+}
+@media (max-width: 640px) {
+  .news-logo-section {
+    height: 58px;
+  }
+  .news-logo-img, .news-logo-html {
+    height: 34px;
+  }
+  .news-logo-img {
+    max-width: 128px;
+  }
+  .db-logo {
+    font-size: 12px;
+  }
+  .ndtv-logo {
+    font-size: 16px;
+  }
+  .ndtv-logo span {
+    width: 24px;
+    height: 24px;
+  }
+  .heroSwiper .swiper-button-prev, .heroSwiper .swiper-button-next {
+    width: 40px;
+    height: 40px;
+  }
+  .heroSwiper .swiper-button-prev::after, .heroSwiper .swiper-button-next::after {
+    font-size: 12px;
+    font-weight: 400;
+  }
 }
 @property --tw-content {
   syntax: "*";
