@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+.section-padded {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 24px;
+}
+.heroSwiper {
+    --swiper-navigation-color: #fff;
+}
+
+.heroSwiper .swiper-button-prev,
+.heroSwiper .swiper-button-next {
+    width: 52px;
+    height: 52px;
+    border-radius: 9999px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+    transition: background 0.2s ease;
+}
+
+.heroSwiper .swiper-button-prev:hover,
+.heroSwiper .swiper-button-next:hover {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.heroSwiper .swiper-button-prev::after,
+.heroSwiper .swiper-button-next::after {
+    font-size: 18px;
+    font-weight: 700;
+}
