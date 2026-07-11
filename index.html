@@ -11,10 +11,19 @@
     <link rel="stylesheet" href="./css/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!-- Prefetch news logo images (low priority, loads after critical resources) -->
+    <link rel="prefetch" href="./assets/images/cnn-logo.png" as="image">
+    <link rel="prefetch" href="./assets/images/times-logo.png" as="image">
+    <link rel="prefetch" href="./assets/images/Forbes-logo.png" as="image">
+    <link rel="prefetch" href="./assets/images/dainik-logo 1.png" as="image">
+    <link rel="prefetch" href="./assets/images/ht-logo.png" as="image">
+    <link rel="prefetch" href="./assets/images/indiatv-logo.png" as="image">
+    <link rel="prefetch" href="./assets/images/indiatv-logo.png" as="image">
+
 </head>
 
 <body class="bg-white h-screen">
-    <section class="slider-section">
+    <section class="slider-section ">
         <div class="swiper heroSwiper w-full ">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -31,81 +40,11 @@
             <div class="swiper-button-next text-white right-6 after:text-3xl"></div>
         </div>
     </section>
-    <section class="news-logo-section">
-        <div class="swiper logoSwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide news-logo-slide">
-                    <img src="./assets/images/cnn-logo.png" alt="CNN" class="news-logo-img">
-                    <span class="news-logo-dot" aria-hidden="true"></span>
-                </div>
-                <div class="swiper-slide news-logo-slide">
-                    <img src="./assets/images/times-logo.png" alt="Times Now" class="news-logo-img">
-                    <span class="news-logo-dot" aria-hidden="true"></span>
-                </div>
-                <div class="swiper-slide news-logo-slide">
-                    <img src="./assets/images/Forbes-logo.png" alt="Forbes" class="news-logo-img">
-                    <span class="news-logo-dot" aria-hidden="true"></span>
-                </div>
-                <div class="swiper-slide news-logo-slide">
-                    <img src="./assets/images/cnn-logo.png" alt="CNN" class="news-logo-img">
-                    <span class="news-logo-dot" aria-hidden="true"></span>
-                </div>
-                <div class="swiper-slide news-logo-slide">
-                    <span class="news-logo-html" aria-label="Dainik Bhaskar">
-                        <span class="db-logo">दैनिक<br>भास्कर</span>
-                    </span>
-                    <span class="news-logo-dot" aria-hidden="true"></span>
-                </div>
-                <div class="swiper-slide news-logo-slide">
-                    <img src="./assets/images/ht-logo.png" alt="Hindustan Times" class="news-logo-img">
-                    <span class="news-logo-dot" aria-hidden="true"></span>
-                </div>
-                <div class="swiper-slide news-logo-slide">
-                    <img src="./assets/images/indiatv-logo.png" alt="India TV" class="news-logo-img">
-                    <span class="news-logo-dot" aria-hidden="true"></span>
-                </div>
-                <div class="swiper-slide news-logo-slide">
-                    <span class="news-logo-html" aria-label="NDTV">
-                        <span class="ndtv-logo"><span>N</span>NDTV</span>
-                    </span>
-                    <span class="news-logo-dot" aria-hidden="true"></span>
-                </div>
-
-                <div class="swiper-slide news-logo-slide" aria-hidden="true">
-                    <img src="./assets/images/cnn-logo.png" alt="" class="news-logo-img">
-                    <span class="news-logo-dot" aria-hidden="true"></span>
-                </div>
-                <div class="swiper-slide news-logo-slide" aria-hidden="true">
-                    <img src="./assets/images/times-logo.png" alt="" class="news-logo-img">
-                    <span class="news-logo-dot" aria-hidden="true"></span>
-                </div>
-                <div class="swiper-slide news-logo-slide" aria-hidden="true">
-                    <img src="./assets/images/Forbes-logo.png" alt="" class="news-logo-img">
-                    <span class="news-logo-dot" aria-hidden="true"></span>
-                </div>
-                <div class="swiper-slide news-logo-slide" aria-hidden="true">
-                    <img src="./assets/images/cnn-logo.png" alt="" class="news-logo-img">
-                    <span class="news-logo-dot" aria-hidden="true"></span>
-                </div>
-                <div class="swiper-slide news-logo-slide" aria-hidden="true">
-                    <span class="news-logo-html">
-                        <span class="db-logo">दैनिक<br>भास्कर</span>
-                    </span>
-                    <span class="news-logo-dot" aria-hidden="true"></span>
-                </div>
-                <div class="swiper-slide news-logo-slide" aria-hidden="true">
-                    <img src="./assets/images/ht-logo.png" alt="" class="news-logo-img">
-                    <span class="news-logo-dot" aria-hidden="true"></span>
-                </div>
-                <div class="swiper-slide news-logo-slide" aria-hidden="true">
-                    <img src="./assets/images/indiatv-logo.png" alt="" class="news-logo-img">
-                    <span class="news-logo-dot" aria-hidden="true"></span>
-                </div>
-                <div class="swiper-slide news-logo-slide" aria-hidden="true">
-                    <span class="news-logo-html">
-                        <span class="ndtv-logo"><span>N</span>NDTV</span>
-                    </span>
-                    <span class="news-logo-dot" aria-hidden="true"></span>
+    <section class="news-logo-section ">
+        <div class="news-logo-container">
+            <div class="swiper logoSwiper">
+                <div class="swiper-wrapper" id="logoWrapper">
+                    <!-- Slides will be populated dynamically -->
                 </div>
             </div>
         </div>

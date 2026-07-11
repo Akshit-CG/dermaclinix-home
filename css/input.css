@@ -40,7 +40,7 @@ body {
 
 /* news icons bar*/
 .news-logo-section {
-    height: 67px;
+    padding: 14px 0px;
     overflow: hidden;
     border-top: 1px solid #a6b0ba;
     border-bottom: 1px solid #a6b0ba;
@@ -69,8 +69,8 @@ body {
 
 .news-logo-img {
     width: auto;
-    max-width: 170px;
-    height: 43px;
+    /* max-width: 183px; */
+    height: 53px;
     object-fit: contain;
     display: block;
     flex: 0 0 auto;
@@ -130,25 +130,40 @@ body {
 }
 
 .news-logo-dot {
+    display: block;
     width: 4px;
     height: 4px;
-    border-radius: 9999px;
+    border-radius: 50%;
     flex: 0 0 auto;
-    background: #d8a3aa;
+    background: #999;
+}
+
+.news-logo-slide {
+    display: flex !important;
+}
+
+.news-logo-dot-slide {
+    width: auto !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 0 8px;
 }
 
 @media (max-width: 640px) {
     .news-logo-section {
-        height: 58px;
+        padding: 10px 0px;
     }
 
     .news-logo-img,
     .news-logo-html {
-        height: 34px;
+        height: 40px;
     }
 
     .news-logo-img {
-        max-width: 128px;
+        max-width: 140px;
     }
 
     .db-logo {
@@ -169,10 +184,11 @@ body {
         width: 40px;
         height: 40px;
     }
+
     .heroSwiper .swiper-button-prev::after,
-.heroSwiper .swiper-button-next::after {
-    font-size: 12px;
-    font-weight: 400;
-}
+    .heroSwiper .swiper-button-next::after {
+        font-size: 12px;
+        font-weight: 400;
+    }
 
 }
