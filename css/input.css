@@ -6,6 +6,7 @@
     --primary-color: #e39482;
     --bg-primary-color: #FFE1DB;
     --pink-text-color: #6D504B;
+    --border-color: #F28979;
 }
 
 
@@ -27,7 +28,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 65px clamp(20px, 7vw, 100px);
+    padding: 65px 100px;
 }
 
 @media (max-width: 640px) {
@@ -43,7 +44,7 @@ body {
 h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: clamp(24px, 2.6vw, 32px);
+    font-size: 32px;
     color: var(--heading-color);
     line-height: 1.35;
     letter-spacing: 0;
@@ -59,6 +60,15 @@ h2 {
     letter-spacing: 3px;
     text-align: center;
     text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+    h2 {
+
+        font-size: 24px;
+
+    }
+
 }
 
 /* hero section  */
@@ -260,39 +270,10 @@ h2 {
     border-radius: 24px;
     overflow: hidden;
     border: 1px solid #f2d9d3;
-    box-shadow: 0 16px 36px rgba(104, 44, 35, .08);
-}
-
-#founders {
-    gap: 64px;
-}
-
-.founders-intro {
-    width: min(100%, 980px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#founders .section-title {
-    margin-top: 22px;
-}
-
-#founders .pink-text {
-    max-width: 940px;
-    margin-top: 20px;
-}
-
-.founders-grid {
-    width: min(100%, 1240px);
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 36px;
-    align-items: stretch;
 }
 
 #founders .eyebrow-heading {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .founder-top-line {
@@ -304,25 +285,8 @@ h2 {
             #C92735 100%);
 }
 
-.founder-content {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    min-height: 539px;
-    padding: 34px 28px 28px;
-    position: relative;
-    z-index: 2;
-}
-
 .text-primary {
     color: var(--primary-color);
-}
-
-.founder-left {
-    display: flex;
-    flex-direction: column;
-    width: 58%;
-    z-index: 5;
 }
 
 /* ===========================
@@ -415,12 +379,6 @@ font-weight: 400; */
    Stats
 =========================== */
 
-.doctor-stats {
-    display: flex;
-    gap: 12px;
-    margin-top: 32px;
-}
-
 .stat-box {
     width: 74px;
     height: 74px;
@@ -454,11 +412,11 @@ font-weight: 400; */
 }
 
 /* ===========================
-   Whatsapp Button
+   Founder Buttons
 =========================== */
 
-.whatsapp-btn {
-    margin-top: 34px;
+.whatsapp-btn,
+.call-btn {
     width: 164px;
     height: 50px;
 
@@ -486,21 +444,26 @@ font-weight: 400; */
     background: #3aac46;
 }
 
-.whatsapp-btn img {
+.call-btn {
+    color: #2B1311;
+    background: #FFF3F0;
+    border: 1px solid #F3D5CE;
+    box-shadow: none;
+}
+
+.call-btn:hover {
+    background: #FBE4DE;
+}
+
+.whatsapp-btn img,
+.call-btn img {
     width: 18px;
+    height: 18px;
 }
 
 /* ===========================
    Right Side
 =========================== */
-
-.founder-right {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 51%;
-    height: 100%;
-}
 
 /* existing class reused */
 .bg-circle {
@@ -618,51 +581,16 @@ font-weight: 400; */
    Responsive
 =========================== */
 
-@media(max-width:1180px) {
-    .founders-grid {
-        grid-template-columns: 1fr;
-        max-width: 600px;
-    }
-}
-
 @media(max-width:640px) {
-    #founders {
-        gap: 38px;
-    }
-
-    #founders .section-title {
-        margin-top: 16px;
-    }
-
     #founders .pink-text {
         font-size: 14px;
         line-height: 1.65;
-        margin-top: 14px;
     }
 
     .founder-card {
         max-width: 100%;
         min-height: auto;
         border-radius: 20px;
-    }
-
-    .founder-content {
-        flex-direction: column;
-        min-height: 0;
-        padding: 24px 18px 0;
-        padding-bottom: 0;
-    }
-
-    .founder-left {
-        width: 100%;
-    }
-
-    .founder-right {
-        position: relative;
-        width: 100%;
-        height: 310px;
-        margin-top: 24px;
-        overflow: visible;
     }
 
     .doctor-image {
@@ -688,19 +616,16 @@ font-weight: 400; */
         margin-top: 22px;
     }
 
-    .doctor-stats {
-        flex-wrap: wrap;
-    }
-
-    .whatsapp-btn {
+    .whatsapp-btn,
+    .call-btn {
         width: 160px;
     }
 }
 
 /* 3 principles */
 
-#principles .section-title {
-    max-width: 780px;
+#principles h2 {
+    color: black;
 }
 
 .principles-intro {
@@ -708,6 +633,14 @@ font-weight: 400; */
     font-size: 20px;
     line-height: 28px;
     font-weight: 400;
+}
+
+.principles .section-padded {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 65px 100px;
 }
 
 .principle-row {
@@ -748,9 +681,9 @@ font-weight: 400; */
 }
 
 .principle-title {
-    color: var(--heading-color);
-    font-size: 16px;
-    line-height: 1.3;
+    color: #181818;
+    font-size: 20px;
+    line-height: 28px;
     font-weight: 500;
 }
 
@@ -766,11 +699,11 @@ font-weight: 400; */
     display: inline-flex;
     align-items: center;
     min-height: 27px;
-    border: 1px solid #F2B6A9;
+    border: 1px solid var(--border-color);
     border-radius: 999px;
     padding: 5px 20px;
-    background: #FFF9F7;
-    font-size: 12px;
+    background: #FFF9F1;
+    font-size: 18px;
     line-height: 1.2;
     font-weight: 400;
 }
@@ -778,6 +711,17 @@ font-weight: 400; */
 @media(max-width:640px) {
     .principles-intro {
         font-size: 13px;
+    }
+
+    .principle-icon img {
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .principle-pill {
+        font-size: 13px;
+        line-height: 1.2;
     }
 
     .principle-icon {
@@ -797,5 +741,116 @@ font-weight: 400; */
     .principle-copy {
         font-size: 13px;
         line-height: 1.5;
+    }
+}
+
+/* 4 specialisations */
+
+#specialisations .eyebrow-heading {
+    font-size: 10px;
+    line-height: 16px;
+}
+
+.specialisations-intro {
+    color: #181818;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.specialisation-tab {
+    min-height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 2px solid transparent;
+    background: #fff;
+    color: #181818;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.specialisation-tab--active {
+    border-color: #E39482;
+    background: #E39482;
+}
+
+.specialisation-tab-icon {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.specialisation-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.specialisation-item {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid #E1DED7;
+    color: #181818;
+    font-size: 20px;
+    line-height: 20.4px;
+    font-weight: 500;
+    letter-spacing: 2.45px;
+    text-transform: uppercase;
+}
+
+.specialisation-pill {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 18px;
+    border-radius: 999px;
+    padding: 3px 13px;
+    background: #F1EEE9;
+    color: #666666;
+    font-size: 14px;
+    line-height: 14.88px;
+    font-weight: 500;
+    letter-spacing: 1.98px;
+    text-transform: uppercase;
+}
+
+@media(max-width:640px) {
+    .specialisations-intro {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .specialisation-tab {
+        gap: 5px;
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .specialisation-item {
+        min-height: 54px;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        padding: 10px 0;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 1.4px;
+    }
+
+    .specialisation-pill {
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 1.2px;
     }
 }
