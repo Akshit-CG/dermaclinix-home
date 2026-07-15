@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DermaClinix</title>
     <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="./css/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -23,6 +23,7 @@
 </head>
 
 <body class="bg-white h-screen">
+    <!-- slider -->
     <section class="slider-section ">
         <div class="swiper heroSwiper w-full ">
             <div class="swiper-wrapper">
@@ -40,6 +41,7 @@
             <div class="swiper-button-next text-white right-6 after:text-3xl"></div>
         </div>
     </section>
+    <!-- news-logo -->
     <section class="news-logo-section">
         <div class="news-logo-container overflow-hidden w-full h-full flex items-center relative">
             <div class="news-logo-track flex w-max animate-marquee">
@@ -68,13 +70,14 @@
         </div>
     </section>
 
+    <!-- founders -->
     <section id="founders"
         class="flex flex-col items-center justify-center gap-16 px-5 py-10 sm:px-[100px] sm:py-[65px] max-sm:gap-[38px]">
         <div class="founders-intro flex w-full max-w-[980px] flex-col items-center">
             <div class="eyebrow-heading">THE FOUNDERS</div>
             <h2 class="section-title mt-[22px] max-sm:mt-4">Two dermatologists. <span class="text-primary">One
                     philosophy of care</span>.</h2>
-            <p class="pink-text mt-5 max-w-[940px] max-sm:mt-[14px]">DermaClinix is led by Dr. Kavish Chouhan and Dr. Amrendra Kumar — AIIMS-trained,
+            <p class="sub-heading mt-5 max-w-[940px] max-sm:mt-[14px]">DermaClinix is led by Dr. Kavish Chouhan and Dr. Amrendra Kumar — AIIMS-trained,
                 internationally
                 credentialed, and among the earliest adopters of FUE hair restoration in India. Every guest journey at
                 DermaClinix is personally overseen by one of our founding doctors — AIIMS-trained, internationally
@@ -280,12 +283,13 @@
         </div>
 
     </section>
+    <!-- principles -->
     <section id="principles" class="bg-[#FFE1DB] px-5 py-14 sm:px-8 lg:px-20 lg:py-16">
         <div class="mx-auto flex w-full max-w-[1000px] flex-col items-center">
             <div class="eyebrow-heading">THE DERMACLINIX DIFFERENCE</div>
             <h2 class="section-title mt-4">Five principles that guide every <span class="text-primary">Guest
                     journey</span>.</h2>
-            <p class="principles-intro mt-3 max-w-[760px] text-center">Our clinical philosophy is built on five
+            <p class="sub-heading mt-3 max-w-[760px] text-center">Our clinical philosophy is built on five
                 commitments — each one documented in our protocols and reflected in how every consultation, procedure,
                 and follow-up is conducted.</p>
 
@@ -357,75 +361,406 @@
             </div>
         </div>
     </section>
+    <!-- specialisations -->
     <section id="specialisations" class="bg-white px-5 py-14 sm:px-8 lg:px-20 lg:py-20">
         <div class="mx-auto w-full max-w-[1000px]">
             <div class="flex flex-col items-center text-center">
-                <div class="eyebrow-heading">OUR SPECIALISATIONS</div>
+                <div class="eyebrow-heading with-line">OUR SPECIALISATIONS</div>
                 <h2 class="section-title mt-4">Treatments <span class="text-primary italic">Crafted for You</span>
                 </h2>
-                <p class="specialisations-intro mt-3 max-w-[820px]">Every procedure is evidence-based, personalised by
+                <p class="sub-heading mt-3 max-w-[820px]">Every procedure is evidence-based, personalised by
                     our clinical team, and delivered with precision for your unique anatomy and aesthetic goals.</p>
             </div>
 
             <div class="mt-10 w-full">
                 <div class="grid grid-cols-3 border-b border-[#E8E2DC]">
-                    <button class="specialisation-tab specialisation-tab--active" type="button">
+                    <button class="specialisation-tab specialisation-tab--active" data-tab="hair" type="button">
                         <img src="/assets/images/scissor.svg" alt="" class="specialisation-tab-icon">
                         Hair
                     </button>
-                    <button class="specialisation-tab" type="button">
+                    <button class="specialisation-tab" data-tab="skin" type="button">
                         <img src="/assets/images/stethoscope-gry.svg" alt="" class="specialisation-tab-icon">
                         Skin
                     </button>
-                    <button class="specialisation-tab" type="button">
+                    <button class="specialisation-tab" data-tab="aesthetic" type="button">
                         <img src="/assets/images/injection.svg" alt="" class="specialisation-tab-icon">
                         Aesthetic
                     </button>
                 </div>
 
-                <ul class="specialisation-list">
-                    <li class="specialisation-item">
-                        <span>B.E.S.T. FUE™ – Patented Method</span>
-                        <span class="specialisation-pill">Popular</span>
-                    </li>
-                    <li class="specialisation-item">
-                        <span>InstaGraft™ – Long Hair Transplant</span>
-                        <span class="specialisation-pill">Signature</span>
-                    </li>
-                    <li class="specialisation-item">
-                        <span>FUE – Follicular Unit Extraction</span>
-                        <span class="specialisation-pill">Best Value</span>
-                    </li>
-                    <li class="specialisation-item">
-                        <span>Non-Shaven / Long Hair FUE</span>
-                        <span class="specialisation-pill">Discreet</span>
-                    </li>
-                    <li class="specialisation-item">
-                        <span>Bio Stimulated FUE</span>
-                        <span class="specialisation-pill">Regenerative</span>
-                    </li>
-                    <li class="specialisation-item">
-                        <span>Body Hair Transplant (BHT)</span>
-                        <span class="specialisation-pill">Reconstructive</span>
-                    </li>
-                    <li class="specialisation-item">
-                        <span>Female Hair Transplant</span>
-                        <span class="specialisation-pill">Tailored</span>
-                    </li>
-                    <li class="specialisation-item">
-                        <span>Beard &amp; Moustache Transplant</span>
-                        <span class="specialisation-pill">Bespoke</span>
-                    </li>
-                    <li class="specialisation-item">
-                        <span>GFC / Exosomes / Stem Cell Therapy</span>
-                        <span class="specialisation-pill">Non-Surgical</span>
-                    </li>
-                    <li class="specialisation-item">
-                        <span>Failed Transplant Repair &amp; Reconstruction</span>
-                        <span class="specialisation-pill">Corrective</span>
-                    </li>
-                </ul>
+                <!-- Hair Panel -->
+                <div data-panel="hair">
+                    <ul class="specialisation-list">
+                        <li class="specialisation-item">
+                            <span>B.E.S.T. FUE™ &ndash; Patented Method</span>
+                            <span class="specialisation-pill">Popular</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>InstaGraft™ &ndash; Long Hair Transplant</span>
+                            <span class="specialisation-pill">Signature</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>FUE &ndash; Follicular Unit Extraction</span>
+                            <span class="specialisation-pill">Best Value</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Non-Shaven / Long Hair FUE</span>
+                            <span class="specialisation-pill">Discreet</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Bio Stimulated FUE</span>
+                            <span class="specialisation-pill">Regenerative</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Body Hair Transplant (BHT)</span>
+                            <span class="specialisation-pill">Reconstructive</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Female Hair Transplant</span>
+                            <span class="specialisation-pill">Tailored</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Beard &amp; Moustache Transplant</span>
+                            <span class="specialisation-pill">Bespoke</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>GFC / Exosomes / Stem Cell Therapy</span>
+                            <span class="specialisation-pill">Non-Surgical</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Failed Transplant Repair &amp; Reconstruction</span>
+                            <span class="specialisation-pill">Corrective</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skin Panel -->
+                <div data-panel="skin" style="display:none">
+                    <ul class="specialisation-list">
+                        <li class="specialisation-item">
+                            <span>Skin &ndash; Patented Method</span>
+                            <span class="specialisation-pill">Popular</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>InstaGraft™ &ndash; Long Hair Transplant</span>
+                            <span class="specialisation-pill">Signature</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>FUE &ndash; Follicular Unit Extraction</span>
+                            <span class="specialisation-pill">Best Value</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Non-Shaven / Long Hair FUE</span>
+                            <span class="specialisation-pill">Discreet</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Bio Stimulated FUE</span>
+                            <span class="specialisation-pill">Regenerative</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Body Hair Transplant (BHT)</span>
+                            <span class="specialisation-pill">Reconstructive</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Female Hair Transplant</span>
+                            <span class="specialisation-pill">Tailored</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Beard &amp; Moustache Transplant</span>
+                            <span class="specialisation-pill">Bespoke</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>GFC / Exosomes / Stem Cell Therapy</span>
+                            <span class="specialisation-pill">Non-Surgical</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Failed Transplant Repair &amp; Reconstruction</span>
+                            <span class="specialisation-pill">Corrective</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Aesthetic Panel -->
+                <div data-panel="aesthetic" style="display:none">
+                    <ul class="specialisation-list">
+                        <li class="specialisation-item">
+                            <span>Aesthetic &ndash; Patented Method</span>
+                            <span class="specialisation-pill">Popular</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>InstaGraft™ &ndash; Long Hair Transplant</span>
+                            <span class="specialisation-pill">Signature</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>FUE &ndash; Follicular Unit Extraction</span>
+                            <span class="specialisation-pill">Best Value</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Non-Shaven / Long Hair FUE</span>
+                            <span class="specialisation-pill">Discreet</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Bio Stimulated FUE</span>
+                            <span class="specialisation-pill">Regenerative</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Body Hair Transplant (BHT)</span>
+                            <span class="specialisation-pill">Reconstructive</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Female Hair Transplant</span>
+                            <span class="specialisation-pill">Tailored</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Beard &amp; Moustache Transplant</span>
+                            <span class="specialisation-pill">Bespoke</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>GFC / Exosomes / Stem Cell Therapy</span>
+                            <span class="specialisation-pill">Non-Surgical</span>
+                        </li>
+                        <li class="specialisation-item">
+                            <span>Failed Transplant Repair &amp; Reconstruction</span>
+                            <span class="specialisation-pill">Corrective</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </div>
+    </section>
+    <!-- results -->
+    <section id="results" class="bg-[#FFE1DB] px-5 py-14 sm:px-8 lg:px-20 lg:py-20">
+        <div class="mx-auto w-full max-w-[1260px]">
+
+            <!-- Header -->
+            <div class="flex flex-col items-center text-center">
+                <div class="eyebrow-heading">CLINICAL OUTCOMES</div>
+                <h2 class="section-title mt-4">Results worth <span class="text-primary">showing.</span></h2>
+                <p class="sub-heading mt-3 max-w-[680px]">See How Our Expert Treatments Have Transformed Thousands of
+                    Lives, Restoring Confidence, Enhancing Appearance, and Delivering Natural-Looking Results That Speak
+                    for Themselves.</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="mt-8 flex justify-center">
+                <div class="results-tab-group">
+                    <button class="results-tab results-tab--active" data-results-tab="hair-transplant" type="button">
+                       
+                        Hair Transplant
+                    </button>
+                    <button class="results-tab" data-results-tab="hair-regen" type="button">
+                       
+                        Hair Regeneration
+                    </button>
+                    <button class="results-tab" data-results-tab="skin-aes" type="button">
+                    
+                        Skin Aesthetics
+                    </button>
+                </div>
+            </div>
+
+            <!-- Panels -->
+            <!-- Hair Transplant Panel -->
+            <div data-results-panel="hair-transplant" class="mt-10">
+                <div class="results-cards">
+                    <!-- Card 1 -->
+                    <div class="results-card">
+                        <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
+                        <div class="results-card-img-wrap">
+                            <img src="/assets/images/ba-1.webp" alt="Before & After" class="results-card-img">
+                        </div>
+                        <div class="results-card-badges">
+                            <span class="results-badge results-badge--before">Before</span>
+                            <span class="results-badge results-badge--after">After</span>
+                        </div>
+                        <div class="results-card-meta">
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Result:</span>
+                                12Months
+                            </div>
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Details:</span>
+                                4012 Grafts
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="results-card">
+                        <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
+                        <div class="results-card-img-wrap">
+                            <img src="/assets/images/ba-2.webp" alt="Before & After" class="results-card-img">
+                        </div>
+                        <div class="results-card-badges">
+                            <span class="results-badge results-badge--before">Before</span>
+                            <span class="results-badge results-badge--after">After</span>
+                        </div>
+                        <div class="results-card-meta">
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Result:</span>
+                                12Months
+                            </div>
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Details:</span>
+                                4012 Grafts
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="results-card">
+                        <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
+                        <div class="results-card-img-wrap">
+                            <img src="/assets/images/ba-3.webp" alt="Before & After" class="results-card-img">
+                        </div>
+                        <div class="results-card-badges">
+                            <span class="results-badge results-badge--before">Before</span>
+                            <span class="results-badge results-badge--after">After</span>
+                        </div>
+                        <div class="results-card-meta">
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Result:</span>
+                                12Months
+                            </div>
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Details:</span>
+                                4012 Grafts
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hair Regeneration Panel (placeholder) -->
+            <div data-results-panel="hair-regen" class="mt-10" style="display:none">
+                <div class="results-cards">
+                    <div class="results-card">
+                        <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
+                        <div class="results-card-img-wrap">
+                            <img src="/assets/images/ba-1.webp" alt="Before & After" class="results-card-img">
+                        </div>
+                        <div class="results-card-badges">
+                            <span class="results-badge results-badge--before">Before</span>
+                            <span class="results-badge results-badge--after">After</span>
+                        </div>
+                        <div class="results-card-meta">
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Result:</span>
+                                12Months
+                            </div>
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Details:</span>
+                                4012 Grafts
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results-card">
+                        <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
+                        <div class="results-card-img-wrap">
+                            <img src="/assets/images/ba-2.webp" alt="Before & After" class="results-card-img">
+                        </div>
+                        <div class="results-card-badges">
+                            <span class="results-badge results-badge--before">Before</span>
+                            <span class="results-badge results-badge--after">After</span>
+                        </div>
+                        <div class="results-card-meta">
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Result:</span>
+                                12Months
+                            </div>
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Details:</span>
+                                4012 Grafts
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results-card">
+                        <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
+                        <div class="results-card-img-wrap">
+                            <img src="/assets/images/ba-3.webp" alt="Before & After" class="results-card-img">
+                        </div>
+                        <div class="results-card-badges">
+                            <span class="results-badge results-badge--before">Before</span>
+                            <span class="results-badge results-badge--after">After</span>
+                        </div>
+                        <div class="results-card-meta">
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Result:</span>
+                                12Months
+                            </div>
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Details:</span>
+                                4012 Grafts
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skin Aesthetics Panel (placeholder) -->
+            <div data-results-panel="skin-aes" class="mt-10" style="display:none">
+                <div class="results-cards">
+                    <div class="results-card">
+                        <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
+                        <div class="results-card-img-wrap">
+                            <img src="/assets/images/ba-1.webp" alt="Before & After" class="results-card-img">
+                        </div>
+                        <div class="results-card-badges">
+                            <span class="results-badge results-badge--before">Before</span>
+                            <span class="results-badge results-badge--after">After</span>
+                        </div>
+                        <div class="results-card-meta">
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Result:</span>
+                                12Months
+                            </div>
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Details:</span>
+                                4012 Grafts
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results-card">
+                        <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
+                        <div class="results-card-img-wrap">
+                            <img src="/assets/images/ba-2.webp" alt="Before & After" class="results-card-img">
+                        </div>
+                        <div class="results-card-badges">
+                            <span class="results-badge results-badge--before">Before</span>
+                            <span class="results-badge results-badge--after">After</span>
+                        </div>
+                        <div class="results-card-meta">
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Result:</span>
+                                12Months
+                            </div>
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Details:</span>
+                                4012 Grafts
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results-card">
+                        <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
+                        <div class="results-card-img-wrap">
+                            <img src="/assets/images/ba-3.webp" alt="Before & After" class="results-card-img">
+                        </div>
+                        <div class="results-card-badges">
+                            <span class="results-badge results-badge--before">Before</span>
+                            <span class="results-badge results-badge--after">After</span>
+                        </div>
+                        <div class="results-card-meta">
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Result:</span>
+                                12Months
+                            </div>
+                            <div class="results-meta-item">
+                                <span class="results-meta-label">Details:</span>
+                                4012 Grafts
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     <section class="section-padded h-screen">

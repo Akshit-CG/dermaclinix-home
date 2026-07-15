@@ -248,6 +248,9 @@
   .w-max {
     width: max-content;
   }
+  .max-w-\[680px\] {
+    max-width: 680px;
+  }
   .max-w-\[760px\] {
     max-width: 760px;
   }
@@ -265,6 +268,9 @@
   }
   .max-w-\[1240px\] {
     max-width: 1240px;
+  }
+  .max-w-\[1260px\] {
+    max-width: 1260px;
   }
   .min-w-0 {
     min-width: 0;
@@ -497,12 +503,24 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-.pink-text {
-  color: var(--pink-text-color);
+.sub-heading {
+  color: #000000;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
+}
+.with-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.with-line::before {
+  content: "";
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+  flex-shrink: 0;
 }
 .section-padded {
   display: flex;
@@ -538,6 +556,10 @@ h2 {
 @media (max-width: 640px) {
   h2 {
     font-size: 24px;
+  }
+  .sub-heading {
+    font-size: 14px;
+    line-height: 1.65;
   }
 }
 .heroSwiper {
@@ -590,7 +612,6 @@ h2 {
 }
 .news-logo-img {
   width: auto;
-  height: 53px;
   object-fit: contain;
   display: block;
   flex: 0 0 auto;
@@ -600,27 +621,6 @@ h2 {
   display: inline-flex;
   align-items: center;
   flex: 0 0 auto;
-}
-.db-logo {
-  position: relative;
-  display: inline-block;
-  padding-top: 10px;
-  color: #181818;
-  font-family: Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 800;
-  line-height: 0.88;
-  text-align: center;
-}
-.db-logo::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 14px;
-  width: 10px;
-  height: 10px;
-  border-radius: 9999px;
-  background: #f59a22;
 }
 .ndtv-logo {
   display: inline-flex;
@@ -649,7 +649,7 @@ h2 {
   height: 6px;
   border-radius: 50%;
   flex: 0 0 auto;
-  background: #A7324266;
+  background-color: rgb(167 50 66 / 40%);
 }
 .news-logo-slide {
   display: flex !important;
@@ -668,10 +668,7 @@ h2 {
     padding: 10px 0px;
   }
   .news-logo-img, .news-logo-html {
-    height: 40px;
-  }
-  .news-logo-img {
-    max-width: 140px;
+    max-height: 40px;
   }
   .db-logo {
     font-size: 12px;
@@ -691,6 +688,9 @@ h2 {
     font-size: 12px;
     font-weight: 400;
   }
+}
+#founders .sub-heading {
+  color: var(--pink-text-color);
 }
 .founder-card {
   position: relative;
@@ -808,7 +808,6 @@ h2 {
   font-size: 13px;
   font-weight: 500;
   background: #49C254;
-  box-shadow: 0 8px 18px rgba(73, 194, 84, .28);
   transition: .25s;
 }
 .whatsapp-btn:hover {
@@ -887,10 +886,6 @@ h2 {
   width: 332px;
 }
 @media (max-width:640px) {
-  #founders .pink-text {
-    font-size: 14px;
-    line-height: 1.65;
-  }
   .founder-card {
     max-width: 100%;
     min-height: auto;
@@ -922,10 +917,9 @@ h2 {
 #principles h2 {
   color: black;
 }
-.principles-intro {
-  font-size: 20px;
+#principles .sub-heading {
+  color: #000000;
   line-height: 28px;
-  font-weight: 400;
 }
 .principles .section-padded {
   display: flex;
@@ -1023,6 +1017,12 @@ h2 {
   font-size: 10px;
   line-height: 16px;
 }
+#specialisations h2 {
+  color: #1E1E1E;
+}
+#specialisations .sub-heading {
+  color: #000000;
+}
 .specialisations-intro {
   color: #181818;
   font-size: 20px;
@@ -1046,8 +1046,8 @@ h2 {
   text-transform: uppercase;
 }
 .specialisation-tab--active {
-  border-color: #E39482;
-  background: #E39482;
+  border-color: var(--border-color);
+  background: var(--primary-color);
 }
 .specialisation-tab-icon {
   width: 14px;
@@ -1101,12 +1101,9 @@ h2 {
   }
   .specialisation-item {
     min-height: 54px;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
     gap: 8px;
     padding: 10px 0;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     letter-spacing: 1.4px;
   }
@@ -1114,6 +1111,162 @@ h2 {
     font-size: 10px;
     line-height: 12px;
     letter-spacing: 1.2px;
+  }
+}
+#results .sub-heading {
+  color: #000000;
+}
+#results .section-title {
+  font-weight: 300;
+}
+.results-tab-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.results-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 22px;
+  border-radius: 999px;
+  border: 1.5px solid #E8E2DC;
+  background: #fff;
+  color: #181818;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+.results-tab--active {
+  border-color: var(--border-color);
+  background: var(--primary-color);
+  color: #fff;
+}
+.results-tab-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+.results-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.results-card {
+  width: 100%;
+  max-width: 401px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 14px 14px;
+  gap: 0;
+}
+.results-card-logo {
+  height: 36px;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: 12px;
+}
+.results-card-img-wrap {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 373 / 280;
+  flex-shrink: 0;
+}
+.results-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.results-card-badges {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10px;
+  margin-top: -12.5px;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+.results-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 25px;
+  border-radius: 335px;
+  font-family: "Inter", "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.results-badge--before {
+  background: rgba(0, 0, 0, 0.40);
+  color: #fff;
+}
+.results-badge--after {
+  background: #A73242;
+  color: #fff;
+}
+.results-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.results-meta-item {
+  font-family: "Inter", "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+@media (max-width: 900px) {
+  .results-card-logo {
+    height: 25px;
+  }
+  .results-meta-item {
+    font-size: 8px;
+  }
+  .results-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .results-tab {
+    font-size: 12px;
+    padding: 7px 14px;
+    gap: 5px;
+  }
+  .results-tab-icon {
+    width: 13px;
+    height: 13px;
+  }
+  .results-cards {
+    grid-template-columns: 1fr;
+  }
+  .results-card {
+    max-width: 100%;
   }
 }
 @property --tw-border-style {
