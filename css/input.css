@@ -7,6 +7,7 @@
     --bg-primary-color: #FFE1DB;
     --pink-text-color: #6D504B;
     --border-color: #F28979;
+    --icon-bg: #F1EEE9;
 }
 
 
@@ -15,28 +16,6 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-.sub-heading {
-
-    color: #000000;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-}
-
-.with-line {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.with-line::before {
-    content: "";
-    width: 16px;
-    height: 2px;
-    background-color: #000000;
-    flex-shrink: 0;
-}
 
 .section-padded {
     display: flex;
@@ -66,6 +45,37 @@ h2 {
     text-align: center;
 }
 
+.custom-text {
+    color: #000000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.sub-heading {
+
+    color: #000000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.with-line {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.with-line::before {
+    content: "";
+    width: 16px;
+    height: 2px;
+    background-color: #000000;
+    flex-shrink: 0;
+}
+
 .eyebrow-heading {
     font-family: "Poppins", sans-serif;
     color: #554D4E;
@@ -88,6 +98,14 @@ h2 {
         font-size: 14px;
         line-height: 1.65;
     }
+
+    .custom-text {
+
+        font-size: 14px !important;
+        line-height: 20px;
+
+    }
+
 
 }
 
@@ -619,6 +637,12 @@ font-weight: 400; */
 
 }
 
+#principles .custom-text {
+    color: #1C1A1A;
+    line-height: 24px;
+}
+
+
 .principles .section-padded {
     display: flex;
     flex-direction: column;
@@ -669,13 +693,6 @@ font-weight: 400; */
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
-}
-
-.principle-copy {
-    color: #1C1A1A;
-    font-size: 20px;
-    line-height: 26px;
-    font-weight: 400;
 }
 
 .principle-pill {
@@ -1028,4 +1045,265 @@ font-weight: 400; */
     .results-card {
         max-width: 100%;
     }
+}
+
+/* ===========================
+   6. MEASURE SUCCESS SECTION
+=========================== */
+
+.measure-title-em {
+    font-style: italic;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-size: inherit;
+}
+
+#measure-success .custom-text {
+    font-size: 17px;
+
+}
+
+#measure-success .eyebrow-heading {
+    color: #000000;
+}
+
+#measure-success .section-title {
+    color: #1E1E1E;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.measure-sub-line {
+    display: block;
+    width: 16px;
+    height: 1.5px;
+    background-color: #6B5E5C;
+    flex-shrink: 0;
+}
+
+#measure-success .review .with-line {
+    color: #666666;
+}
+
+/* 4-card grid */
+.measure-cards-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.measure-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 28px 24px;
+    border: 1px solid #E1DED7;
+    border-radius: 4px;
+    min-height: 210px;
+}
+
+/* remove right border overrides — no longer needed, each card has its own border */
+
+.measure-card-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.measure-icon-wrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--icon-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.measure-icon-label {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.24px;
+    color: #6B5E5C;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.measure-card-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.measure-card-heading {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    color: var(--heading-color);
+    margin: 0;
+}
+
+.measure-card-desc {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #4A3F3D;
+    margin: 0;
+}
+
+/* Review Schedule */
+.measure-schedule {
+    border: 1px solid #E1DED7;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.measure-schedule-row {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    align-items: center;
+    min-height: 123.25px;
+    padding: 20px 24px;
+    border-bottom: 1px solid #E1DED7;
+    gap: 32px;
+}
+
+.measure-schedule-row:last-child {
+    border-bottom: none;
+}
+
+.measure-schedule-label {
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    color: #6B5E5C;
+    text-transform: uppercase;
+    line-height: 1.5;
+    flex-shrink: 0;
+}
+
+.measure-schedule-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.measure-schedule-title {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.24px;
+    color: var(--heading-color);
+    margin: 0;
+}
+
+.measure-schedule-desc {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #4A3F3D;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .measure-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .measure-card {
+        min-height: auto;
+    }
+
+    .measure-schedule-row {
+        grid-template-columns: 110px 1fr;
+        gap: 20px;
+        min-height: auto;
+        padding: 18px 16px;
+    }
+}
+
+@media (max-width: 640px) {
+    .measure-card {
+        flex-direction: column;
+        gap: 14px;
+        padding: 20px 16px;
+    }
+
+    .measure-card-left {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .measure-card-heading {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .measure-schedule-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 16px;
+    }
+
+    .measure-schedule-label {
+        font-size: 10px;
+    }
+
+    .measure-schedule-title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .measure-note-item {
+        align-items: flex-start !important;
+    }
+}
+
+/* Tick-icon notes list */
+.measure-notes {
+    list-style: none;
+    margin: 28px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.measure-notes .custom-text {
+    color: #1E1E1ECC;
+}
+
+.measure-note-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.measure-note-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.measure-note-item .custom-text {
+    text-align: left;
+    margin: 0;
+    line-height: 19px;
 }
