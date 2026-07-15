@@ -1574,3 +1574,39 @@ font-weight: 400; */
         letter-spacing: 2px;
     }
 }
+
+/* reviews */
+#reviews h2 {
+    text-align: start;
+}
+
+/* consultation form */
+#consultation-form .eyebrow-heading {
+    color: #ffffff;
+}
+
+#consultation-form .custom-text {
+    color: white;
+}
+
+#consultation-form input,
+#consultation-form textarea {
+    background-color: #ECECEC;
+    color: #000000;
+}
+
+#consultation-form .eyebrow-heading::before {
+    background-color: #ffffff;
+}
+
+#consultation-form .section-title {
+    color: #ffffff;
+    text-align: left;
+}
+
+#consultation-form .sub-heading {
+    color: #ffffff;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.5;
+}
