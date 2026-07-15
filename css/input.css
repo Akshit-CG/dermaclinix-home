@@ -768,7 +768,7 @@ font-weight: 400; */
     text-align: center;
 }
 
-.specialisation-tab {
+.tab-btn {
     min-height: 38px;
     display: inline-flex;
     align-items: center;
@@ -784,12 +784,14 @@ font-weight: 400; */
     text-transform: uppercase;
 }
 
-.specialisation-tab--active {
+.tab-btn--active {
     border-color: var(--border-color);
     background: var(--primary-color);
+    color: #fff;
+    /* added so active text is white */
 }
 
-.specialisation-tab-icon {
+.tab-btn-icon {
     width: 14px;
     height: 14px;
     object-fit: contain;
@@ -839,7 +841,8 @@ font-weight: 400; */
         line-height: 22px;
     }
 
-    .specialisation-tab {
+    .tab-btn,
+    #patient-voices .tab-btn {
         gap: 5px;
         font-size: 10px;
         letter-spacing: 2px;
@@ -1067,7 +1070,7 @@ font-weight: 400; */
     color: #000000;
 }
 
-#measure-success .section-title {
+#measure-success .measure-cards-grid .section-title {
     color: #1E1E1E;
     font-weight: 400;
     font-size: 22px;
@@ -1185,10 +1188,10 @@ font-weight: 400; */
 
 .measure-schedule-label {
     font-family: "Poppins", sans-serif;
-    font-size: 11px;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 2.5px;
-    color: #6B5E5C;
+    color: #1C3A27;
     text-transform: uppercase;
     line-height: 1.5;
     flex-shrink: 0;
@@ -1262,7 +1265,7 @@ font-weight: 400; */
     }
 
     .measure-schedule-label {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .measure-schedule-title {
@@ -1306,4 +1309,268 @@ font-weight: 400; */
     text-align: left;
     margin: 0;
     line-height: 19px;
+}
+
+/* ===========================
+   7. GUEST JOURNEY SECTION
+=========================== */
+
+/* Reusable step icon base — sized, circular, centered content */
+.step-icon {
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Unique style scoped to guest-journey via section id */
+#guest-journey .step-icon {
+    border: 1.5px solid #1C3A27;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #6B5E5C;
+}
+
+#guest-journey .step-icon em {
+    font-style: italic;
+}
+
+/* Eyebrow line override for this section — use same dark line */
+#guest-journey .eyebrow-heading {
+    color: #000000;
+}
+
+/* Sub-heading left-align override */
+#guest-journey .sub-heading {
+    text-align: left;
+}
+
+#guest-journey .section-title {
+    text-align: left;
+}
+
+/* Section-title left-align for h3 step titles */
+#guest-journey .journey-grid .section-title {
+    text-align: left;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.3;
+    color: var(--heading-color);
+}
+
+/* custom-text left-align in this section */
+#guest-journey .custom-text {
+    text-align: left;
+    font-size: 16px;
+    line-height: 26px;
+    color: #3D3534;
+}
+
+/* 2×2 grid */
+.journey-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 64px;
+}
+
+/* Each step card */
+.journey-step {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Icon + eyebrow row */
+.journey-step-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .journey-grid {
+        gap: 40px 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .journey-heading {
+        font-size: 26px;
+    }
+
+    .journey-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    #guest-journey .journey-grid .section-title {
+        font-size: 22px;
+    }
+}
+
+/* ===========================
+   8. MEDIA PRESENCE SECTION
+=========================== */
+
+.media-em {
+    font-style: italic;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+}
+
+/* Icon scoped to media-presence — white circle, no border */
+#media-presence .step-icon {
+    background: rgba(255, 255, 255, 0.85);
+    border: none;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+#media-presence .section-title {
+    font-weight: 300;
+}
+
+#media-presence .eyebrow-heading {
+    color: #666666;
+}
+
+/* Section-title override to 15px for card titles */
+#media-presence .media-cards-grid .section-title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #2B1311;
+    text-align: center;
+}
+
+/* Card description label */
+.media-card-desc {
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #666666;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 14px;
+    position: relative;
+    display: inline-block;
+    /* allows the dot to center relative to text bounds */
+}
+
+.media-card-desc::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: #2B1311;
+    border-radius: 50%;
+}
+
+/* Grid */
+.media-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+/* Card base */
+.media-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #E1DED7;
+    border-radius: 6px;
+    min-height: 178px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px 20px;
+    gap: 0;
+}
+
+/* Decorative 96×96 white blob — top-right corner, 40% opacity */
+.media-card-blob {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.40);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Ensure icon and text sit above blob */
+.media-card>.step-icon,
+.media-card>.section-title,
+.media-card>.media-card-desc {
+    position: relative;
+    z-index: 1;
+}
+
+/* 5 pastel background themes cycling per column */
+.media-card--1 {
+    background: linear-gradient(145deg, #FDE8E3 0%, #F7D0C8 100%);
+}
+
+.media-card--2 {
+    background: linear-gradient(145deg, #DFF0EB 0%, #C8E5DE 100%);
+}
+
+.media-card--3 {
+    background: linear-gradient(145deg, #FDE8D8 0%, #F5D5BF 100%);
+}
+
+.media-card--4 {
+    background: linear-gradient(145deg, #E0EEFA 0%, #C8DDF2 100%);
+}
+
+.media-card--5 {
+    background: linear-gradient(135deg, #F9F3F3 0%, #F2E5E5 100%);
+
+    /* background: linear-gradient(145deg, #EDE8F8 0%, #DDD4F2 100%); */
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .media-cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    #media-presence .media-cards-grid .section-title {
+        font-size: 11px;
+    }
+
+    .media-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .media-card {
+        min-height: 150px;
+        padding: 20px 12px 16px;
+    }
+}
+
+/* patient-voices */
+#patient-voices .tab-btn {
+    font-size: 18px;
+}
+
+@media (max-width: 640px) {
+    #patient-voices .tab-btn {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
 }

@@ -12,16 +12,16 @@ const heroSwiper = new Swiper(".heroSwiper", {
 });
 
 // specialisations tabs
-const specTabs = document.querySelectorAll('.specialisation-tab');
-const specPanels = document.querySelectorAll('[data-panel]');
+const specTabs = document.querySelectorAll('#specialisations .tab-btn');
+const specPanels = document.querySelectorAll('#specialisations [data-panel]');
 
 specTabs.forEach(tab => {
     tab.addEventListener('click', () => {
         const target = tab.dataset.tab;
 
         // update tab active state
-        specTabs.forEach(t => t.classList.remove('specialisation-tab--active'));
-        tab.classList.add('specialisation-tab--active');
+        specTabs.forEach(t => t.classList.remove('tab-btn--active'));
+        tab.classList.add('tab-btn--active');
 
         // show matching panel, hide others
         specPanels.forEach(panel => {
@@ -46,5 +46,41 @@ resultsTabs.forEach(tab => {
         resultsPanels.forEach(panel => {
             panel.style.display = panel.dataset.resultsPanel === target ? '' : 'none';
         });
+    });
+});
+
+// Patient Voices Videos
+const videoCards = document.querySelectorAll('.video-card');
+
+videoCards.forEach(card => {
+    card.addEventListener('click', () => {
+        const videoId = card.dataset.videoId;
+        if (!videoId) return;
+        
+        // Create iframe
+        const iframe = document.createElement('iframe');
+        iframe.className = 'w-full h-full';
+        iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`);
+        iframe.setAttribute('title', 'YouTube video player');
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+        iframe.setAttribute('allowfullscreen', '');
+        
+        // Replace inner content
+        card.innerHTML = '';
+        card.appendChild(iframe);
+        
+        // Remove cursor pointer since it's now an interactive iframe
+        card.classList.remove('cursor-pointer');
+    });
+});
+
+// Patient Voices Tabs (Optional logic if they want to switch panels later)
+const videoTabs = document.querySelectorAll('#patient-voices .tab-btn');
+videoTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        videoTabs.forEach(t => t.classList.remove('tab-btn--active'));
+        tab.classList.add('tab-btn--active');
+        // Panel switching logic can be added here if multiple grids are added
     });
 });
