@@ -339,9 +339,6 @@
   .h-full {
     height: 100%;
   }
-  .h-screen {
-    height: 100vh;
-  }
   .min-h-\[110px\] {
     min-height: 110px;
   }
@@ -2530,6 +2527,10 @@ body {
 }
 #contact .custom-text {
   font-size: 14px;
+}
+#contact .whatsapp svg {
+  width: 36px;
+  height: 36px;
 }
 #links .custom-text, #associations .custom-text {
   font-size: 12px;

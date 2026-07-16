@@ -1723,6 +1723,11 @@ font-weight: 400; */
 
 }
 
+#contact .whatsapp svg {
+    width: 36px;
+    height: 36px;
+}
+
 #links .custom-text,
 #associations .custom-text {
     font-size: 12px;
