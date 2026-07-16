@@ -2,12 +2,17 @@
 
 /* common */
 :root {
+    /* colors */
     --heading-color: #2B1311;
     --primary-color: #e39482;
     --bg-primary-color: #FFE1DB;
     --pink-text-color: #6D504B;
     --border-color: #F28979;
     --icon-bg: #F1EEE9;
+
+    /* font-sizes */
+    --title-size-mobile: 24px;
+    --title-size-desktop: 32px;
 }
 
 
@@ -35,14 +40,20 @@ body {
 
 
 /* typography */
-h2 {
-    font-family: "Poppins", sans-serif;
+
+.section-title {
+    font-size: var(--title-size-desktop, 32px);
     font-weight: 500;
-    font-size: 32px;
     color: var(--heading-color);
     line-height: 1.35;
     letter-spacing: 0;
     text-align: center;
+}
+
+@media (max-width:640px) {
+    .section-title {
+        font-size: var(--title-size-mobile, 24px);
+    }
 }
 
 .custom-text {
@@ -88,11 +99,6 @@ h2 {
 }
 
 @media (max-width: 640px) {
-    h2 {
-
-        font-size: 24px;
-
-    }
 
     .sub-heading {
         font-size: 14px;
@@ -772,6 +778,7 @@ font-weight: 400; */
     min-height: 38px;
     display: inline-flex;
     align-items: center;
+    padding: 5px 14px;
     justify-content: center;
     gap: 8px;
     border: 2px solid transparent;
@@ -845,6 +852,7 @@ font-weight: 400; */
     #patient-voices .tab-btn {
         gap: 5px;
         font-size: 10px;
+        padding: 2px 8px;
         letter-spacing: 2px;
     }
 
@@ -1070,9 +1078,11 @@ font-weight: 400; */
     color: #000000;
 }
 
-#measure-success .measure-cards-grid .section-title {
+#measure-success .measure-cards-grid .section-title,
+.measure-schedule .section-title {
     color: #1E1E1E;
     font-weight: 400;
+    text-align: start;
     font-size: 22px;
 }
 
@@ -1465,7 +1475,7 @@ font-weight: 400; */
 .media-card-desc::before {
     content: "";
     position: absolute;
-    top: -12px;
+    top: -6px;
     left: 50%;
     transform: translateX(-50%);
     width: 4px;
@@ -1571,6 +1581,7 @@ font-weight: 400; */
 @media (max-width: 640px) {
     #patient-voices .tab-btn {
         font-size: 10px;
+        padding: 1px;
         letter-spacing: 2px;
     }
 }
@@ -1599,6 +1610,60 @@ font-weight: 400; */
     background-color: #ffffff;
 }
 
+/* FAQ Section */
+#faq-section .eyebrow-heading {
+    color: #C21725;
+    text-align: left;
+}
+
+#faq-section {
+    text-align: left;
+}
+
+#faq-section h2.section-title {
+    text-align: left;
+    --title-size-mobile: 24px;
+    --title-size-desktop: 42px;
+
+}
+
+#faq-section p.sub-heading {
+    text-align: left;
+}
+
+.faq-card {
+    width: 100%;
+    max-width: 811px;
+    border: 1px solid #E1DED7;
+    border-radius: 24px;
+    padding: 24px 32px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.faq-card.active {
+    border-color: rgba(194, 23, 37, 0.4);
+    box-shadow: 0px 4px 12px rgba(194, 23, 37, 0.4)
+        /* #C21725 with 40% opacity */
+}
+
+.faq-icon-wrapper {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #E1DED7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.faq-icon-wrapper.active {
+    background-color: #F28979;
+    border-color: transparent;
+}
+
 #consultation-form .section-title {
     color: #ffffff;
     text-align: left;
@@ -1609,4 +1674,84 @@ font-weight: 400; */
     text-align: left;
     font-size: 20px;
     line-height: 1.5;
+}
+
+/* Recent Blogs / Results Card */
+#recent-blogs .section-title {
+    text-align: center;
+}
+
+#recent-blogs .results-card {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 0;
+    border: none;
+    max-width: 429px;
+    height: 100%;
+    min-height: 619px;
+    display: flex;
+    flex-direction: column;
+}
+
+.results-card-content {
+    padding: 32px;
+}
+
+.results-card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #1E1E1E;
+    line-height: 1.4;
+}
+
+.results-card-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color, #e39482);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.results-card-link:hover {
+    opacity: 0.8;
+}
+
+/* footer */
+#contact .custom-text {
+    font-size: 14px;
+
+}
+
+#links .custom-text {
+    font-size: 12px;
+    line-height: 2;
+
+}
+
+#links p.custom-text {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#links .step-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+#links .step-icon:last-child {
+    margin-right: 0;
+}
+
+#links .step-icon img {
+    max-width: 14px;
+    max-height: 14px;
+    object-fit: contain;
 }

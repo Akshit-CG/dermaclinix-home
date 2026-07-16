@@ -84,3 +84,41 @@ videoTabs.forEach(tab => {
         // Panel switching logic can be added here if multiple grids are added
     });
 });
+
+// FAQ Accordion
+const faqCards = document.querySelectorAll('.faq-card');
+
+faqCards.forEach(card => {
+    
+    card.addEventListener('click', () => {
+        const isActive = card.classList.contains('active');
+        
+        // Close all cards
+        faqCards.forEach(c => {
+            c.classList.remove('active');
+            const content = c.querySelector('.faq-content');
+            const iconWrapper = c.querySelector('.faq-icon-wrapper');
+            const icon = iconWrapper.querySelector('svg');
+            
+            if (content) content.classList.add('hidden');
+            iconWrapper.classList.remove('active');
+            icon.classList.remove('text-white');
+            icon.classList.add('text-[#666666]');
+            icon.innerHTML = '<polyline points="6 9 12 15 18 9"></polyline>'; // down arrow
+        });
+        
+        // Open the clicked one if it wasn't active
+        if (!isActive) {
+            card.classList.add('active');
+            const content = card.querySelector('.faq-content');
+            const iconWrapper = card.querySelector('.faq-icon-wrapper');
+            const icon = iconWrapper.querySelector('svg');
+            
+            if (content) content.classList.remove('hidden');
+            iconWrapper.classList.add('active');
+            icon.classList.remove('text-[#666666]');
+            icon.classList.add('text-white');
+            icon.innerHTML = '<polyline points="18 15 12 9 6 15"></polyline>'; // up arrow
+        }
+    });
+});
