@@ -1,6 +1,7 @@
 // hero swiper
 const heroSwiper = new Swiper(".heroSwiper", {
     loop: true,
+    autoHeight: true,
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
