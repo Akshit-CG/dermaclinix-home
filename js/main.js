@@ -1,15 +1,20 @@
 // hero swiper
-const heroSwiper = new Swiper(".heroSwiper", {
-    loop: true,
-    autoHeight: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+document.addEventListener('DOMContentLoaded', () => {
+    // Delay Swiper init slightly to allow browser layout pass and prevent forced reflow
+    requestAnimationFrame(() => {
+        const heroSwiper = new Swiper(".heroSwiper", {
+            loop: true,
+            // autoHeight: true removed to avoid layout thrashing, as images have fixed aspect ratio
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    });
 });
 
 // specialisations tabs
