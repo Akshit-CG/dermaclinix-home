@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Prefetch news logo images (low priority, loads after critical resources) -->
-    <link rel="prefetch" href="./assets/images/hero-1.webp" as="image">
+    <link rel="preload" href="/assets/images/hero-1.webp" as="image">
     <link rel="prefetch" href="./assets/images/cnn-logo.png" as="image">
     <link rel="prefetch" href="./assets/images/times-logo.png" as="image">
     <link rel="prefetch" href="./assets/images/Forbes-logo.png" as="image">
@@ -36,13 +36,11 @@
             <div class="swiper heroSwiper w-full ">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="/assets/images/hero-1.webp" alt="Hero 1" class="w-full" preload="metadata"
-                            fetchpriority="high" />
+                        <img src="/assets/images/hero-1.webp" alt="Hero 1" class="w-full" width="1920" height="1080" fetchpriority="high">
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="/assets/images/hero-1.webp" alt="Hero 2" class="w-full" preload="metadata"
-                            fetchpriority="high" />
+                        <img src="/assets/images/hero-1.webp" alt="Hero 2" class="w-full" width="1920" height="1080" loading="lazy">
                     </div>
                 </div>
 
@@ -57,37 +55,37 @@
                 <div class="news-logo-track flex w-max animate-marquee">
                     <!-- Logos block 1 -->
                     <div class="flex items-center news-logo-slide-group">
-                        <div class="news-logo-slide"><img src="./assets/images/cnn-logo.png" alt="CNN"
+                        <div class="news-logo-slide"><img loading="lazy" src="./assets/images/cnn-logo.png" alt="CNN"
                                 class="news-logo-img"><span class="news-logo-dot" aria-hidden="true"></span></div>
-                        <div class="news-logo-slide"><img src="./assets/images/times-logo.png" alt="Times Now"
+                        <div class="news-logo-slide"><img loading="lazy" src="./assets/images/times-logo.png" alt="Times Now"
                                 class="news-logo-img"><span class="news-logo-dot" aria-hidden="true"></span></div>
-                        <div class="news-logo-slide"><img src="./assets/images/Forbes-logo.png" alt="Forbes"
+                        <div class="news-logo-slide"><img loading="lazy" src="./assets/images/Forbes-logo.png" alt="Forbes"
                                 class="news-logo-img"><span class="news-logo-dot" aria-hidden="true"></span></div>
-                        <div class="news-logo-slide"><img src="./assets/images/cnn-logo.png" alt="CNN"
+                        <div class="news-logo-slide"><img loading="lazy" src="./assets/images/cnn-logo.png" alt="CNN"
                                 class="news-logo-img"><span class="news-logo-dot" aria-hidden="true"></span></div>
-                        <div class="news-logo-slide"><img src="./assets/images/dainik-logo 1.png" alt="Dainik Bhaskar"
+                        <div class="news-logo-slide"><img loading="lazy" src="./assets/images/dainik-logo 1.png" alt="Dainik Bhaskar"
                                 class="news-logo-img"><span class="news-logo-dot" aria-hidden="true"></span></div>
-                        <div class="news-logo-slide"><img src="./assets/images/ht-logo.png" alt="Hindustan Times"
+                        <div class="news-logo-slide"><img loading="lazy" src="./assets/images/ht-logo.png" alt="Hindustan Times"
                                 class="news-logo-img"><span class="news-logo-dot" aria-hidden="true"></span></div>
-                        <div class="news-logo-slide"><img src="./assets/images/indiatv-logo.png" alt="India TV"
+                        <div class="news-logo-slide"><img loading="lazy" src="./assets/images/indiatv-logo.png" alt="India TV"
                                 class="news-logo-img"><span class="news-logo-dot" aria-hidden="true"></span></div>
                         <div class="news-logo-slide"><span class="news-logo-html" aria-label="NDTV"><span
                                     class="ndtv-logo"><span>N</span>NDTV</span></span><span class="news-logo-dot"
                                 aria-hidden="true"></span></div>
                         <!-- Duplicate blocks for infinite loop -->
-                        <div class="news-logo-slide"><img src="./assets/images/cnn-logo.png" alt="CNN"
+                        <div class="news-logo-slide"><img loading="lazy" src="./assets/images/cnn-logo.png" alt="CNN"
                                 class="news-logo-img"><span class="news-logo-dot" aria-hidden="true"></span></div>
-                        <div class="news-logo-slide"><img src="./assets/images/times-logo.png" alt="Times Now"
+                        <div class="news-logo-slide"><img loading="lazy" src="./assets/images/times-logo.png" alt="Times Now"
                                 class="news-logo-img"><span class="news-logo-dot" aria-hidden="true"></span></div>
-                        <div class="news-logo-slide"><img src="./assets/images/Forbes-logo.png" alt="Forbes"
+                        <div class="news-logo-slide"><img loading="lazy" src="./assets/images/Forbes-logo.png" alt="Forbes"
                                 class="news-logo-img"><span class="news-logo-dot" aria-hidden="true"></span></div>
-                        <div class="news-logo-slide"><img src="./assets/images/cnn-logo.png" alt="CNN"
+                        <div class="news-logo-slide"><img loading="lazy" src="./assets/images/cnn-logo.png" alt="CNN"
                                 class="news-logo-img"><span class="news-logo-dot" aria-hidden="true"></span></div>
-                        <div class="news-logo-slide"><img src="./assets/images/dainik-logo 1.png" alt="Dainik Bhaskar"
+                        <div class="news-logo-slide"><img loading="lazy" src="./assets/images/dainik-logo 1.png" alt="Dainik Bhaskar"
                                 class="news-logo-img"><span class="news-logo-dot" aria-hidden="true"></span></div>
-                        <div class="news-logo-slide"><img src="./assets/images/ht-logo.png" alt="Hindustan Times"
+                        <div class="news-logo-slide"><img loading="lazy" src="./assets/images/ht-logo.png" alt="Hindustan Times"
                                 class="news-logo-img"><span class="news-logo-dot" aria-hidden="true"></span></div>
-                        <div class="news-logo-slide"><img src="./assets/images/indiatv-logo.png" alt="India TV"
+                        <div class="news-logo-slide"><img loading="lazy" src="./assets/images/indiatv-logo.png" alt="India TV"
                                 class="news-logo-img"><span class="news-logo-dot" aria-hidden="true"></span></div>
                         <div class="news-logo-slide"><span class="news-logo-html" aria-label="NDTV"><span
                                     class="ndtv-logo"><span>N</span>NDTV</span></span><span class="news-logo-dot"
@@ -126,7 +124,7 @@
                         <div class="founder-left z-2 flex w-[58%] flex-col max-sm:w-full">
 
                             <span class="doctor-tag">
-                                <img src="/assets/images/stethoscope.svg" alt="">
+                                <img loading="lazy" src="/assets/images/stethoscope.svg" alt="">
                                 DERMATOLOGIST
                             </span>
 
@@ -144,22 +142,22 @@
                             <ul class="doctor-points">
 
                                 <li>
-                                    <img src="/assets/images/check.svg" alt="">
+                                    <img loading="lazy" src="/assets/images/check.svg" alt="">
                                     <span>Board-Certified Surgeon — GHTB</span>
                                 </li>
 
                                 <li>
-                                    <img src="/assets/images/check.svg" alt="">
+                                    <img loading="lazy" src="/assets/images/check.svg" alt="">
                                     <span>Co-pioneer: InstaGraft™ — Featured in Forbes (2021)</span>
                                 </li>
 
                                 <li>
-                                    <img src="/assets/images/check.svg" alt="">
+                                    <img loading="lazy" src="/assets/images/check.svg" alt="">
                                     <span>Inventor: B.E.S.T. FUE™ — Patented Method</span>
                                 </li>
 
                                 <li>
-                                    <img src="/assets/images/check.svg" alt="">
+                                    <img loading="lazy" src="/assets/images/check.svg" alt="">
                                     <span>World's first published research on Body Hair Transplantation</span>
                                 </li>
 
@@ -182,11 +180,11 @@
                             <div class="founder-actions mt-[34px] flex flex-wrap items-center gap-2.5 max-sm:mt-7">
                                 <a href="https://wa.me/910000000000" class="whatsapp-btn"
                                     aria-label="Chat with us on WhatsApp">
-                                    <img src="assets/images/whatsapp.svg" alt="">
+                                    <img loading="lazy" src="assets/images/whatsapp.svg" alt="">
                                     Chat with us
                                 </a>
                                 <a href="tel:+910000000000" class="call-btn" aria-label="Call DermaClinix">
-                                    <img src="assets/images/call.svg" alt="">
+                                    <img loading="lazy" src="assets/images/call.svg" alt="">
                                     Call us
                                 </a>
                             </div>
@@ -201,7 +199,7 @@
                             <div class="rating-card">
 
                                 <div class="rating-top">
-                                    <img src="assets/images/star.svg" alt="">
+                                    <img loading="lazy" src="assets/images/star.svg" alt="">
                                     <strong>4.9</strong>
                                 </div>
 
@@ -209,7 +207,7 @@
 
                             </div>
 
-                            <img src="/assets/images/dr-amrendra.webp" alt="Dr. Amrendra Kumar" class="doctor-image">
+                            <img loading="lazy" src="/assets/images/dr-amrendra.webp" alt="Dr. Amrendra Kumar" class="doctor-image">
 
                         </div>
 
@@ -226,7 +224,7 @@
                         <div class="founder-left z-2 flex w-[58%] flex-col max-sm:w-full">
 
                             <span class="doctor-tag">
-                                <img src="/assets/images/stethoscope.svg" alt="">
+                                <img loading="lazy" src="/assets/images/stethoscope.svg" alt="">
                                 DERMATOLOGIST
                             </span>
 
@@ -244,22 +242,22 @@
                             <ul class="doctor-points">
 
                                 <li>
-                                    <img src="/assets/images/check.svg" alt="">
+                                    <img loading="lazy" src="/assets/images/check.svg" alt="">
                                     <span>Board-Certified Surgeon — GHTB</span>
                                 </li>
 
                                 <li>
-                                    <img src="/assets/images/check.svg" alt="">
+                                    <img loading="lazy" src="/assets/images/check.svg" alt="">
                                     <span>Co-pioneer: InstaGraft™ — Featured in Forbes (2021)</span>
                                 </li>
 
                                 <li>
-                                    <img src="/assets/images/check.svg" alt="">
+                                    <img loading="lazy" src="/assets/images/check.svg" alt="">
                                     <span>Inventor: B.E.S.T. FUE™ — Patented Method</span>
                                 </li>
 
                                 <li>
-                                    <img src="/assets/images/check.svg" alt="">
+                                    <img loading="lazy" src="/assets/images/check.svg" alt="">
                                     <span>6,000+ FUE procedures; Mega & Gigasession Specialist</span>
                                 </li>
 
@@ -282,11 +280,11 @@
                             <div class="founder-actions mt-[34px] flex flex-wrap items-center gap-2.5 max-sm:mt-7">
                                 <a href="https://wa.me/910000000000" class="whatsapp-btn"
                                     aria-label="Chat with us on WhatsApp">
-                                    <img src="assets/images/whatsapp.svg" alt="">
+                                    <img loading="lazy" src="assets/images/whatsapp.svg" alt="">
                                     Chat with us
                                 </a>
                                 <a href="tel:+910000000000" class="call-btn" aria-label="Call DermaClinix">
-                                    <img src="assets/images/call.svg" alt="">
+                                    <img loading="lazy" src="assets/images/call.svg" alt="">
                                     Call us
                                 </a>
                             </div>
@@ -301,7 +299,7 @@
                             <div class="rating-card">
 
                                 <div class="rating-top">
-                                    <img src="assets/images/star.svg" alt="">
+                                    <img loading="lazy" src="assets/images/star.svg" alt="">
                                     <strong>4.9</strong>
                                 </div>
 
@@ -309,7 +307,7 @@
 
                             </div>
 
-                            <img src="/assets/images/dr-kavish.webp" alt="Dr. Kavish Chouhan" class="doctor-image">
+                            <img loading="lazy" src="/assets/images/dr-kavish.webp" alt="Dr. Kavish Chouhan" class="doctor-image">
 
                         </div>
 
@@ -333,7 +331,7 @@
                 <div class="mt-7 flex w-full flex-col">
                     <article class="principle-row flex flex-col gap-4 px-6 py-6 sm:flex-row sm:gap-6 sm:px-7">
                         <div class="principle-icon shrink-0">
-                            <img src="/assets/images/verified.svg" alt="Verified Safety Icon">
+                            <img loading="lazy" src="/assets/images/verified.svg" alt="Verified Safety Icon">
                         </div>
                         <div class="min-w-0">
                             <h3 class="principle-title">Verified Safety, Documented Always</h3>
@@ -346,7 +344,7 @@
 
                     <article class="principle-row flex flex-col gap-4 px-6 py-6 sm:flex-row sm:gap-6 sm:px-7">
                         <div class="principle-icon shrink-0">
-                            <img src="/assets/images/person.svg" alt="Named Doctor Icon">
+                            <img loading="lazy" src="/assets/images/person.svg" alt="Named Doctor Icon">
                         </div>
                         <div class="min-w-0">
                             <h3 class="principle-title">Named Doctor, Every Stage</h3>
@@ -360,7 +358,7 @@
 
                     <article class="principle-row flex flex-col gap-4 px-6 py-6 sm:flex-row sm:gap-6 sm:px-7">
                         <div class="principle-icon shrink-0">
-                            <img src="/assets/images/person-waiting.svg" alt="Person Waiting Icon">
+                            <img loading="lazy" src="/assets/images/person-waiting.svg" alt="Person Waiting Icon">
                         </div>
                         <div class="min-w-0">
                             <h3 class="principle-title">Consultation Designed Around You</h3>
@@ -374,7 +372,7 @@
 
                     <article class="principle-row flex flex-col gap-4 px-6 py-6 sm:flex-row sm:gap-6 sm:px-7">
                         <div class="principle-icon shrink-0">
-                            <img src="/assets/images/cadboard.svg" alt="cadboard">
+                            <img loading="lazy" src="/assets/images/cadboard.svg" alt="cadboard">
                         </div>
                         <div class="min-w-0">
                             <h3 class="principle-title">Complete Pre-Procedure Clarity</h3>
@@ -387,7 +385,7 @@
 
                     <article class="principle-row flex flex-col gap-4 px-6 py-6 sm:flex-row sm:gap-6 sm:px-7">
                         <div class="principle-icon shrink-0">
-                            <img src="/assets/images/headsets.svg" alt="Headsets Icon">
+                            <img loading="lazy" src="/assets/images/headsets.svg" alt="Headsets Icon">
                         </div>
                         <div class="min-w-0">
                             <h3 class="principle-title">Proactive Post-Procedure Support</h3>
@@ -414,15 +412,15 @@
                 <div class="mt-10 w-full">
                     <div class="grid grid-cols-3 border-b border-[#E8E2DC]">
                         <button class="tab-btn tab-btn--active" data-tab="hair" type="button">
-                            <img src="/assets/images/scissor.svg" alt="" class="tab-btn-icon">
+                            <img loading="lazy" src="/assets/images/scissor.svg" alt="" class="tab-btn-icon">
                             Hair
                         </button>
                         <button class="tab-btn" data-tab="skin" type="button">
-                            <img src="/assets/images/stethoscope-gry.svg" alt="" class="tab-btn-icon">
+                            <img loading="lazy" src="/assets/images/stethoscope-gry.svg" alt="" class="tab-btn-icon">
                             Skin
                         </button>
                         <button class="tab-btn" data-tab="aesthetic" type="button">
-                            <img src="/assets/images/injection.svg" alt="" class="tab-btn-icon">
+                            <img loading="lazy" src="/assets/images/injection.svg" alt="" class="tab-btn-icon">
                             Aesthetic
                         </button>
                     </div>
@@ -610,7 +608,7 @@
                         <div class="results-card">
                             <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
                             <div class="results-card-img-wrap">
-                                <img src="/assets/images/ba-1.webp" alt="Before & After" class="results-card-img">
+                                <img loading="lazy" src="/assets/images/ba-1.webp" alt="Before & After" class="results-card-img">
                             </div>
                             <div class="results-card-badges">
                                 <span class="results-badge results-badge--before">Before</span>
@@ -631,7 +629,7 @@
                         <div class="results-card">
                             <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
                             <div class="results-card-img-wrap">
-                                <img src="/assets/images/ba-2.webp" alt="Before & After" class="results-card-img">
+                                <img loading="lazy" src="/assets/images/ba-2.webp" alt="Before & After" class="results-card-img">
                             </div>
                             <div class="results-card-badges">
                                 <span class="results-badge results-badge--before">Before</span>
@@ -652,7 +650,7 @@
                         <div class="results-card">
                             <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
                             <div class="results-card-img-wrap">
-                                <img src="/assets/images/ba-3.webp" alt="Before & After" class="results-card-img">
+                                <img loading="lazy" src="/assets/images/ba-3.webp" alt="Before & After" class="results-card-img">
                             </div>
                             <div class="results-card-badges">
                                 <span class="results-badge results-badge--before">Before</span>
@@ -678,7 +676,7 @@
                         <div class="results-card">
                             <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
                             <div class="results-card-img-wrap">
-                                <img src="/assets/images/ba-1.webp" alt="Before & After" class="results-card-img">
+                                <img loading="lazy" src="/assets/images/ba-1.webp" alt="Before & After" class="results-card-img">
                             </div>
                             <div class="results-card-badges">
                                 <span class="results-badge results-badge--before">Before</span>
@@ -698,7 +696,7 @@
                         <div class="results-card">
                             <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
                             <div class="results-card-img-wrap">
-                                <img src="/assets/images/ba-2.webp" alt="Before & After" class="results-card-img">
+                                <img loading="lazy" src="/assets/images/ba-2.webp" alt="Before & After" class="results-card-img">
                             </div>
                             <div class="results-card-badges">
                                 <span class="results-badge results-badge--before">Before</span>
@@ -718,7 +716,7 @@
                         <div class="results-card">
                             <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
                             <div class="results-card-img-wrap">
-                                <img src="/assets/images/ba-3.webp" alt="Before & After" class="results-card-img">
+                                <img loading="lazy" src="/assets/images/ba-3.webp" alt="Before & After" class="results-card-img">
                             </div>
                             <div class="results-card-badges">
                                 <span class="results-badge results-badge--before">Before</span>
@@ -744,7 +742,7 @@
                         <div class="results-card">
                             <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
                             <div class="results-card-img-wrap">
-                                <img src="/assets/images/ba-1.webp" alt="Before & After" class="results-card-img">
+                                <img loading="lazy" src="/assets/images/ba-1.webp" alt="Before & After" class="results-card-img">
                             </div>
                             <div class="results-card-badges">
                                 <span class="results-badge results-badge--before">Before</span>
@@ -764,7 +762,7 @@
                         <div class="results-card">
                             <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
                             <div class="results-card-img-wrap">
-                                <img src="/assets/images/ba-2.webp" alt="Before & After" class="results-card-img">
+                                <img loading="lazy" src="/assets/images/ba-2.webp" alt="Before & After" class="results-card-img">
                             </div>
                             <div class="results-card-badges">
                                 <span class="results-badge results-badge--before">Before</span>
@@ -784,7 +782,7 @@
                         <div class="results-card">
                             <img src="/assets/images/dcx_logo.png" alt="DermaClinix" class="results-card-logo">
                             <div class="results-card-img-wrap">
-                                <img src="/assets/images/ba-3.webp" alt="Before & After" class="results-card-img">
+                                <img loading="lazy" src="/assets/images/ba-3.webp" alt="Before & After" class="results-card-img">
                             </div>
                             <div class="results-card-badges">
                                 <span class="results-badge results-badge--before">Before</span>
@@ -836,7 +834,7 @@
                     <div class="measure-card">
                         <div class="measure-card-left">
                             <div class="measure-icon-wrap">
-                                <img src="/assets/images/dlqi.svg" alt="...">
+                                <img loading="lazy" src="/assets/images/dlqi.svg" alt="...">
                             </div>
                             <span class="measure-icon-label">DLQI</span>
                         </div>
@@ -855,7 +853,7 @@
                     <div class="measure-card">
                         <div class="measure-card-left">
                             <div class="measure-icon-wrap">
-                                <img src="/assets/images/who.svg" alt="...">
+                                <img loading="lazy" src="/assets/images/who.svg" alt="...">
                             </div>
                             <span class="measure-icon-label">WHO-5</span>
                         </div>
@@ -872,7 +870,7 @@
                     <div class="measure-card">
                         <div class="measure-card-left">
                             <div class="measure-icon-wrap">
-                                <img src="/assets/images/hads.svg" alt="...">
+                                <img loading="lazy" src="/assets/images/hads.svg" alt="...">
                             </div>
                             <span class="measure-icon-label">HADS</span>
                         </div>
@@ -890,7 +888,7 @@
                     <div class="measure-card">
                         <div class="measure-card-left">
                             <div class="measure-icon-wrap">
-                                <img src="/assets/images/gais.svg" alt="...">
+                                <img loading="lazy" src="/assets/images/gais.svg" alt="...">
                             </div>
                             <span class="measure-icon-label">GAIS</span>
                         </div>
@@ -982,27 +980,27 @@
                 <!-- Tick-icon notes -->
                 <ul class="measure-notes">
                     <li class="measure-note-item">
-                        <img src="/assets/images/tick.svg" alt="" width="16" height="16" class="measure-note-icon"
+                        <img loading="lazy" src="/assets/images/tick.svg" alt="" width="16" height="16" class="measure-note-icon"
                             aria-hidden="true">
                         <p class="custom-text">All assessment frameworks are internationally recognised and
                             peer-reviewed —
                             not internal marketing scores.</p>
                     </li>
                     <li class="measure-note-item">
-                        <img src="/assets/images/tick.svg" alt="" width="16" height="16" class="measure-note-icon"
+                        <img loading="lazy" src="/assets/images/tick.svg" alt="" width="16" height="16" class="measure-note-icon"
                             aria-hidden="true">
                         <p class="custom-text">Emotional and psychological wellbeing is tracked as standard — because a
                             result that does not improve how you feel is not a complete result.</p>
                     </li>
                     <li class="measure-note-item">
-                        <img src="/assets/images/tick.svg" alt="" width="16" height="16" class="measure-note-icon"
+                        <img loading="lazy" src="/assets/images/tick.svg" alt="" width="16" height="16" class="measure-note-icon"
                             aria-hidden="true">
                         <p class="custom-text">Your scores are yours to keep — shared with you at every review so you
                             can
                             see your own progress in measurable terms.</p>
                     </li>
                     <li class="measure-note-item">
-                        <img src="/assets/images/tick.svg" alt="" width="16" height="16" class="measure-note-icon"
+                        <img loading="lazy" src="/assets/images/tick.svg" alt="" width="16" height="16" class="measure-note-icon"
                             aria-hidden="true">
                         <p class="custom-text">Doctor assessments and guest assessments are recorded separately and then
                             compared — to surface any gap early and address it within your care plan.</p>
@@ -1096,7 +1094,7 @@
                     <div class="media-card media-card--1">
                         <div class="media-card-blob"></div>
                         <div class="step-icon">
-                            <img src="/assets/images/scissor-pink.svg" alt="" width="24" height="24">
+                            <img loading="lazy" src="/assets/images/scissor-pink.svg" alt="" width="24" height="24">
                         </div>
                         <h3 class="section-title mt-4">InstaGraft™</h3>
                         <p class="media-card-desc">LONG HAIR TRANSPLANT</p>
@@ -1106,7 +1104,7 @@
                     <div class="media-card media-card--2">
                         <div class="media-card-blob"></div>
                         <div class="step-icon">
-                            <img src="/assets/images/question.svg" alt="" width="24" height="24">
+                            <img loading="lazy" src="/assets/images/question.svg" alt="" width="24" height="24">
                         </div>
                         <h3 class="section-title mt-4">Bursting Myths</h3>
                         <p class="media-card-desc">AROUND HAIR LOSS</p>
@@ -1116,7 +1114,7 @@
                     <div class="media-card media-card--3">
                         <div class="media-card-blob"></div>
                         <div class="step-icon">
-                            <img src="/assets/images/medal.svg" alt="" width="24" height="24">
+                            <img loading="lazy" src="/assets/images/medal.svg" alt="" width="24" height="24">
                         </div>
                         <h3 class="section-title mt-4">Hair Restoration</h3>
                         <p class="media-card-desc">EXPERT FEATURE</p>
@@ -1126,7 +1124,7 @@
                     <div class="media-card media-card--4">
                         <div class="media-card-blob"></div>
                         <div class="step-icon">
-                            <img src="/assets/images/pc.svg" alt="" width="24" height="24">
+                            <img loading="lazy" src="/assets/images/pc.svg" alt="" width="24" height="24">
                         </div>
                         <h3 class="section-title mt-4">Dermatology</h3>
                         <p class="media-card-desc">TELEVISION FEATURE</p>
@@ -1136,7 +1134,7 @@
                     <div class="media-card media-card--5">
                         <div class="media-card-blob"></div>
                         <div class="step-icon">
-                            <img src="/assets/images/persons.svg" alt="" width="24" height="24">
+                            <img loading="lazy" src="/assets/images/persons.svg" alt="" width="24" height="24">
                         </div>
                         <h3 class="section-title mt-4">Skin &amp; Hair</h3>
                         <p class="media-card-desc">EXPERT PANEL</p>
@@ -1146,7 +1144,7 @@
                     <div class="media-card media-card--1">
                         <div class="media-card-blob"></div>
                         <div class="step-icon">
-                            <img src="/assets/images/thunder.svg" alt="" width="24" height="24">
+                            <img loading="lazy" src="/assets/images/thunder.svg" alt="" width="24" height="24">
                         </div>
                         <h3 class="section-title mt-4">Breaking Barriers</h3>
                         <p class="media-card-desc">MILLENNIALS &amp; HT</p>
@@ -1156,7 +1154,7 @@
                     <div class="media-card media-card--2">
                         <div class="media-card-blob"></div>
                         <div class="step-icon">
-                            <img src="/assets/images/rain.svg" alt="" width="24" height="24">
+                            <img loading="lazy" src="/assets/images/rain.svg" alt="" width="24" height="24">
                         </div>
                         <h3 class="section-title mt-4">Monsoon Care</h3>
                         <p class="media-card-desc">TRANSPLANT TIPS</p>
@@ -1166,7 +1164,7 @@
                     <div class="media-card media-card--3">
                         <div class="media-card-blob"></div>
                         <div class="step-icon">
-                            <img src="/assets/images/beat.svg" alt="" width="24" height="24">
+                            <img loading="lazy" src="/assets/images/beat.svg" alt="" width="24" height="24">
                         </div>
                         <h3 class="section-title mt-4">Health &amp; Wellness</h3>
                         <p class="media-card-desc">EDITORIAL</p>
@@ -1176,7 +1174,7 @@
                     <div class="media-card media-card--4">
                         <div class="media-card-blob"></div>
                         <div class="step-icon">
-                            <img src="/assets/images/shield-pink.svg" alt="" width="24" height="24">
+                            <img loading="lazy" src="/assets/images/shield-pink.svg" alt="" width="24" height="24">
                         </div>
                         <h3 class="section-title mt-4">Member</h3>
                         <p class="media-card-desc">INT'L SOCIETY OF HRS</p>
@@ -1186,7 +1184,7 @@
                     <div class="media-card media-card--5">
                         <div class="media-card-blob"></div>
                         <div class="step-icon">
-                            <img src="/assets/images/tick-circel.svg" alt="" width="24" height="24">
+                            <img loading="lazy" src="/assets/images/tick-circel.svg" alt="" width="24" height="24">
                         </div>
                         <h3 class="section-title mt-4">Double Board</h3>
                         <p class="media-card-desc">CERTIFIED SURGEONS</p>
@@ -1227,40 +1225,40 @@
                     <!-- Video Card 1 -->
                     <div class="video-card cursor-pointer relative rounded-xl overflow-hidden shadow-sm aspect-video bg-black"
                         data-video-id="RJLm5-QL61A">
-                        <img src="/assets/images/vid-1.webp" alt="Video thumbnail"
+                        <img loading="lazy" src="/assets/images/vid-1.webp" alt="Video thumbnail"
                             class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity bg-white">
                         <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                            <img src="/assets/images/yt-play.svg" alt="Play" class="w-14 h-14">
+                            <img loading="lazy" src="/assets/images/yt-play.svg" alt="Play" class="w-14 h-14">
                         </div>
                     </div>
 
                     <!-- Video Card 2 -->
                     <div class="video-card cursor-pointer relative rounded-xl overflow-hidden shadow-sm aspect-video bg-black"
                         data-video-id="RJLm5-QL61A">
-                        <img src="/assets/images/vid-2.webp" alt="Video thumbnail"
+                        <img loading="lazy" src="/assets/images/vid-2.webp" alt="Video thumbnail"
                             class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity bg-white">
                         <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                            <img src="/assets/images/yt-play.svg" alt="Play" class="w-14 h-14">
+                            <img loading="lazy" src="/assets/images/yt-play.svg" alt="Play" class="w-14 h-14">
                         </div>
                     </div>
 
                     <!-- Video Card 3 -->
                     <div class="video-card cursor-pointer relative rounded-xl overflow-hidden shadow-sm aspect-video bg-black"
                         data-video-id="RJLm5-QL61A">
-                        <img src="/assets/images/vid-3.webp" alt="Video thumbnail"
+                        <img loading="lazy" src="/assets/images/vid-3.webp" alt="Video thumbnail"
                             class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity bg-white">
                         <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                            <img src="/assets/images/yt-play.svg" alt="Play" class="w-14 h-14">
+                            <img loading="lazy" src="/assets/images/yt-play.svg" alt="Play" class="w-14 h-14">
                         </div>
                     </div>
 
                     <!-- Video Card 4 -->
                     <div class="video-card cursor-pointer relative rounded-xl overflow-hidden shadow-sm aspect-video bg-black"
                         data-video-id="RJLm5-QL61A">
-                        <img src="/assets/images/vid-4.webp" alt="Video thumbnail"
+                        <img loading="lazy" src="/assets/images/vid-4.webp" alt="Video thumbnail"
                             class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity bg-white">
                         <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                            <img src="/assets/images/yt-play.svg" alt="Play" class="w-14 h-14">
+                            <img loading="lazy" src="/assets/images/yt-play.svg" alt="Play" class="w-14 h-14">
                         </div>
                     </div>
 
@@ -1285,21 +1283,21 @@
                 <div
                     class="flex items-center justify-between border border-[#E1DED7] rounded-sm bg-white px-8 py-6 mb-8 max-w-[1120px] mx-auto flex-wrap gap-4 md:flex-nowrap">
                     <div class="flex items-center gap-6">
-                        <img src="/assets/images/google.svg" alt="Google" width="34" height="36"
+                        <img loading="lazy" src="/assets/images/google.svg" alt="Google" width="34" height="36"
                             class="w-[34px] h-[36px] object-contain shrink-0">
                         <div class="flex flex-col">
                             <div class="flex items-center gap-2">
                                 <span class="font-bold text-[20px]  text-[#1E1E1E]">4.9</span>
                                 <div class="flex">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
                                 </div>
                             </div>
@@ -1319,18 +1317,18 @@
                         <div>
                             <div class="flex justify-between items-start mb-6">
                                 <div class="flex gap-1">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
                                 </div>
-                                <img src="/assets/images/quotes.svg" alt="Quote" width="22" height="22"
+                                <img loading="lazy" src="/assets/images/quotes.svg" alt="Quote" width="22" height="22"
                                     class="w-[22px] h-[22px]">
                             </div>
                             <p class=" italic text-[15px] leading-relaxed text-[#1E1E1E]">"Struggled with
@@ -1339,7 +1337,7 @@
                         </div>
                         <div class="mt-6 pt-6 border-t border-[#F2F2F2]">
                             <div class="flex items-center gap-4">
-                                <img src="/assets/images/anuj.webp" alt="Anuj Shrivastava"
+                                <img loading="lazy" src="/assets/images/anuj.webp" alt="Anuj Shrivastava"
                                     class="w-10 h-10 rounded-full object-cover">
                                 <div class="flex flex-col">
                                     <span class=" font-semibold text-[15px] text-[#1E1E1E]">Anuj
@@ -1347,7 +1345,7 @@
                                     <span class=" text-[13px] text-[#666666]">B.E.S.T. FUE™ • 3,200
                                         grafts</span>
                                     <div class="flex items-center gap-1 mt-0.5">
-                                        <img src="/assets/images/google.svg" alt="Google" class="w-[12px] h-[12px]">
+                                        <img loading="lazy" src="/assets/images/google.svg" alt="Google" class="w-[12px] h-[12px]">
                                         <span class=" text-[11px] text-[#666666]">Google Review</span>
                                     </div>
                                 </div>
@@ -1360,18 +1358,18 @@
                         <div>
                             <div class="flex justify-between items-start mb-6">
                                 <div class="flex gap-1">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
                                 </div>
-                                <img src="/assets/images/quotes.svg" alt="Quote" width="22" height="22"
+                                <img loading="lazy" src="/assets/images/quotes.svg" alt="Quote" width="22" height="22"
                                     class="w-[22px] h-[22px]">
                             </div>
                             <p class=" italic text-[15px] leading-relaxed text-[#1E1E1E]">"I'd highly
@@ -1381,7 +1379,7 @@
                         </div>
                         <div class="mt-6 pt-6 border-t border-[#F2F2F2]">
                             <div class="flex items-center gap-4">
-                                <img src="/assets/images/harshit.webp" alt="Harshit M."
+                                <img loading="lazy" src="/assets/images/harshit.webp" alt="Harshit M."
                                     class="w-10 h-10 rounded-full object-cover">
                                 <div class="flex flex-col">
                                     <span class=" font-semibold text-[15px] text-[#1E1E1E]">Harshit
@@ -1389,7 +1387,7 @@
                                     <span class=" text-[13px] text-[#666666]">B.E.S.T. FUE™ • 5,000
                                         grafts</span>
                                     <div class="flex items-center gap-1 mt-0.5">
-                                        <img src="/assets/images/google.svg" alt="Google" class="w-[12px] h-[12px]">
+                                        <img loading="lazy" src="/assets/images/google.svg" alt="Google" class="w-[12px] h-[12px]">
                                         <span class=" text-[11px] text-[#666666]">Google Review</span>
                                     </div>
                                 </div>
@@ -1402,18 +1400,18 @@
                         <div>
                             <div class="flex justify-between items-start mb-6">
                                 <div class="flex gap-1">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
-                                    <img src="/assets/images/star.svg" alt="Star" width="15" height="14"
+                                    <img loading="lazy" src="/assets/images/star.svg" alt="Star" width="15" height="14"
                                         class="w-[15px] h-[14px]">
                                 </div>
-                                <img src="/assets/images/quotes.svg" alt="Quote" width="22" height="22"
+                                <img loading="lazy" src="/assets/images/quotes.svg" alt="Quote" width="22" height="22"
                                     class="w-[22px] h-[22px]">
                             </div>
                             <p class=" italic text-[15px] leading-relaxed text-[#1E1E1E]">"I have a rare
@@ -1422,14 +1420,14 @@
                         </div>
                         <div class="mt-6 pt-6 border-t border-[#F2F2F2]">
                             <div class="flex items-center gap-4">
-                                <img src="/assets/images/anjali.webp" alt="Anjali Bisen"
+                                <img loading="lazy" src="/assets/images/anjali.webp" alt="Anjali Bisen"
                                     class="w-10 h-10 rounded-full object-cover">
                                 <div class="flex flex-col">
                                     <span class=" font-semibold text-[15px] text-[#1E1E1E]">Anjali
                                         Bisen</span>
                                     <span class=" text-[13px] text-[#666666]">Hyaluronic Acid Fillers</span>
                                     <div class="flex items-center gap-1 mt-0.5">
-                                        <img src="/assets/images/google.svg" alt="Google" class="w-[12px] h-[12px]">
+                                        <img loading="lazy" src="/assets/images/google.svg" alt="Google" class="w-[12px] h-[12px]">
                                         <span class=" text-[11px] text-[#666666]">Google Review</span>
                                     </div>
                                 </div>
@@ -1666,7 +1664,7 @@
 
                     <!-- Blog Card 1 -->
                     <div class="results-card">
-                        <img src="/assets/images/bald-1.webp" alt="HD PRP" class="w-full h-[260px] object-cover" />
+                        <img loading="lazy" src="/assets/images/bald-1.webp" alt="HD PRP" class="w-full h-[260px] object-cover" />
                         <div class="p-2 md:p-8 flex flex-col justify-center md:justify-between grow">
                             <div>
                                 <h3 class="sub-heading">HD PRP vs Regular PRP: What's the Difference & Why
@@ -1680,7 +1678,7 @@
 
                     <!-- Blog Card 2 -->
                     <div class="results-card">
-                        <img src="/assets/images/bald-2.webp" alt="Hair Follicle"
+                        <img loading="lazy" src="/assets/images/bald-2.webp" alt="Hair Follicle"
                             class="w-full h-[260px] object-cover" />
                         <div class="p-2 md:p-8 flex flex-col justify-center md:justify-between grow">
                             <div>
@@ -1694,7 +1692,7 @@
 
                     <!-- Blog Card 3 -->
                     <div class="results-card">
-                        <img src="/assets/images/bald-3.webp" alt="PRP Therapy" class="w-full h-[260px] object-cover" />
+                        <img loading="lazy" src="/assets/images/bald-3.webp" alt="PRP Therapy" class="w-full h-[260px] object-cover" />
                         <div class="p-2 md:p-8 flex flex-col justify-center md:justify-between grow">
                             <div>
                                 <h3 class="sub-heading">What is PRP Therapy? A Complete Guide to Natural Hair
@@ -1716,25 +1714,25 @@
         <!-- Top Section (White Background) -->
         <div id="contact" class="w-full bg-white py-10 flex flex-col items-center">
             <!-- Logo -->
-            <img src="/assets/images/dcx_logo.png" alt="DermaClinix" style="width: 261.28px; height: 69.49px;"
+            <img src="/assets/images/dcx_logo.png" alt="DermaClinix" width="261" height="69" style="width: 261.28px; height: 69.49px;"
                 class="mb-8 object-contain" />
 
             <!-- Contact Info -->
             <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-20 w-full max-w-[1200px]">
                 <!-- Phone 1 -->
                 <div class="flex items-center gap-2">
-                    <img src="/assets/images/phone-icon.svg" alt="Phone" width="20" height="20" />
+                    <img loading="lazy" src="/assets/images/phone-icon.svg" alt="Phone" width="20" height="20" />
                     <span class="custom-text font-semibold text-[16px]">For Skin +91-8588829376</span>
                 </div>
                 <div class="flex items-center gap-2">
-                    <img src="/assets/images/email-icon.svg" alt="Email" width="20" height="20" />
+                    <img loading="lazy" src="/assets/images/email-icon.svg" alt="Email" width="20" height="20" />
                     <span class="custom-text font-semibold text-[16px]">enquiry@dermaclinix.in</span>
                 </div>
 
 
                 <!-- Phone 2 -->
                 <div class="flex items-center gap-2">
-                    <img src="/assets/images/phone-icon.svg" alt="Phone" width="20" height="20" />
+                    <img loading="lazy" src="/assets/images/phone-icon.svg" alt="Phone" width="20" height="20" />
                     <span class="custom-text font-semibold text-[16px]">For Hair +91-8882227080</span>
                 </div>
             </div>
@@ -1759,7 +1757,7 @@
                     <!-- Col 1 -->
                     <div class="flex flex-col ">
                         <div class="flex items-center gap-2 mb-2">
-                            <img src="/assets/images/link-icon.svg" alt="Quick Links" width="21" height="21" />
+                            <img loading="lazy" src="/assets/images/link-icon.svg" alt="Quick Links" width="21" height="21" />
                             <p class="custom-text font-semibold text-[14px]">Quick Links</p>
                         </div>
                         <ul class="flex flex-col">
@@ -1791,7 +1789,7 @@
                         <!-- About -->
                         <div class="flex flex-col ">
                             <div class="flex items-center gap-2 mb-2">
-                                <img src="/assets/images/about-icon.svg" alt="About" width="21" height="21" />
+                                <img loading="lazy" src="/assets/images/about-icon.svg" alt="About" width="21" height="21" />
                                 <p class="custom-text font-semibold text-[14px]">About</p>
                             </div>
                             <ul class="flex flex-col">
@@ -1812,7 +1810,7 @@
                         <!-- Conditions -->
                         <div class="flex flex-col mt-3">
                             <div class="flex items-center gap-2 mb-2">
-                                <img src="/assets/images/conditions-icon.svg" alt="Conditions" width="21" height="21" />
+                                <img loading="lazy" src="/assets/images/conditions-icon.svg" alt="Conditions" width="21" height="21" />
                                 <p class="custom-text font-semibold text-[14px]">Conditions</p>
                             </div>
                             <ul class="flex flex-col ">
@@ -1829,7 +1827,7 @@
                     <!-- Col 3 -->
                     <div class="flex flex-col ">
                         <div class="flex items-center gap-2 mb-2">
-                            <img src="/assets/images/grape.svg" alt="Hair Treatment" width="21" height="21" />
+                            <img loading="lazy" src="/assets/images/grape.svg" alt="Hair Treatment" width="21" height="21" />
                             <p class="custom-text font-semibold text-[14px]">Hair Treatment</p>
                         </div>
                         <ul class="flex flex-col ">
@@ -1855,7 +1853,7 @@
                     <!-- Col 4 -->
                     <div class="flex flex-col ">
                         <div class="flex items-center gap-2 mb-2">
-                            <img src="/assets/images/skin-treatment-icon.svg" alt="Skin Treatment" width="21"
+                            <img loading="lazy" src="/assets/images/skin-treatment-icon.svg" alt="Skin Treatment" width="21"
                                 height="21" />
                             <p class="custom-text font-semibold text-[14px]">Skin Treatment</p>
                         </div>
@@ -1882,7 +1880,7 @@
                     <!-- Col 5 -->
                     <div class="flex flex-col ">
                         <div class="flex items-center gap-2 mb-2">
-                            <img src="/assets/images/anti-ageing-icon.svg" alt="Anti Ageing Treatments" width="21"
+                            <img loading="lazy" src="/assets/images/anti-ageing-icon.svg" alt="Anti Ageing Treatments" width="21"
                                 height="21" />
                             <p class="custom-text font-semibold text-[14px]">Anti Ageing Treatments</p>
                         </div>
@@ -1908,13 +1906,13 @@
                         <!-- Our Branches -->
                         <div class="flex flex-col ">
                             <div class="flex items-center gap-2 mb-2">
-                                <img src="/assets/images/branches-icon.svg" alt="Our Branches" width="21" height="21" />
+                                <img loading="lazy" src="/assets/images/branches-icon.svg" alt="Our Branches" width="21" height="21" />
                                 <p class="custom-text font-semibold text-[14px]">Our Branches</p>
                             </div>
 
                             <!-- Delhi -->
                             <div class="flex gap-2 items-start">
-                                <img src="/assets/images/location-icon.svg" alt="Location" width="21" height="21"
+                                <img loading="lazy" src="/assets/images/location-icon.svg" alt="Location" width="21" height="21"
                                     class="mt-0.5 shrink-0" />
                                 <div class="flex flex-col">
                                     <span class="custom-text font-semibold text-[12px]">Delhi</span>
@@ -1926,7 +1924,7 @@
 
                             <!-- Indore -->
                             <div class="flex gap-2 items-start">
-                                <img src="/assets/images/location-icon.svg" alt="Location" width="21" height="21"
+                                <img loading="lazy" src="/assets/images/location-icon.svg" alt="Location" width="21" height="21"
                                     class="mt-0.5 shrink-0" />
                                 <div class="flex flex-col">
                                     <span class="custom-text font-semibold text-[12px]">Indore</span>
@@ -1941,21 +1939,21 @@
                         <div class="flex flex-col mt-4 md:mt-0">
                             <p class="custom-text font-semibold text-[14px] mb-2">Stay Tuned!</p>
                             <div class="flex items-center flex-wrap gap-y-2">
-                                <a href="#" class="hover:opacity-80 step-icon"><img
+                                <a href="#" class="hover:opacity-80 step-icon"><img loading="lazy"
                                         src="/assets/images/youtube-icon.svg" alt="YouTube" width="26"
                                         height="26" /></a>
-                                <a href="#" class="hover:opacity-80 step-icon"><img
+                                <a href="#" class="hover:opacity-80 step-icon"><img loading="lazy"
                                         src="/assets/images/facebook-icon.svg" alt="Facebook" width="26"
                                         height="26" /></a>
-                                <a href="#" class="hover:opacity-80 step-icon"><img
+                                <a href="#" class="hover:opacity-80 step-icon"><img loading="lazy"
                                         src="/assets/images/pinterest-icon.svg" alt="Pinterest" width="26"
                                         height="26" /></a>
-                                <a href="#" class="hover:opacity-80 step-icon"><img
+                                <a href="#" class="hover:opacity-80 step-icon"><img loading="lazy"
                                         src="/assets/images/instagram-icon.svg" alt="Instagram" width="26"
                                         height="26" /></a>
-                                <a href="#" class="hover:opacity-80 step-icon"><img src="/assets/images/x-icon.svg"
+                                <a href="#" class="hover:opacity-80 step-icon"><img loading="lazy" src="/assets/images/x-icon.svg"
                                         alt="X" width="26" height="26" /></a>
-                                <a href="#" class="hover:opacity-80 step-icon"><img
+                                <a href="#" class="hover:opacity-80 step-icon"><img loading="lazy"
                                         src="/assets/images/linkedin-icon.svg" alt="LinkedIn" width="26"
                                         height="26" /></a>
                             </div>
@@ -1999,7 +1997,7 @@
                                 <div class="flex flex-col gap-8">
                                     <!-- Hyderabad -->
                                     <div class="flex gap-2 items-start">
-                                        <img src="/assets/images/location-icon.svg" alt="Location" width="21"
+                                        <img loading="lazy" src="/assets/images/location-icon.svg" alt="Location" width="21"
                                             height="21" class="mt-0.5 shrink-0" />
                                         <div class="flex flex-col">
                                             <p class="custom-text font-semibold text-[14px] mb-1">DERMACLINIX HYDERABAD
@@ -2018,7 +2016,7 @@
                                     </div>
                                     <!-- Chennai -->
                                     <div class="flex gap-2 items-start">
-                                        <img src="/assets/images/location-icon.svg" alt="Location" width="21"
+                                        <img loading="lazy" src="/assets/images/location-icon.svg" alt="Location" width="21"
                                             height="21" class="mt-0.5 shrink-0" />
                                         <div class="flex flex-col">
                                             <p class="custom-text font-semibold text-[14px] mb-1">DERMACLINIX CHENNAI
@@ -2036,7 +2034,7 @@
                                     </div>
                                     <!-- Cochin -->
                                     <div class="flex gap-2 items-start">
-                                        <img src="/assets/images/location-icon.svg" alt="Location" width="21"
+                                        <img loading="lazy" src="/assets/images/location-icon.svg" alt="Location" width="21"
                                             height="21" class="mt-0.5 shrink-0" />
                                         <div class="flex flex-col">
                                             <p class="custom-text font-semibold text-[14px] mb-1">DERMACLINIX COCHIN
@@ -2054,7 +2052,7 @@
                                     </div>
                                     <!-- Ranchi -->
                                     <div class="flex gap-2 items-start">
-                                        <img src="/assets/images/location-icon.svg" alt="Location" width="21"
+                                        <img loading="lazy" src="/assets/images/location-icon.svg" alt="Location" width="21"
                                             height="21" class="mt-0.5 shrink-0" />
                                         <div class="flex flex-col">
                                             <p class="custom-text font-semibold text-[14px] mb-1">DERMACLINIX RANCHI</p>
@@ -2069,7 +2067,7 @@
                                     </div>
                                     <!-- Bilaspur -->
                                     <div class="flex gap-2 items-start">
-                                        <img src="/assets/images/location-icon.svg" alt="Location" width="21"
+                                        <img loading="lazy" src="/assets/images/location-icon.svg" alt="Location" width="21"
                                             height="21" class="mt-0.5 shrink-0" />
                                         <div class="flex flex-col">
                                             <p class="custom-text font-semibold text-[14px] mb-1">DERMACLINIX BILASPUR
@@ -2090,7 +2088,7 @@
                                 <div class="flex flex-col gap-8">
                                     <!-- Bengaluru -->
                                     <div class="flex gap-2 items-start">
-                                        <img src="/assets/images/location-icon.svg" alt="Location" width="21"
+                                        <img loading="lazy" src="/assets/images/location-icon.svg" alt="Location" width="21"
                                             height="21" class="mt-0.5 shrink-0" />
                                         <div class="flex flex-col">
                                             <p class="custom-text font-semibold text-[14px] mb-1">DERMACLINIX BENGALURU
@@ -2107,7 +2105,7 @@
                                     </div>
                                     <!-- Dibrugarh -->
                                     <div class="flex gap-2 items-start">
-                                        <img src="/assets/images/location-icon.svg" alt="Location" width="21"
+                                        <img loading="lazy" src="/assets/images/location-icon.svg" alt="Location" width="21"
                                             height="21" class="mt-0.5 shrink-0" />
                                         <div class="flex flex-col">
                                             <p class="custom-text font-semibold text-[14px] mb-1">DERMACLINIX DIBRUGARH
@@ -2124,7 +2122,7 @@
                                     </div>
                                     <!-- Bhopal -->
                                     <div class="flex gap-2 items-start">
-                                        <img src="/assets/images/location-icon.svg" alt="Location" width="21"
+                                        <img loading="lazy" src="/assets/images/location-icon.svg" alt="Location" width="21"
                                             height="21" class="mt-0.5 shrink-0" />
                                         <div class="flex flex-col">
                                             <p class="custom-text font-semibold text-[14px] mb-1">DERMACLINIX BHOPAL</p>
@@ -2141,7 +2139,7 @@
                                     </div>
                                     <!-- Raipur -->
                                     <div class="flex gap-2 items-start">
-                                        <img src="/assets/images/location-icon.svg" alt="Location" width="21"
+                                        <img loading="lazy" src="/assets/images/location-icon.svg" alt="Location" width="21"
                                             height="21" class="mt-0.5 shrink-0" />
                                         <div class="flex flex-col">
                                             <p class="custom-text font-semibold text-[14px] mb-1">DERMACLINIX RAIPUR</p>
@@ -2170,7 +2168,7 @@
                                 <div class="flex flex-col gap-8">
                                     <!-- Dubai -->
                                     <div class="flex gap-2 items-start">
-                                        <img src="/assets/images/location-icon.svg" alt="Location" width="21"
+                                        <img loading="lazy" src="/assets/images/location-icon.svg" alt="Location" width="21"
                                             height="21" class="mt-0.5 shrink-0" />
                                         <div class="flex flex-col">
                                             <p class="custom-text font-semibold text-[14px] mb-1">Dubai</p>
@@ -2185,7 +2183,7 @@
                                     </div>
                                     <!-- Nepal -->
                                     <div class="flex gap-2 items-start">
-                                        <img src="/assets/images/location-icon.svg" alt="Location" width="21"
+                                        <img loading="lazy" src="/assets/images/location-icon.svg" alt="Location" width="21"
                                             height="21" class="mt-0.5 shrink-0" />
                                         <div class="flex flex-col">
                                             <p class="custom-text font-semibold text-[14px] mb-1">NEPAL</p>
@@ -2205,7 +2203,7 @@
                                 <div class="flex flex-col gap-8">
                                     <!-- Myanmar -->
                                     <div class="flex gap-2 items-start">
-                                        <img src="/assets/images/location-icon.svg" alt="Location" width="21"
+                                        <img loading="lazy" src="/assets/images/location-icon.svg" alt="Location" width="21"
                                             height="21" class="mt-0.5 shrink-0" />
                                         <div class="flex flex-col">
                                             <p class="custom-text font-semibold text-[14px] mb-1">MYANMAR</p>
@@ -2221,7 +2219,7 @@
                                     </div>
                                     <!-- South Africa -->
                                     <div class="flex gap-2 items-start">
-                                        <img src="/assets/images/location-icon.svg" alt="Location" width="21"
+                                        <img loading="lazy" src="/assets/images/location-icon.svg" alt="Location" width="21"
                                             height="21" class="mt-0.5 shrink-0" />
                                         <div class="flex flex-col">
                                             <p class="custom-text font-semibold text-[14px] mb-1">SOUTH AFRICA</p>
@@ -2233,7 +2231,7 @@
                                     </div>
                                     <!-- Qatar -->
                                     <div class="flex gap-2 items-start">
-                                        <img src="/assets/images/location-icon.svg" alt="Location" width="21"
+                                        <img loading="lazy" src="/assets/images/location-icon.svg" alt="Location" width="21"
                                             height="21" class="mt-0.5 shrink-0" />
                                         <div class="flex flex-col">
                                             <p class="custom-text font-semibold text-[14px] mb-1">Qatar</p>
@@ -2245,7 +2243,7 @@
                                     </div>
                                     <!-- Kuwait -->
                                     <div class="flex gap-2 items-start">
-                                        <img src="/assets/images/location-icon.svg" alt="Location" width="21"
+                                        <img loading="lazy" src="/assets/images/location-icon.svg" alt="Location" width="21"
                                             height="21" class="mt-0.5 shrink-0" />
                                         <div class="flex flex-col">
                                             <p class="custom-text font-semibold text-[14px] mb-1">KUWAIT</p>
@@ -2291,8 +2289,8 @@
     </footer>
 
     <!-- js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="js/main.js"></script>
 </body>
 
 </html>
