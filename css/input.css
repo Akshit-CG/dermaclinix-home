@@ -38,6 +38,7 @@ section {
 }
 
 .eyebrow {
+    font-family: 'DM Sans', sans-serif;
     font-size: 10px;
     font-weight: 500;
     letter-spacing: 0.15em;
@@ -74,6 +75,7 @@ section {
 }
 
 .sec-sub {
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     color: var(--stone);
     line-height: 1.85;
@@ -150,18 +152,6 @@ body {
     flex-shrink: 0;
 }
 
-.eyebrow {
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex-wrap: wrap;
-}
 
 .hero-eyebrow::before {
     content: '';
