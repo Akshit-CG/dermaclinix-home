@@ -14,6 +14,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 prevEl: ".swiper-button-prev",
             },
         });
+
+        // Initialize Results Swiper for all panels
+        const resultsSwipers = document.querySelectorAll(".results-swiper");
+        resultsSwipers.forEach(swiperEl => {
+            new Swiper(swiperEl, {
+                slidesPerView: 1.2,
+                spaceBetween: 16,
+                observer: true,
+                observeParents: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    640: { slidesPerView: 2.2, spaceBetween: 20 },
+                    1024: { slidesPerView: 3, spaceBetween: 24 }
+                }
+            });
+        });
     });
 });
 

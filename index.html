@@ -51,24 +51,185 @@
 
 <body class="bg-white">
     <main>
-        <!-- slider -->
-        <section class="slider-section ">
-            <div class="swiper heroSwiper w-full ">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="/assets/images/hero-1.webp" alt="Hero 1" class="w-full" width="1440" height="861.58"
-                            fetchpriority="high">
+        <!-- hero section -->
+        <section
+            class="hero-section relative bg-gradient-to-b from-[#FEF1EC] to-[#FDF4F0] pt-24 pb-20 px-5 sm:px-8 lg:px-20 overflow-hidden">
+            <!-- decorative circles background if needed -->
+            <div class="absolute top-[10%] right-[40%] w-6 h-6 rounded-full bg-[#fde1d8] opacity-60"></div>
+            <div class="absolute bottom-[20%] right-[10%] w-4 h-4 rounded-full bg-[#fde1d8] opacity-60"></div>
+            <div class="absolute bottom-[10%] left-[5%] w-8 h-8 rounded-full bg-[#fde1d8] opacity-40"></div>
+
+            <div
+                class="max-w-[1260px] mx-auto w-full flex flex-col lg:flex-row items-center gap-16 lg:gap-10 relative z-10">
+
+                <!-- Left Content -->
+                <div class="hero-content w-full lg:w-[55%] flex flex-col items-start">
+
+                    <div
+                        class="inline-flex items-center gap-2 bg-white rounded-full px-4 py-2 shadow-[0_2px_10px_rgba(0,0,0,0.04)] text-[13px] font-semibold text-gray-700 mb-8 border border-white">
+                        <span class="w-1.5 h-1.5 rounded-full bg-gray-500"></span>
+                        DermaClinix • New Delhi • Est. 2010
                     </div>
 
-                    <div class="swiper-slide">
-                        <img src="/assets/images/hero-1.webp" alt="Hero 2" class="w-full" width="1440" height="861.58"
-                            loading="lazy">
+                    <h1
+                        class="sec-title text-left mb-6 text-[#2D2321] text-[42px] leading-[1.1] sm:text-[56px] lg:text-[64px] font-bold">
+                        Experience the Future<br>
+                        of <span class="text-[#D99583] font-normal"
+                            style="font-family: 'Cormorant Garamond', serif;">Luxury Dermatology</span>
+                    </h1>
+
+                    <p class="custom-text text-[17px] text-gray-700 mb-10 max-w-[560px] leading-relaxed">
+                        AIIMS-trained dermatologists. Patented B.E.S.T. FUE&trade; method. Three engines of care &mdash;
+                        assurance before, presence during, continuity for twelve months after.
+                    </p>
+
+                    <div class="flex flex-wrap items-center gap-5 mb-12">
+                        <a href="#"
+                            class="inline-flex items-center justify-center bg-[#D99583] text-white rounded-full px-7 py-3.5 text-[15px] font-semibold transition hover:bg-[#c28271] border-0 shadow-md shadow-[#D99583]/30">
+                            Book Consultation
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="inline-flex items-center justify-center bg-white/60 backdrop-blur-sm text-gray-800 rounded-full px-7 py-3.5 text-[15px] font-semibold transition hover:bg-white border border-gray-200/50 shadow-sm">
+                            View Treatments
+                            <svg class="ml-2 w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 gap-y-5 gap-x-8 text-[14px] text-gray-800 font-semibold w-full">
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#D99583] shadow-sm shrink-0 mt-0.5">
+                                <img src="/assets/images/check.svg" class="w-3 h-3 opacity-60" alt="check"
+                                    style="filter: brightness(0) saturate(100%) invert(48%) sepia(21%) saturate(1212%) hue-rotate(330deg) brightness(97%) contrast(93%);">
+                            </div>
+                            <span class="leading-snug">AIIMS-Trained Doctors</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#D99583] shadow-sm shrink-0 mt-0.5">
+                                <img src="/assets/images/check.svg" class="w-3 h-3 opacity-60" alt="check"
+                                    style="filter: brightness(0) saturate(100%) invert(48%) sepia(21%) saturate(1212%) hue-rotate(330deg) brightness(97%) contrast(93%);">
+                            </div>
+                            <span class="leading-snug">Patented B.E.S.T. FUE</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#D99583] shadow-sm shrink-0 mt-0.5">
+                                <img src="/assets/images/check.svg" class="w-3 h-3 opacity-60" alt="check"
+                                    style="filter: brightness(0) saturate(100%) invert(48%) sepia(21%) saturate(1212%) hue-rotate(330deg) brightness(97%) contrast(93%);">
+                            </div>
+                            <span class="leading-snug">Pioneers of Long Hair Transplant in Asia</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#D99583] shadow-sm shrink-0 mt-0.5">
+                                <img src="/assets/images/check.svg" class="w-3 h-3 opacity-60" alt="check"
+                                    style="filter: brightness(0) saturate(100%) invert(48%) sepia(21%) saturate(1212%) hue-rotate(330deg) brightness(97%) contrast(93%);">
+                            </div>
+                            <span class="leading-snug">98% Satisfaction</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#D99583] shadow-sm shrink-0 mt-0.5">
+                                <img src="/assets/images/check.svg" class="w-3 h-3 opacity-60" alt="check"
+                                    style="filter: brightness(0) saturate(100%) invert(48%) sepia(21%) saturate(1212%) hue-rotate(330deg) brightness(97%) contrast(93%);">
+                            </div>
+                            <span class="leading-snug max-w-[200px]">Board-Certified Hair Transplant Surgeons</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#D99583] shadow-sm shrink-0 mt-0.5">
+                                <img src="/assets/images/check.svg" class="w-3 h-3 opacity-60" alt="check"
+                                    style="filter: brightness(0) saturate(100%) invert(48%) sepia(21%) saturate(1212%) hue-rotate(330deg) brightness(97%) contrast(93%);">
+                            </div>
+                            <span class="leading-snug max-w-[200px]">Pioneers of Long Hair Transplant in Asia</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="swiper-button-prev text-white left-6 after:text-3xl"></div>
+                <!-- Right Content (Image & Cards) -->
+                <div class="hero-image-wrapper w-full lg:w-[45%] relative mt-10 lg:mt-0 px-4 sm:px-10 lg:px-0">
+                    <!-- Main Image -->
+                    <div class="rounded-[36px] overflow-hidden relative shadow-2xl">
+                        <img src="/assets/images/hero-1.webp" alt="Hair Transplant Procedure"
+                            class="w-full h-auto object-cover object-center aspect-[4/4.5]" fetchpriority="high">
+                    </div>
 
-                <div class="swiper-button-next text-white right-6 after:text-3xl"></div>
+                    <!-- Top Right Card (Glassmorphism) -->
+                    <div
+                        class="absolute -top-6 -right-2 sm:-right-8 lg:-right-12 bg-white/60 backdrop-blur-xl border border-white/80 rounded-[20px] p-4 shadow-[0_8px_30px_rgb(0,0,0,0.08)] flex items-center gap-4 z-20">
+                        <div
+                            class="w-11 h-11 rounded-full bg-[#f68e7b] flex items-center justify-center text-white shadow-md">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="pr-2">
+                            <div class="text-[11px] text-gray-500 font-semibold uppercase tracking-wide">Patient Rating
+                            </div>
+                            <div class="text-[22px] font-bold text-gray-900 leading-tight">4.9<span
+                                    class="text-[13px] text-gray-500 font-medium">/5</span></div>
+                            <div class="flex text-[#ef4444] text-[12px] mt-0.5 gap-[2px]">
+                                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Left Card (Glassmorphism) -->
+                    <div
+                        class="absolute -bottom-8 -left-2 sm:-left-8 lg:-left-12 bg-white/60 backdrop-blur-xl border border-white/80 rounded-[20px] p-5 shadow-[0_8px_30px_rgb(0,0,0,0.08)] w-[240px] z-20">
+                        <div class="flex justify-between items-start mb-1">
+                            <div class="text-[10px] font-bold text-gray-400 tracking-wider">SUCCESS RATE</div>
+                            <svg class="w-4 h-4 text-[#ef4444]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="text-[28px] font-bold text-gray-800 mb-3 leading-none">98<span
+                                class="text-[16px] text-[#D99583] font-semibold">%</span></div>
+                        <div class="w-full h-1.5 bg-gray-200/80 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-[#eab308] to-[#ef4444] w-[98%] rounded-full"></div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
         <!-- news-logo -->
@@ -129,13 +290,14 @@
         </section>
 
         <!-- founders -->
-        <section id="founders"
-            class="flex flex-col items-center justify-center gap-16 px-5 py-10 sm:px-[100px] sm:py-[65px] max-sm:gap-[38px]">
-            <div class="founders-intro flex w-full max-w-[980px] flex-col items-center">
-                <div class="eyebrow-heading">THE FOUNDERS</div>
-                <h2 class="section-title mt-[22px] max-sm:mt-4">Two dermatologists. <span class="text-primary">One
-                        philosophy of care</span>.</h2>
-                <p class="sub-heading mt-5 max-w-[940px] max-sm:mt-[14px]">DermaClinix is led by Dr. Kavish Chouhan and
+        <section id="founders" class="">
+            <div class="founders-intro">
+                <!-- <div class="eyebrow">THE FOUNDERS</div> -->
+                <div class="eyebrow">THE FOUNDERS</div>
+                <h2 class="sec-title">Two dermatologists.<br><em>One
+                        philosophy of care</em></h2>
+
+                <p class="sec-sub">DermaClinix is led by Dr. Kavish Chouhan and
                     Dr.
                     Amrendra Kumar — AIIMS-trained,
                     internationally
@@ -144,313 +306,371 @@
                     DermaClinix is personally overseen by one of our founding doctors — AIIMS-trained, internationally
                     recognised, and committed to care built on clinical evidence and individual understanding.</p>
             </div>
-            <div
-                class="founders-grid grid w-full max-w-[1240px] grid-cols-1 items-stretch gap-9 min-[1181px]:grid-cols-2 min-[1181px]:max-w-[1240px] max-[1181px]:max-w-[600px]">
-                <div class="founder-card founder-card--amrendra">
+            <div class="flex items-center justify-center">
+                <div
+                    class="founders-grid grid w-full max-w-[1240px] grid-cols-1 items-stretch gap-2 min-[1181px]:grid-cols-2 min-[1181px]:max-w-[1240px] max-[1181px]:max-w-[600px]">
+                    <div class="founder-card founder-card--amrendra flex flex-col">
 
-                    <div class="founder-top-line"></div>
+                        <div class="founder-top-line"></div>
 
-                    <div
-                        class="founder-content relative z-2 flex h-full min-h-[539px] justify-between p-[34px_28px_28px] max-sm:min-h-0 max-sm:flex-col max-sm:p-[24px_18px_0]">
+                        <div
+                            class="founder-content relative z-2 flex flex-1 min-h-[539px] justify-between p-[34px_28px_28px] max-sm:min-h-0 max-sm:flex-col max-sm:p-[24px_18px_0]">
 
-                        <div class="founder-left z-2 flex w-[58%] flex-col max-sm:w-full">
+                            <div class="founder-left z-2 flex w-[58%] flex-col max-sm:w-full">
 
-                            <span class="doctor-tag">
-                                <img loading="lazy" src="/assets/images/stethoscope.svg" alt="">
-                                DERMATOLOGIST
-                            </span>
+                                <span class="doctor-tag">
+                                    <img loading="lazy" src="/assets/images/stethoscope.svg" alt="">
+                                    DERMATOLOGIST
+                                </span>
 
-                            <h3 class="doctor-name">
-                                Dr. Amrendra
-                                Kumar
-                            </h3>
+                                <h3 class="doctor-name">
+                                    Dr. Amrendra
+                                    Kumar
+                                </h3>
 
-                            <p class="doctor-degree">
-                                MD Dermatology (AIIMS, New Delhi)
-                            </p>
+                                <p class="doctor-degree">
+                                    MD Dermatology (AIIMS, New Delhi)
+                                </p>
 
-                            <div class="title-divider"></div>
+                                <div class="title-divider"></div>
 
-                            <ul class="doctor-points">
+                                <ul class="doctor-points">
 
-                                <li>
-                                    <img loading="lazy" src="/assets/images/check.svg" alt="">
-                                    <span>Board-Certified Surgeon — GHTB</span>
-                                </li>
+                                    <li>
+                                        <img loading="lazy" src="/assets/images/check-light.svg" alt="">
+                                        <span>MD Dermatology — AIIMS, New Delhi</span>
+                                    </li>
+                                    <li>
+                                        <img loading="lazy" src="/assets/images/check-light.svg" alt="">
+                                        <span>Double Board Certified — GHTB</span>
+                                    </li>
 
-                                <li>
-                                    <img loading="lazy" src="/assets/images/check.svg" alt="">
-                                    <span>Co-pioneer: InstaGraft™ — Featured in Forbes (2021)</span>
-                                </li>
+                                    <li>
+                                        <img loading="lazy" src="/assets/images/check-light.svg" alt="">
+                                        <span>Member, (USA)</span>
+                                    </li>
 
-                                <li>
-                                    <img loading="lazy" src="/assets/images/check.svg" alt="">
-                                    <span>Inventor: B.E.S.T. FUE™ — Patented Method</span>
-                                </li>
+                                    <li>
+                                        <img loading="lazy" src="/assets/images/check-light.svg" alt="">
+                                        <span>Co-pioneer: InstaGraft™ — Featured in Forbes (2021)</span>
+                                    </li>
 
-                                <li>
-                                    <img loading="lazy" src="/assets/images/check.svg" alt="">
-                                    <span>World's first published research on Body Hair Transplantation</span>
-                                </li>
+                                    <li>
+                                        <img loading="lazy" src="/assets/images/check-light.svg" alt="">
+                                        <span>World's First Published Research on Body Hair Transplantation</span>
+                                    </li>
 
-                            </ul>
+                                    <li>
+                                        <img loading="lazy" src="/assets/images/check-light.svg" alt="">
+                                        <span>Specialist: Mega &amp; Giga FUE Sessions, B.E.S.T. FUE™</span>
+                                    </li>
 
-                            <div class="doctor-stats mt-8 flex gap-3 max-sm:flex-wrap">
+                                </ul>
 
-                                <div class="stat-box">
-                                    <h4>19+</h4>
-                                    <span>YEARS EXPERIENCE</span>
-                                </div>
+                                <div class="doctor-stats mt-8 flex gap-3 max-sm:flex-wrap">
 
-                                <div class="stat-box">
-                                    <h4>8K+</h4>
-                                    <span>TRANSPLANTS</span>
+                                    <div class="stat-box">
+                                        <h4>19+</h4>
+                                        <span>YEARS EXPERIENCE</span>
+                                    </div>
+
+                                    <div class="stat-box">
+                                        <h4>8K+</h4>
+                                        <span>TRANSPLANTS</span>
+                                    </div>
+
                                 </div>
 
                             </div>
 
-                            <div class="founder-actions mt-[34px] flex flex-wrap items-center gap-2.5 max-sm:mt-7">
-                                <a href="https://wa.me/910000000000" class="whatsapp-btn"
-                                    aria-label="Chat with us on WhatsApp">
-                                    <img loading="lazy" src="assets/images/whatsapp.svg" alt="">
-                                    Chat with us
-                                </a>
-                                <a href="tel:+910000000000" class="call-btn" aria-label="Call DermaClinix">
-                                    <img loading="lazy" src="assets/images/call.svg" alt="">
-                                    Call us
-                                </a>
+                            <div
+                                class="founder-right absolute right-0 top-0 h-full w-[51%] max-sm:relative max-sm:mt-6 max-sm:h-[310px] max-sm:w-full max-sm:overflow-visible">
+
+                                <div class="bg-circle"></div>
+
+                                <div class="rating-card">
+
+                                    <div class="rating-top">
+                                        <img loading="lazy" src="assets/images/star.svg" alt="">
+                                        <strong>4.9</strong>
+                                    </div>
+
+                                    <span>PATIENT RATING</span>
+
+                                </div>
+
+                                <img loading="lazy" src="/assets/images/dr-amrendra.webp" alt="Dr. Amrendra Kumar"
+                                    class="doctor-image">
+
                             </div>
 
                         </div>
 
                         <div
-                            class="founder-right absolute right-0 top-0 h-full w-[51%] max-sm:relative max-sm:mt-6 max-sm:h-[310px] max-sm:w-full max-sm:overflow-visible">
-
-                            <div class="bg-circle"></div>
-
-                            <div class="rating-card">
-
-                                <div class="rating-top">
-                                    <img loading="lazy" src="assets/images/star.svg" alt="">
-                                    <strong>4.9</strong>
-                                </div>
-
-                                <span>PATIENT RATING</span>
-
-                            </div>
-
-                            <img loading="lazy" src="/assets/images/dr-amrendra.webp" alt="Dr. Amrendra Kumar"
-                                class="doctor-image">
-
+                            class="founder-actions relative z-10 w-full px-[28px] pb-[28px]  max-sm:px-[18px] max-sm:pb-[24px] flex flex-nowrap items-center gap-4 justify-center">
+                            <a href="https://wa.me/910000000000" class="whatsapp-btn flex-1 flex justify-center"
+                                aria-label="Chat with us on WhatsApp">
+                                <img loading="lazy" src="assets/images/whatsapp.svg" alt="">
+                                Chat with us
+                            </a>
+                            <a href="tel:+910000000000" class="call-btn flex-1 flex justify-center"
+                                aria-label="Call DermaClinix">
+                                <img loading="lazy" src="assets/images/call.svg" alt="">
+                                Call us
+                            </a>
                         </div>
 
                     </div>
+                    <div class="founder-card founder-card--kavish flex flex-col">
 
-                </div>
-                <div class="founder-card founder-card--kavish">
+                        <div class="founder-top-line"></div>
 
-                    <div class="founder-top-line"></div>
+                        <div
+                            class="founder-content relative z-2 flex flex-1 min-h-[539px] justify-between p-[34px_28px_28px] max-sm:min-h-0 max-sm:flex-col max-sm:p-[24px_18px_0]">
 
-                    <div
-                        class="founder-content relative z-2 flex h-full min-h-[539px] justify-between p-[34px_28px_28px] max-sm:min-h-0 max-sm:flex-col max-sm:p-[24px_18px_0]">
+                            <div class="founder-left z-2 flex w-[58%] flex-col max-sm:w-full">
 
-                        <div class="founder-left z-2 flex w-[58%] flex-col max-sm:w-full">
+                                <span class="doctor-tag">
+                                    <img loading="lazy" src="/assets/images/stethoscope.svg" alt="">
+                                    DERMATOLOGIST
+                                </span>
 
-                            <span class="doctor-tag">
-                                <img loading="lazy" src="/assets/images/stethoscope.svg" alt="">
-                                DERMATOLOGIST
-                            </span>
+                                <h3 class="doctor-name">
+                                    Dr. Kavish
+                                    Chouhan
+                                </h3>
 
-                            <h3 class="doctor-name">
-                                Dr. Kavish
-                                Chouhan
-                            </h3>
+                                <p class="doctor-degree">
+                                    MD Dermatologist (AIIMS, New Delhi)
+                                </p>
 
-                            <p class="doctor-degree">
-                                MD (AIIMS, New Delhi) Chief Hair transplant surgeon
-                            </p>
+                                <div class="title-divider"></div>
 
-                            <div class="title-divider"></div>
+                                <ul class="doctor-points">
 
-                            <ul class="doctor-points">
+                                    <li>
+                                        <img loading="lazy" src="/assets/images/check-light.svg" alt="">
+                                        <span>MD Dermatology — AIIMS, New Delhi</span>
+                                    </li>
 
-                                <li>
-                                    <img loading="lazy" src="/assets/images/check.svg" alt="">
-                                    <span>Board-Certified Surgeon — GHTB</span>
-                                </li>
+                                    <li>
+                                        <img loading="lazy" src="/assets/images/check-light.svg" alt="">
+                                        <span>Double Board Certified — GHTB</span>
+                                    </li>
 
-                                <li>
-                                    <img loading="lazy" src="/assets/images/check.svg" alt="">
-                                    <span>Co-pioneer: InstaGraft™ — Featured in Forbes (2021)</span>
-                                </li>
+                                    <li>
+                                        <img loading="lazy" src="/assets/images/check-light.svg" alt="">
+                                        <span>Member, (USA) since 2010</span>
+                                    </li>
 
-                                <li>
-                                    <img loading="lazy" src="/assets/images/check.svg" alt="">
-                                    <span>Inventor: B.E.S.T. FUE™ — Patented Method</span>
-                                </li>
+                                    <li>
+                                        <img loading="lazy" src="/assets/images/check-light.svg" alt="">
+                                        <span>Co-pioneer: InstaGraft™ — Featured in Forbes (2021)</span>
+                                    </li>
 
-                                <li>
-                                    <img loading="lazy" src="/assets/images/check.svg" alt="">
-                                    <span>6,000+ FUE procedures; Mega & Gigasession Specialist</span>
-                                </li>
+                                    <li>
+                                        <img loading="lazy" src="/assets/images/check-light.svg" alt="">
+                                        <span>Inventor: B.E.S.T. FUE™ — Patented Method</span>
+                                    </li>
 
-                            </ul>
+                                    <li>
+                                        <img loading="lazy" src="/assets/images/check-light.svg" alt="">
+                                        <span>6,000+ FUE Procedures; Mega &amp; Gigasession Specialist</span>
+                                    </li>
 
-                            <div class="doctor-stats mt-8 flex gap-3 max-sm:flex-wrap">
+                                </ul>
 
-                                <div class="stat-box">
-                                    <h4>19+</h4>
-                                    <span>YEARS EXPERIENCE</span>
-                                </div>
+                                <div class="doctor-stats mt-8 flex gap-3 max-sm:flex-wrap">
 
-                                <div class="stat-box">
-                                    <h4>12K+</h4>
-                                    <span>PATIENTS</span>
+                                    <div class="stat-box">
+                                        <h4>19+</h4>
+                                        <span>YEARS EXPERIENCE</span>
+                                    </div>
+
+                                    <div class="stat-box">
+                                        <h4>12K+</h4>
+                                        <span>PATIENTS</span>
+                                    </div>
+
                                 </div>
 
                             </div>
 
-                            <div class="founder-actions mt-[34px] flex flex-wrap items-center gap-2.5 max-sm:mt-7">
-                                <a href="https://wa.me/910000000000" class="whatsapp-btn"
-                                    aria-label="Chat with us on WhatsApp">
-                                    <img loading="lazy" src="assets/images/whatsapp.svg" alt="">
-                                    Chat with us
-                                </a>
-                                <a href="tel:+910000000000" class="call-btn" aria-label="Call DermaClinix">
-                                    <img loading="lazy" src="assets/images/call.svg" alt="">
-                                    Call us
-                                </a>
+                            <div
+                                class="founder-right absolute right-0 top-0 h-full w-[51%] max-sm:relative max-sm:mt-6 max-sm:h-[310px] max-sm:w-full max-sm:overflow-visible">
+
+                                <div class="bg-circle"></div>
+
+                                <div class="rating-card">
+
+                                    <div class="rating-top">
+                                        <img loading="lazy" src="assets/images/star.svg" alt="">
+                                        <strong>4.9</strong>
+                                    </div>
+
+                                    <span>PATIENT RATING</span>
+
+                                </div>
+
+                                <img loading="lazy" src="/assets/images/dr-kavish.webp" alt="Dr. Kavish Chouhan"
+                                    class="doctor-image">
+
                             </div>
 
                         </div>
 
                         <div
-                            class="founder-right absolute right-0 top-0 h-full w-[51%] max-sm:relative max-sm:mt-6 max-sm:h-[310px] max-sm:w-full max-sm:overflow-visible">
-
-                            <div class="bg-circle"></div>
-
-                            <div class="rating-card">
-
-                                <div class="rating-top">
-                                    <img loading="lazy" src="assets/images/star.svg" alt="">
-                                    <strong>4.9</strong>
-                                </div>
-
-                                <span>PATIENT RATING</span>
-
-                            </div>
-
-                            <img loading="lazy" src="/assets/images/dr-kavish.webp" alt="Dr. Kavish Chouhan"
-                                class="doctor-image">
-
+                            class="founder-actions relative z-10 w-full px-[28px] pb-[28px] max-sm:px-[18px] max-sm:pb-[24px] flex flex-nowrap items-center gap-4 justify-center">
+                            <a href="https://wa.me/910000000000" class="whatsapp-btn flex-1 flex justify-center"
+                                aria-label="Chat with us on WhatsApp">
+                                <img loading="lazy" src="assets/images/whatsapp.svg" alt="">
+                                Chat with us
+                            </a>
+                            <a href="tel:+910000000000" class="call-btn flex-1 flex justify-center"
+                                aria-label="Call DermaClinix">
+                                <img loading="lazy" src="assets/images/call.svg" alt="">
+                                Call us
+                            </a>
                         </div>
 
                     </div>
-
                 </div>
             </div>
+
 
         </section>
         <!-- principles -->
         <section id="principles" class="bg-[#FFE1DB] px-5 py-14 sm:px-8 lg:px-20 lg:py-16">
-            <div class="mx-auto flex w-full max-w-[1000px] flex-col items-center">
-                <div class="eyebrow-heading">THE DERMACLINIX DIFFERENCE</div>
-                <h2 class="section-title mt-4">Five principles that guide every <span class="text-primary">Guest
-                        journey</span>.</h2>
-                <p class="sub-heading mt-3 max-w-[760px] text-center">Our clinical philosophy is built on five
-                    commitments — each one documented in our protocols and reflected in how every consultation,
-                    procedure,
-                    and follow-up is conducted.</p>
+            <div class="mx-auto flex flex-col">
+                <div class="w-full text-left mb-10">
+                    <div class="eyebrow">THE DERMACLINIX DIFFERENCE</div>
+                    <h2 class="sec-title mt-4">Five principles that guide every <span class="text-primary">Guest
+                            journey</span>.</h2>
+                    <p class="sec-sub mt-3 max-w-[760px]">Our clinical philosophy is built on five
+                        commitments — each one documented in our protocols and reflected in how every consultation,
+                        procedure,
+                        and follow-up is conducted.</p>
 
-                <div class="mt-7 flex w-full flex-col">
-                    <article class="principle-row flex flex-col gap-4 px-6 py-6 sm:flex-row sm:gap-6 sm:px-7">
-                        <div class="principle-icon shrink-0">
-                            <img loading="lazy" src="/assets/images/verified.svg" alt="Verified Safety Icon">
-                        </div>
-                        <div class="min-w-0">
-                            <h3 class="principle-title">Verified Safety, Documented Always</h3>
-                            <p class="custom-text mt-2">Sterilisation protocols, pre-operative screening parameters, and
-                                procedural safety benchmarks are shared with every guest before booking is confirmed.
-                                Composite safety score: 5.0.</p>
-                            <span class="principle-pill mt-4">WHO-UMC Graded • Score 5.0</span>
-                        </div>
-                    </article>
+                    <div class="mt-7 flex w-full flex-col lg:grid lg:grid-cols-2 lg:gap-6">
+                        <article class="principle-row flex flex-col gap-4 px-6 py-6 sm:flex-row sm:gap-6 sm:px-7">
+                            <div class="principle-icon shrink-0">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#B8966A" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                                <!-- <img loading="lazy" src="/assets/images/verified.svg" alt="Verified Safety Icon"> -->
+                            </div>
+                            <div class="min-w-0">
+                                <h3 class="principle-title">Verified Safety, Documented Always</h3>
+                                <p class="custom-text mt-2">Sterilisation protocols, pre-operative screening parameters,
+                                    and
+                                    procedural safety benchmarks are shared with every guest before booking is
+                                    confirmed.
+                                    Composite safety score: 5.0.</p>
+                                <span class="principle-pill mt-4">WHO-UMC Graded • Score 5.0</span>
+                            </div>
+                        </article>
 
-                    <article class="principle-row flex flex-col gap-4 px-6 py-6 sm:flex-row sm:gap-6 sm:px-7">
-                        <div class="principle-icon shrink-0">
-                            <img loading="lazy" src="/assets/images/person.svg" alt="Named Doctor Icon">
-                        </div>
-                        <div class="min-w-0">
-                            <h3 class="principle-title">Named Doctor, Every Stage</h3>
-                            <p class="custom-text mt-2">The senior dermatologist who personally reviews your case is
-                                identified to you before your consultation begins. You will always know who is
-                                clinically
-                                accountable for your care.</p>
-                            <span class="principle-pill mt-4">Clinically accountable</span>
-                        </div>
-                    </article>
+                        <article class="principle-row flex flex-col gap-4 px-6 py-6 sm:flex-row sm:gap-6 sm:px-7">
+                            <div class="principle-icon shrink-0">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#B8966A" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="8" r="4"></circle>
+                                    <path d="M6 20v-2a6 6 0 0112 0v2"></path>
+                                </svg>
+                                <!-- <img loading="lazy" src="/assets/images/person.svg" alt="Named Doctor Icon"> -->
+                            </div>
+                            <div class="min-w-0">
+                                <h3 class="principle-title">Named Doctor, Every Stage</h3>
+                                <p class="custom-text mt-2">The senior dermatologist who personally reviews your case is
+                                    identified to you before your consultation begins. You will always know who is
+                                    clinically
+                                    accountable for your care.</p>
+                                <span class="principle-pill mt-4">Clinically accountable</span>
+                            </div>
+                        </article>
 
-                    <article class="principle-row flex flex-col gap-4 px-6 py-6 sm:flex-row sm:gap-6 sm:px-7">
-                        <div class="principle-icon shrink-0">
-                            <img loading="lazy" src="/assets/images/person-waiting.svg" alt="Person Waiting Icon">
-                        </div>
-                        <div class="min-w-0">
-                            <h3 class="principle-title">Consultation Designed Around You</h3>
-                            <p class="custom-text mt-2">Every consultation is structured around your timeline and
-                                concerns. We document the exact words you use to describe what matters to you — and
-                                reflect
-                                them back throughout your care journey.</p>
-                            <span class="principle-pill mt-4">Guest-led protocol</span>
-                        </div>
-                    </article>
+                        <article class="principle-row flex flex-col gap-4 px-6 py-6 sm:flex-row sm:gap-6 sm:px-7">
+                            <div class="principle-icon shrink-0">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#B8966A" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z">
+                                    </path>
+                                </svg>
+                                <!-- <img loading="lazy" src="/assets/images/person-waiting.svg" alt="Person Waiting Icon"> -->
+                            </div>
+                            <div class="min-w-0">
+                                <h3 class="principle-title">Consultation Designed Around You</h3>
+                                <p class="custom-text mt-2">Every consultation is structured around your timeline and
+                                    concerns. We document the exact words you use to describe what matters to you — and
+                                    reflect
+                                    them back throughout your care journey.</p>
+                                <span class="principle-pill mt-4">Guest-led protocol</span>
+                            </div>
+                        </article>
 
-                    <article class="principle-row flex flex-col gap-4 px-6 py-6 sm:flex-row sm:gap-6 sm:px-7">
-                        <div class="principle-icon shrink-0">
-                            <img loading="lazy" src="/assets/images/cadboard.svg" alt="cadboard">
-                        </div>
-                        <div class="min-w-0">
-                            <h3 class="principle-title">Complete Pre-Procedure Clarity</h3>
-                            <p class="custom-text mt-2">Before any procedure is confirmed, you receive a documented
-                                recovery timeline, expected weekly milestones, and structured answers to every clinical
-                                question — including realistic outcome windows.</p>
-                            <span class="principle-pill mt-4">Written • Pre-confirmed</span>
-                        </div>
-                    </article>
+                        <article class="principle-row flex flex-col gap-4 px-6 py-6 sm:flex-row sm:gap-6 sm:px-7">
+                            <div class="principle-icon shrink-0">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#B8966A" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                                <!-- <img loading="lazy" src="/assets/images/cadboard.svg" alt="cadboard"> -->
+                            </div>
+                            <div class="min-w-0">
+                                <h3 class="principle-title">Complete Pre-Procedure Clarity</h3>
+                                <p class="custom-text mt-2">Before any procedure is confirmed, you receive a documented
+                                    recovery timeline, expected weekly milestones, and structured answers to every
+                                    clinical
+                                    question — including realistic outcome windows.</p>
+                                <span class="principle-pill mt-4">Written • Pre-confirmed</span>
+                            </div>
+                        </article>
 
-                    <article class="principle-row flex flex-col gap-4 px-6 py-6 sm:flex-row sm:gap-6 sm:px-7">
-                        <div class="principle-icon shrink-0">
-                            <img loading="lazy" src="/assets/images/headsets.svg" alt="Headsets Icon">
-                        </div>
-                        <div class="min-w-0">
-                            <h3 class="principle-title">Proactive Post-Procedure Support</h3>
-                            <p class="custom-text mt-2">Your Post-Procedure Support Plan — care coordinator contact,
-                                follow-up schedule, and outcome review appointments — is sent before booking. Clinical
-                                responsibility does not end at discharge.</p>
-                            <span class="principle-pill mt-4">Pre-sent • Outcome-tracked</span>
-                        </div>
-                    </article>
+                        <article class="principle-row flex flex-col gap-4 px-6 py-6 sm:flex-row sm:gap-6 sm:px-7">
+                            <div class="principle-icon shrink-0">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#B8966A" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .97h3a2 2 0 012 1.72 12.05 12.05 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z">
+                                    </path>
+                                </svg>
+                                <!-- <img loading="lazy" src="/assets/images/headsets.svg" alt="Headsets Icon"> -->
+                            </div>
+                            <div class="min-w-0">
+                                <h3 class="principle-title">Proactive Post-Procedure Support</h3>
+                                <p class="custom-text mt-2">Your Post-Procedure Support Plan — care coordinator contact,
+                                    follow-up schedule, and outcome review appointments — is sent before booking.
+                                    Clinical
+                                    responsibility does not end at discharge.</p>
+                                <span class="principle-pill mt-4">Pre-sent • Outcome-tracked</span>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-            </div>
         </section>
         <!-- specialisations -->
         <section id="specialisations" class="bg-white px-5 py-14 sm:px-8 lg:px-20 lg:py-20">
             <div class="mx-auto w-full max-w-[1000px]">
-                <div class="flex flex-col items-center text-center">
-                    <div class="eyebrow-heading with-line">OUR SPECIALISATIONS</div>
-                    <h2 class="section-title mt-4">Treatments <span class="text-primary italic">Crafted for You</span>
+                <div class="flex flex-col text-left mb-10">
+                    <div class="eyebrow">OUR SPECIALISATIONS</div>
+                    <h2 class="sec-title ">Treatments <span class="text-primary italic">Crafted for You</span>
                     </h2>
-                    <p class="sub-heading mt-3 max-w-[820px]">Every procedure is evidence-based, personalised by
+                    <p class="sec-sub ">Every procedure is evidence-based, personalised by
                         our clinical team, and delivered with precision for your unique anatomy and aesthetic goals.</p>
                 </div>
 
                 <div class="mt-10 w-full">
                     <div class="grid grid-cols-3 border-b border-[#E8E2DC]">
                         <button class="tab-btn tab-btn--active" data-tab="hair" type="button">
-                            <img loading="lazy" src="/assets/images/scissor.svg" alt="" class="tab-btn-icon">
+                            <img loading="lazy" src="/assets/images/grape.svg" alt="" class="tab-btn-icon">
                             Hair
                         </button>
                         <button class="tab-btn" data-tab="skin" type="button">
-                            <img loading="lazy" src="/assets/images/stethoscope-gry.svg" alt="" class="tab-btn-icon">
+                            <img loading="lazy" src="/assets/images/skin-treatment-icon.svg" alt=""
+                                class="tab-btn-icon">
                             Skin
                         </button>
                         <button class="tab-btn" data-tab="aesthetic" type="button">
@@ -509,44 +729,43 @@
                     <div data-panel="skin" style="display:none">
                         <ul class="specialisation-list">
                             <li class="specialisation-item">
-                                <span>Skin &ndash; Patented Method</span>
-                                <span class="specialisation-pill">Popular</span>
+                                <span>Acne Vulgaris &amp; Scar Remodelling</span>
+                                <span class="specialisation-pill">Resurfacing</span>
                             </li>
+
                             <li class="specialisation-item">
-                                <span>InstaGraft™ &ndash; Long Hair Transplant</span>
-                                <span class="specialisation-pill">Signature</span>
+                                <span>Melasma &amp; Pigmentation Management</span>
+                                <span class="specialisation-pill">Skin Tone</span>
                             </li>
+
                             <li class="specialisation-item">
-                                <span>FUE &ndash; Follicular Unit Extraction</span>
-                                <span class="specialisation-pill">Best Value</span>
+                                <span>Vitiligo Treatment &amp; Surgery</span>
+                                <span class="specialisation-pill">Specialist</span>
                             </li>
+
                             <li class="specialisation-item">
-                                <span>Non-Shaven / Long Hair FUE</span>
-                                <span class="specialisation-pill">Discreet</span>
+                                <span>Psoriasis &amp; Chronic Dermatoses</span>
+                                <span class="specialisation-pill">Dermatology</span>
                             </li>
+
                             <li class="specialisation-item">
-                                <span>Bio Stimulated FUE</span>
-                                <span class="specialisation-pill">Regenerative</span>
+                                <span>Chemical &amp; Medical Peels</span>
+                                <span class="specialisation-pill">Renewal</span>
                             </li>
+
                             <li class="specialisation-item">
-                                <span>Body Hair Transplant (BHT)</span>
-                                <span class="specialisation-pill">Reconstructive</span>
+                                <span>Hydrafacial &amp; Medifacials</span>
+                                <span class="specialisation-pill">Glow</span>
                             </li>
+
                             <li class="specialisation-item">
-                                <span>Female Hair Transplant</span>
-                                <span class="specialisation-pill">Tailored</span>
+                                <span>ThermiRF Technology</span>
+                                <span class="specialisation-pill">Thermi</span>
                             </li>
+
                             <li class="specialisation-item">
-                                <span>Beard &amp; Moustache Transplant</span>
-                                <span class="specialisation-pill">Bespoke</span>
-                            </li>
-                            <li class="specialisation-item">
-                                <span>GFC / Exosomes / Stem Cell Therapy</span>
-                                <span class="specialisation-pill">Non-Surgical</span>
-                            </li>
-                            <li class="specialisation-item">
-                                <span>Failed Transplant Repair &amp; Reconstruction</span>
-                                <span class="specialisation-pill">Corrective</span>
+                                <span>Laser Hair Reduction</span>
+                                <span class="specialisation-pill">Permanent</span>
                             </li>
                         </ul>
                     </div>
@@ -555,44 +774,43 @@
                     <div data-panel="aesthetic" style="display:none">
                         <ul class="specialisation-list">
                             <li class="specialisation-item">
-                                <span>Aesthetic &ndash; Patented Method</span>
-                                <span class="specialisation-pill">Popular</span>
+                                <span>Botulinum Toxin &ndash; Anti-Wrinkle</span>
+                                <span class="specialisation-pill">Anti-Ageing</span>
                             </li>
+
                             <li class="specialisation-item">
-                                <span>InstaGraft™ &ndash; Long Hair Transplant</span>
-                                <span class="specialisation-pill">Signature</span>
+                                <span>Dermal Fillers &ndash; Hyaluronic Acid</span>
+                                <span class="specialisation-pill">Contouring</span>
                             </li>
+
                             <li class="specialisation-item">
-                                <span>FUE &ndash; Follicular Unit Extraction</span>
-                                <span class="specialisation-pill">Best Value</span>
+                                <span>RF Skin Tightening &amp; Morpheus 8</span>
+                                <span class="specialisation-pill">Tightening</span>
                             </li>
+
                             <li class="specialisation-item">
-                                <span>Non-Shaven / Long Hair FUE</span>
-                                <span class="specialisation-pill">Discreet</span>
+                                <span>Thread Lift &amp; HIFU</span>
+                                <span class="specialisation-pill">Lifting</span>
                             </li>
+
                             <li class="specialisation-item">
-                                <span>Bio Stimulated FUE</span>
+                                <span>Profhilo &amp; Skin Boosters</span>
+                                <span class="specialisation-pill">Biostimulation</span>
+                            </li>
+
+                            <li class="specialisation-item">
+                                <span>Under Eye Treatment &amp; Fillers</span>
+                                <span class="specialisation-pill">Periocular</span>
+                            </li>
+
+                            <li class="specialisation-item">
+                                <span>Vampire Facial &amp; Face GFC</span>
                                 <span class="specialisation-pill">Regenerative</span>
                             </li>
+
                             <li class="specialisation-item">
-                                <span>Body Hair Transplant (BHT)</span>
-                                <span class="specialisation-pill">Reconstructive</span>
-                            </li>
-                            <li class="specialisation-item">
-                                <span>Female Hair Transplant</span>
-                                <span class="specialisation-pill">Tailored</span>
-                            </li>
-                            <li class="specialisation-item">
-                                <span>Beard &amp; Moustache Transplant</span>
-                                <span class="specialisation-pill">Bespoke</span>
-                            </li>
-                            <li class="specialisation-item">
-                                <span>GFC / Exosomes / Stem Cell Therapy</span>
-                                <span class="specialisation-pill">Non-Surgical</span>
-                            </li>
-                            <li class="specialisation-item">
-                                <span>Failed Transplant Repair &amp; Reconstruction</span>
-                                <span class="specialisation-pill">Corrective</span>
+                                <span>Body Sculpting &amp; Liposuction</span>
+                                <span class="specialisation-pill">Body</span>
                             </li>
                         </ul>
                     </div>
@@ -605,10 +823,10 @@
             <div class="mx-auto w-full max-w-[1260px]">
 
                 <!-- Header -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="eyebrow-heading">CLINICAL OUTCOMES</div>
-                    <h2 class="section-title mt-4">Results worth <span class="text-primary">showing.</span></h2>
-                    <p class="sub-heading mt-3 max-w-[680px]">See How Our Expert Treatments Have Transformed Thousands
+                <div class="flex flex-col text-left mb-10">
+                    <div class="eyebrow">CLINICAL OUTCOMES</div>
+                    <h2 class="sec-title mt-4">Results worth <span class="text-primary">showing.</span></h2>
+                    <p class="sec-sub mt-3 max-w-[680px]">See How Our Expert Treatments Have Transformed Thousands
                         of
                         Lives, Restoring Confidence, Enhancing Appearance, and Delivering Natural-Looking Results That
                         Speak
@@ -636,212 +854,251 @@
 
                 <!-- Panels -->
                 <!-- Hair Transplant Panel -->
-                <div data-results-panel="hair-transplant" class="mt-10">
-                    <div class="results-cards">
-                        <!-- Card 1 -->
-                        <div class="results-card">
-                            <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
-                            <div class="results-card-img-wrap">
-                                <img loading="lazy" src="/assets/images/ba-1.webp" alt="Before & After"
-                                    class="results-card-img">
-                            </div>
-                            <div class="results-card-badges">
-                                <span class="results-badge results-badge--before">Before</span>
-                                <span class="results-badge results-badge--after">After</span>
-                            </div>
-                            <div class="results-card-meta">
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Result:</span>
-                                    12Months
+                <div data-results-panel="hair-transplant" class="mt-10 relative group">
+                    <div class="swiper results-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Card 1 -->
+                            <div class="swiper-slide">
+                                <div class="results-card">
+                                    <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
+                                    <div class="results-card-img-wrap">
+                                        <img loading="lazy" src="/assets/images/ba-1.webp" alt="Before & After"
+                                            class="results-card-img">
+                                    </div>
+                                    <div class="results-card-badges">
+                                        <span class="results-badge results-badge--before">Before</span>
+                                        <span class="results-badge results-badge--after">After</span>
+                                    </div>
+                                    <div class="results-card-meta">
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Result:</span>
+                                            12Months
+                                        </div>
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Details:</span>
+                                            4012 Grafts
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Details:</span>
-                                    4012 Grafts
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="swiper-slide">
+                                <div class="results-card">
+                                    <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
+                                    <div class="results-card-img-wrap">
+                                        <img loading="lazy" src="/assets/images/ba-2.webp" alt="Before & After"
+                                            class="results-card-img">
+                                    </div>
+                                    <div class="results-card-badges">
+                                        <span class="results-badge results-badge--before">Before</span>
+                                        <span class="results-badge results-badge--after">After</span>
+                                    </div>
+                                    <div class="results-card-meta">
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Result:</span>
+                                            12Months
+                                        </div>
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Details:</span>
+                                            4012 Grafts
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="swiper-slide">
+                                <div class="results-card">
+                                    <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
+                                    <div class="results-card-img-wrap">
+                                        <img loading="lazy" src="/assets/images/ba-3.webp" alt="Before & After"
+                                            class="results-card-img">
+                                    </div>
+                                    <div class="results-card-badges">
+                                        <span class="results-badge results-badge--before">Before</span>
+                                        <span class="results-badge results-badge--after">After</span>
+                                    </div>
+                                    <div class="results-card-meta">
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Result:</span>
+                                            12Months
+                                        </div>
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Details:</span>
+                                            4012 Grafts
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Card 2 -->
-                        <div class="results-card">
-                            <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
-                            <div class="results-card-img-wrap">
-                                <img loading="lazy" src="/assets/images/ba-2.webp" alt="Before & After"
-                                    class="results-card-img">
-                            </div>
-                            <div class="results-card-badges">
-                                <span class="results-badge results-badge--before">Before</span>
-                                <span class="results-badge results-badge--after">After</span>
-                            </div>
-                            <div class="results-card-meta">
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Result:</span>
-                                    12Months
-                                </div>
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Details:</span>
-                                    4012 Grafts
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 3 -->
-                        <div class="results-card">
-                            <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
-                            <div class="results-card-img-wrap">
-                                <img loading="lazy" src="/assets/images/ba-3.webp" alt="Before & After"
-                                    class="results-card-img">
-                            </div>
-                            <div class="results-card-badges">
-                                <span class="results-badge results-badge--before">Before</span>
-                                <span class="results-badge results-badge--after">After</span>
-                            </div>
-                            <div class="results-card-meta">
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Result:</span>
-                                    12Months
-                                </div>
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Details:</span>
-                                    4012 Grafts
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Navigation arrows -->
+                    <div class="swiper-button-prev !text-white !w-10 !h-10 !bg-[#737373] !rounded-full !absolute !top-1/2 !-translate-y-1/2 !left-2 z-10 after:!text-xl"></div>
+                    <div class="swiper-button-next !text-white !w-10 !h-10 !bg-[#737373] !rounded-full !absolute !top-1/2 !-translate-y-1/2 !right-2 z-10 after:!text-xl"></div>
                     </div>
                 </div>
 
                 <!-- Hair Regeneration Panel (placeholder) -->
-                <div data-results-panel="hair-regen" class="mt-10" style="display:none">
-                    <div class="results-cards">
-                        <div class="results-card">
-                            <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
-                            <div class="results-card-img-wrap">
-                                <img loading="lazy" src="/assets/images/ba-1.webp" alt="Before & After"
-                                    class="results-card-img">
-                            </div>
-                            <div class="results-card-badges">
-                                <span class="results-badge results-badge--before">Before</span>
-                                <span class="results-badge results-badge--after">After</span>
-                            </div>
-                            <div class="results-card-meta">
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Result:</span>
-                                    12Months
+                <div data-results-panel="hair-regen" class="mt-10 relative group" style="display:none">
+                    <div class="swiper results-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Card 1 -->
+                            <div class="swiper-slide">
+                                <div class="results-card">
+                                    <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
+                                    <div class="results-card-img-wrap">
+                                        <img loading="lazy" src="/assets/images/ba-1.webp" alt="Before & After"
+                                            class="results-card-img">
+                                    </div>
+                                    <div class="results-card-badges">
+                                        <span class="results-badge results-badge--before">Before</span>
+                                        <span class="results-badge results-badge--after">After</span>
+                                    </div>
+                                    <div class="results-card-meta">
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Result:</span>
+                                            12Months
+                                        </div>
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Details:</span>
+                                            4012 Grafts
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Details:</span>
-                                    4012 Grafts
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="swiper-slide">
+                                <div class="results-card">
+                                    <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
+                                    <div class="results-card-img-wrap">
+                                        <img loading="lazy" src="/assets/images/ba-2.webp" alt="Before & After"
+                                            class="results-card-img">
+                                    </div>
+                                    <div class="results-card-badges">
+                                        <span class="results-badge results-badge--before">Before</span>
+                                        <span class="results-badge results-badge--after">After</span>
+                                    </div>
+                                    <div class="results-card-meta">
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Result:</span>
+                                            12Months
+                                        </div>
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Details:</span>
+                                            4012 Grafts
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="swiper-slide">
+                                <div class="results-card">
+                                    <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
+                                    <div class="results-card-img-wrap">
+                                        <img loading="lazy" src="/assets/images/ba-3.webp" alt="Before & After"
+                                            class="results-card-img">
+                                    </div>
+                                    <div class="results-card-badges">
+                                        <span class="results-badge results-badge--before">Before</span>
+                                        <span class="results-badge results-badge--after">After</span>
+                                    </div>
+                                    <div class="results-card-meta">
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Result:</span>
+                                            12Months
+                                        </div>
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Details:</span>
+                                            4012 Grafts
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="results-card">
-                            <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
-                            <div class="results-card-img-wrap">
-                                <img loading="lazy" src="/assets/images/ba-2.webp" alt="Before & After"
-                                    class="results-card-img">
-                            </div>
-                            <div class="results-card-badges">
-                                <span class="results-badge results-badge--before">Before</span>
-                                <span class="results-badge results-badge--after">After</span>
-                            </div>
-                            <div class="results-card-meta">
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Result:</span>
-                                    12Months
-                                </div>
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Details:</span>
-                                    4012 Grafts
-                                </div>
-                            </div>
-                        </div>
-                        <div class="results-card">
-                            <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
-                            <div class="results-card-img-wrap">
-                                <img loading="lazy" src="/assets/images/ba-3.webp" alt="Before & After"
-                                    class="results-card-img">
-                            </div>
-                            <div class="results-card-badges">
-                                <span class="results-badge results-badge--before">Before</span>
-                                <span class="results-badge results-badge--after">After</span>
-                            </div>
-                            <div class="results-card-meta">
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Result:</span>
-                                    12Months
-                                </div>
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Details:</span>
-                                    4012 Grafts
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Navigation arrows -->
+                    <div class="swiper-button-prev !text-white !w-10 !h-10 !bg-[#737373] !rounded-full !absolute !top-1/2 !-translate-y-1/2 !left-2 z-10 after:!text-xl"></div>
+                    <div class="swiper-button-next !text-white !w-10 !h-10 !bg-[#737373] !rounded-full !absolute !top-1/2 !-translate-y-1/2 !right-2 z-10 after:!text-xl"></div>
                     </div>
                 </div>
 
                 <!-- Skin Aesthetics Panel (placeholder) -->
-                <div data-results-panel="skin-aes" class="mt-10" style="display:none">
-                    <div class="results-cards">
-                        <div class="results-card">
-                            <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
-                            <div class="results-card-img-wrap">
-                                <img loading="lazy" src="/assets/images/ba-1.webp" alt="Before & After"
-                                    class="results-card-img">
-                            </div>
-                            <div class="results-card-badges">
-                                <span class="results-badge results-badge--before">Before</span>
-                                <span class="results-badge results-badge--after">After</span>
-                            </div>
-                            <div class="results-card-meta">
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Result:</span>
-                                    12Months
+                <div data-results-panel="skin-aes" class="mt-10 relative group" style="display:none">
+                    <div class="swiper results-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Card 1 -->
+                            <div class="swiper-slide">
+                                <div class="results-card">
+                                    <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
+                                    <div class="results-card-img-wrap">
+                                        <img loading="lazy" src="/assets/images/ba-1.webp" alt="Before & After"
+                                            class="results-card-img">
+                                    </div>
+                                    <div class="results-card-badges">
+                                        <span class="results-badge results-badge--before">Before</span>
+                                        <span class="results-badge results-badge--after">After</span>
+                                    </div>
+                                    <div class="results-card-meta">
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Result:</span>
+                                            12Months
+                                        </div>
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Details:</span>
+                                            4012 Grafts
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Details:</span>
-                                    4012 Grafts
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="swiper-slide">
+                                <div class="results-card">
+                                    <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
+                                    <div class="results-card-img-wrap">
+                                        <img loading="lazy" src="/assets/images/ba-2.webp" alt="Before & After"
+                                            class="results-card-img">
+                                    </div>
+                                    <div class="results-card-badges">
+                                        <span class="results-badge results-badge--before">Before</span>
+                                        <span class="results-badge results-badge--after">After</span>
+                                    </div>
+                                    <div class="results-card-meta">
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Result:</span>
+                                            12Months
+                                        </div>
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Details:</span>
+                                            4012 Grafts
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="swiper-slide">
+                                <div class="results-card">
+                                    <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
+                                    <div class="results-card-img-wrap">
+                                        <img loading="lazy" src="/assets/images/ba-3.webp" alt="Before & After"
+                                            class="results-card-img">
+                                    </div>
+                                    <div class="results-card-badges">
+                                        <span class="results-badge results-badge--before">Before</span>
+                                        <span class="results-badge results-badge--after">After</span>
+                                    </div>
+                                    <div class="results-card-meta">
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Result:</span>
+                                            12Months
+                                        </div>
+                                        <div class="results-meta-item">
+                                            <span class="results-meta-label">Details:</span>
+                                            4012 Grafts
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="results-card">
-                            <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
-                            <div class="results-card-img-wrap">
-                                <img loading="lazy" src="/assets/images/ba-2.webp" alt="Before & After"
-                                    class="results-card-img">
-                            </div>
-                            <div class="results-card-badges">
-                                <span class="results-badge results-badge--before">Before</span>
-                                <span class="results-badge results-badge--after">After</span>
-                            </div>
-                            <div class="results-card-meta">
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Result:</span>
-                                    12Months
-                                </div>
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Details:</span>
-                                    4012 Grafts
-                                </div>
-                            </div>
-                        </div>
-                        <div class="results-card">
-                            <img src="/assets/images/dcx_logo.webp" alt="DermaClinix" class="results-card-logo">
-                            <div class="results-card-img-wrap">
-                                <img loading="lazy" src="/assets/images/ba-3.webp" alt="Before & After"
-                                    class="results-card-img">
-                            </div>
-                            <div class="results-card-badges">
-                                <span class="results-badge results-badge--before">Before</span>
-                                <span class="results-badge results-badge--after">After</span>
-                            </div>
-                            <div class="results-card-meta">
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Result:</span>
-                                    12Months
-                                </div>
-                                <div class="results-meta-item">
-                                    <span class="results-meta-label">Details:</span>
-                                    4012 Grafts
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Navigation arrows -->
+                    <div class="swiper-button-prev !text-white !w-10 !h-10 !bg-[#737373] !rounded-full !absolute !top-1/2 !-translate-y-1/2 !left-2 z-10 after:!text-xl"></div>
+                    <div class="swiper-button-next !text-white !w-10 !h-10 !bg-[#737373] !rounded-full !absolute !top-1/2 !-translate-y-1/2 !right-2 z-10 after:!text-xl"></div>
                     </div>
                 </div>
 
@@ -852,11 +1109,11 @@
             <div class="mx-auto w-full max-w-[1288px]">
 
                 <!-- Header -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="eyebrow-heading with-line">HOW WE MEASURE SUCCESS</div>
-                    <h2 class="section-title mt-4">Your experience, <em class="text-primary measure-title-em">measured
+                <div class="flex flex-col text-left mb-10">
+                    <div class="eyebrow">HOW WE MEASURE SUCCESS</div>
+                    <h2 class="sec-title mt-4">Your experience, <em class="text-primary measure-title-em">measured
                             honestly.</em></h2>
-                    <p class="sub-heading mt-3 max-w-[680px]">At DermaClinix, the question we ask is not just "did the
+                    <p class="sec-sub mt-3 max-w-[680px]">At DermaClinix, the question we ask is not just "did the
                         procedure work?" but "do you feel better, inside and out?" We use globally recognised wellbeing
                         and
                         quality-of-life assessment frameworks to measure real outcomes — not just clinical appearances.
@@ -864,11 +1121,11 @@
                 </div>
 
                 <!-- HOW WE TRACK YOUR WELLBEING sub-heading -->
-                <div class="flex justify-center items-center">
-                    <div class="mt-12 mb-6  eyebrow-heading with-line ">
+                <!-- <div class="flex justify-center items-center">
+                    <div class="eyebrow mt-12 mb-6">
                         HOW WE TRACK YOUR WELLBEING
                     </div>
-                </div>
+                </div> -->
 
                 <!-- 4 Metric Cards Grid -->
                 <div class="measure-cards-grid">
@@ -882,7 +1139,7 @@
                             <span class="measure-icon-label">DLQI</span>
                         </div>
                         <div class="measure-card-right">
-                            <h4 class="section-title">Dermatology Life Quality Index</h4>
+                            <h4 class="sec-title">Dermatology Life Quality Index</h4>
                             <p class="custom-text">A simple questionnaire that asks how your skin or hair concerns
                                 have affected your daily life, work, relationships, and emotional wellbeing. Scored
                                 0–30. We
@@ -901,7 +1158,7 @@
                             <span class="measure-icon-label">WHO-5</span>
                         </div>
                         <div class="measure-card-right">
-                            <h4 class="section-title">World Health Organization Wellbeing Index</h4>
+                            <h4 class="sec-title">World Health Organization Wellbeing Index</h4>
                             <p class="custom-text">A 5-question survey developed by the WHO to measure overall
                                 psychological wellbeing — including mood, energy, and calmness. Scored 0–100. We use it
                                 as
@@ -918,7 +1175,7 @@
                             <span class="measure-icon-label">HADS</span>
                         </div>
                         <div class="measure-card-right">
-                            <h4 class="section-title">Hospital Anxiety and Depression Scale</h4>
+                            <h4 class="sec-title">Hospital Anxiety and Depression Scale</h4>
                             <p class="custom-text">A 14-item screening tool used to understand any anxiety or
                                 emotional concerns you may be carrying before your procedure. Helps us understand your
                                 emotional starting point and ensure we support you the right way throughout your
@@ -936,7 +1193,7 @@
                             <span class="measure-icon-label">GAIS</span>
                         </div>
                         <div class="measure-card-right">
-                            <h4 class="section-title">Global Aesthetic Improvement Scale</h4>
+                            <h4 class="sec-title">Global Aesthetic Improvement Scale</h4>
                             <p class="custom-text">An internationally used rating scale where, both the doctor and the
                                 guest, independently score how much aesthetic improvement has occurred. We compare both
                                 scores to make sure what we see matches how you feel — and flag any gaps early.</p>
@@ -947,7 +1204,7 @@
 
                 <!-- YOUR OUTCOME REVIEW SCHEDULE sub-heading -->
                 <div class="review">
-                    <div class="mt-14  mb-4 with-line text-center ">
+                    <div class="mt-14 mb-4 eyebrow">
                         YOUR OUTCOME REVIEW SCHEDULE
                     </div>
                 </div>
@@ -959,7 +1216,7 @@
                     <div class="measure-schedule-row">
                         <div class="measure-schedule-label">BEFORE<br>PROCEDURE</div>
                         <div class="measure-schedule-content">
-                            <h5 class="section-title italic">Baseline Recorded</h5>
+                            <h5 class="sec-title italic">Baseline Recorded</h5>
                             <p class="custom-text">Wellbeing, anxiety, and quality-of-life scores recorded. Your
                                 concerns documented in your own words. Written recovery plan provided before booking is
                                 confirmed.</p>
@@ -969,7 +1226,7 @@
                     <div class="measure-schedule-row">
                         <div class="measure-schedule-label">48 HOURS</div>
                         <div class="measure-schedule-content">
-                            <h5 class="section-title italic">Early Recovery Check-In</h5>
+                            <h5 class="sec-title italic">Early Recovery Check-In</h5>
                             <p class="custom-text">Personal call from your care coordinator within 48 hours. Any
                                 early concerns around swelling, discomfort, or healing addressed directly. Comfort score
                                 recorded.</p>
@@ -979,7 +1236,7 @@
                     <div class="measure-schedule-row">
                         <div class="measure-schedule-label">MONTH 1</div>
                         <div class="measure-schedule-content">
-                            <h5 class="section-title italic">Stabilisation Review</h5>
+                            <h5 class="sec-title italic">Stabilisation Review</h5>
                             <p class="custom-text">First formal review. Quality-of-life score reassessed. We
                                 compare your experience against the expectations we recorded before your procedure and
                                 note
@@ -990,7 +1247,7 @@
                     <div class="measure-schedule-row">
                         <div class="measure-schedule-label">MONTH 3</div>
                         <div class="measure-schedule-content">
-                            <h5 class="section-title italic">Progress Assessment</h5>
+                            <h5 class="sec-title italic">Progress Assessment</h5>
                             <p class="custom-text">Results becoming visible and measurable. Aesthetic improvement
                                 and satisfaction rated. Wellbeing score compared to your pre-procedure baseline.
                                 Photographic comparison prepared and shared with you.</p>
@@ -1000,7 +1257,7 @@
                     <div class="measure-schedule-row">
                         <div class="measure-schedule-label">MONTH 6</div>
                         <div class="measure-schedule-content">
-                            <h5 class="section-title italic">Peak Outcome Review</h5>
+                            <h5 class="sec-title italic">Peak Outcome Review</h5>
                             <p class="custom-text">Full wellbeing and quality-of-life assessment repeated. All scores
                                 compared against your baseline results — including your personal happiness index score —
                                 shared with you in full.</p>
@@ -1010,7 +1267,7 @@
                     <div class="measure-schedule-row">
                         <div class="measure-schedule-label">MONTH 12</div>
                         <div class="measure-schedule-content">
-                            <h5 class="section-title italic">Your 12-Month Record</h5>
+                            <h5 class="sec-title italic">Your 12-Month Record</h5>
                             <p class="custom-text">Final structured review. Long-term result documented. Your complete
                                 wellbeing journey — from before your procedure to now — documented and given to you as
                                 part
@@ -1057,11 +1314,11 @@
             <div class="mx-auto w-full max-w-[1288px]">
 
                 <!-- Header — left-aligned -->
-                <div class="eyebrow-heading with-line">THE GUEST JOURNEY</div>
-                <h2 class="section-title mt-4">Four steps. <span class="text-primary italic">Every</span> patient. Every
+                <div class="eyebrow">THE GUEST JOURNEY</div>
+                <h2 class="sec-title mt-4">Four steps. <span class="text-primary italic">Every</span> patient. Every
                     time.
                 </h2>
-                <p class="sub-heading mt-3 max-w-[560px] text-left">From the first conversation to twelve months of
+                <p class="sec-sub mt-3 max-w-[560px] text-left">From the first conversation to twelve months of
                     post-procedure care — our process is the same, designed to remove uncertainty at every turn.</p>
 
                 <!-- 2×2 Steps Grid -->
@@ -1071,9 +1328,9 @@
                     <div class="journey-step">
                         <div class="journey-step-header">
                             <div class="step-icon"><em>i</em></div>
-                            <span class="eyebrow-heading with-line">STEP ONE</span>
+                            <span class="eyebrow">STEP ONE</span>
                         </div>
-                        <h3 class="section-title italic mt-3">Consultation</h3>
+                        <h3 class="sec-title italic mt-3">Consultation</h3>
                         <p class="custom-text mt-2">A 45-minute conversation with the doctor — scalp and skin analysis,
                             donor assessment, medical history, and an honest reading of what's possible.</p>
                     </div>
@@ -1082,9 +1339,9 @@
                     <div class="journey-step">
                         <div class="journey-step-header">
                             <div class="step-icon"><em>ii</em></div>
-                            <span class="eyebrow-heading with-line">STEP TWO</span>
+                            <span class="eyebrow">STEP TWO</span>
                         </div>
-                        <h3 class="section-title italic mt-3">Treatment Plan</h3>
+                        <h3 class="sec-title italic mt-3">Treatment Plan</h3>
                         <p class="custom-text mt-2">A written, transparent plan — graft count, technique, timeline, and
                             pricing. No revisions hidden in the fine print. You leave knowing what to expect.</p>
                     </div>
@@ -1093,9 +1350,9 @@
                     <div class="journey-step">
                         <div class="journey-step-header">
                             <div class="step-icon"><em>iii</em></div>
-                            <span class="eyebrow-heading with-line">STEP THREE</span>
+                            <span class="eyebrow">STEP THREE</span>
                         </div>
-                        <h3 class="section-title italic mt-3">Procedure</h3>
+                        <h3 class="sec-title italic mt-3">Procedure</h3>
                         <p class="custom-text mt-2">Performed by the doctors themselves — not delegated to technicians.
                             Sterile operating standards, comfort-led design, calm pacing throughout.</p>
                     </div>
@@ -1104,9 +1361,9 @@
                     <div class="journey-step">
                         <div class="journey-step-header">
                             <div class="step-icon"><em>iv</em></div>
-                            <span class="eyebrow-heading with-line">STEP FOUR</span>
+                            <span class="eyebrow">STEP FOUR</span>
                         </div>
-                        <h3 class="section-title italic mt-3">12-Month Aftercare</h3>
+                        <h3 class="sec-title italic mt-3">12-Month Aftercare</h3>
                         <p class="custom-text mt-2">Structured follow-ups at week 1, month 1, 3, 6, 9 and 12 —
                             monitoring
                             growth, supporting recovery, and protecting the result long after the day of the procedure.
@@ -1122,10 +1379,10 @@
             <div class="mx-auto w-full max-w-[1288px]">
 
                 <!-- Header -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="eyebrow-heading with-line">MEDIA PRESENCE</div>
-                    <h2 class="section-title mt-4">As <span class="text-primary">featured in.</span></h2>
-                    <p class="sub-heading mt-3 max-w-[560px]">Recognised by India's leading publications and global
+                <div class="flex flex-col text-left mb-10">
+                    <div class="eyebrow">MEDIA PRESENCE</div>
+                    <h2 class="sec-title mt-4">As <span class="text-primary">featured in.</span></h2>
+                    <p class="sec-sub mt-3 max-w-[560px]">Recognised by India's leading publications and global
                         press
                         for our work in hair restoration and dermatology.</p>
                 </div>
@@ -1139,7 +1396,7 @@
                         <div class="step-icon">
                             <img loading="lazy" src="/assets/images/scissor-pink.svg" alt="" width="24" height="24">
                         </div>
-                        <h3 class="section-title mt-4">InstaGraft™</h3>
+                        <h3 class="sec-title mt-4">InstaGraft™</h3>
                         <p class="media-card-desc">LONG HAIR TRANSPLANT</p>
                     </div>
 
@@ -1149,7 +1406,7 @@
                         <div class="step-icon">
                             <img loading="lazy" src="/assets/images/question.svg" alt="" width="24" height="24">
                         </div>
-                        <h3 class="section-title mt-4">Bursting Myths</h3>
+                        <h3 class="sec-title mt-4">Bursting Myths</h3>
                         <p class="media-card-desc">AROUND HAIR LOSS</p>
                     </div>
 
@@ -1159,7 +1416,7 @@
                         <div class="step-icon">
                             <img loading="lazy" src="/assets/images/medal.svg" alt="" width="24" height="24">
                         </div>
-                        <h3 class="section-title mt-4">Hair Restoration</h3>
+                        <h3 class="sec-title mt-4">Hair Restoration</h3>
                         <p class="media-card-desc">EXPERT FEATURE</p>
                     </div>
 
@@ -1169,7 +1426,7 @@
                         <div class="step-icon">
                             <img loading="lazy" src="/assets/images/pc.svg" alt="" width="24" height="24">
                         </div>
-                        <h3 class="section-title mt-4">Dermatology</h3>
+                        <h3 class="sec-title mt-4">Dermatology</h3>
                         <p class="media-card-desc">TELEVISION FEATURE</p>
                     </div>
 
@@ -1179,7 +1436,7 @@
                         <div class="step-icon">
                             <img loading="lazy" src="/assets/images/persons.svg" alt="" width="24" height="24">
                         </div>
-                        <h3 class="section-title mt-4">Skin &amp; Hair</h3>
+                        <h3 class="sec-title mt-4">Skin &amp; Hair</h3>
                         <p class="media-card-desc">EXPERT PANEL</p>
                     </div>
 
@@ -1189,7 +1446,7 @@
                         <div class="step-icon">
                             <img loading="lazy" src="/assets/images/thunder.svg" alt="" width="24" height="24">
                         </div>
-                        <h3 class="section-title mt-4">Breaking Barriers</h3>
+                        <h3 class="sec-title mt-4">Breaking Barriers</h3>
                         <p class="media-card-desc">MILLENNIALS &amp; HT</p>
                     </div>
 
@@ -1199,7 +1456,7 @@
                         <div class="step-icon">
                             <img loading="lazy" src="/assets/images/rain.svg" alt="" width="24" height="24">
                         </div>
-                        <h3 class="section-title mt-4">Monsoon Care</h3>
+                        <h3 class="sec-title mt-4">Monsoon Care</h3>
                         <p class="media-card-desc">TRANSPLANT TIPS</p>
                     </div>
 
@@ -1209,7 +1466,7 @@
                         <div class="step-icon">
                             <img loading="lazy" src="/assets/images/beat.svg" alt="" width="24" height="24">
                         </div>
-                        <h3 class="section-title mt-4">Health &amp; Wellness</h3>
+                        <h3 class="sec-title mt-4">Health &amp; Wellness</h3>
                         <p class="media-card-desc">EDITORIAL</p>
                     </div>
 
@@ -1219,7 +1476,7 @@
                         <div class="step-icon">
                             <img loading="lazy" src="/assets/images/shield-pink.svg" alt="" width="24" height="24">
                         </div>
-                        <h3 class="section-title mt-4">Member</h3>
+                        <h3 class="sec-title mt-4">Member</h3>
                         <p class="media-card-desc">INT'L SOCIETY OF HRS</p>
                     </div>
 
@@ -1229,7 +1486,7 @@
                         <div class="step-icon">
                             <img loading="lazy" src="/assets/images/tick-circel.svg" alt="" width="24" height="24">
                         </div>
-                        <h3 class="section-title mt-4">Double Board</h3>
+                        <h3 class="sec-title mt-4">Double Board</h3>
                         <p class="media-card-desc">CERTIFIED SURGEONS</p>
                     </div>
 
@@ -1242,11 +1499,11 @@
             <div class="mx-auto w-full max-w-[1288px]">
 
                 <!-- Header -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="eyebrow-heading with-line">PATIENT VOICES</div>
-                    <h2 class="section-title mt-4">Hair Regeneration <em
+                <div class="flex flex-col text-left mb-10">
+                    <div class="eyebrow">PATIENT VOICES</div>
+                    <h2 class="sec-title mt-4">Hair Regeneration <em
                             class="text-primary italic font-['Cormorant_Garamond'] font-normal">Testimonials.</em></h2>
-                    <p class="sub-heading mt-3 max-w-[700px]">Real journeys, documented results — heard directly from
+                    <p class="sec-sub mt-3 max-w-[700px]">Real journeys, documented results — heard directly from
                         our
                         patients and clinical team.</p>
                 </div>
@@ -1315,7 +1572,7 @@
 
                 <!-- Header -->
                 <div class="mb-10 text-left">
-                    <h2 class=" section-title">Trusted
+                    <h2 class="sec-title">Trusted
                         by <span class="text-primary italic ">thousands.</span> Told
                         by them.</h2>
                     <p class="mt-2 text-[#666666] text-lg ">Real patients. Real results. Edited only for
@@ -1493,14 +1750,14 @@
                 class="w-full lg:w-1/2 bg-[#DF9B87] px-5 py-14 sm:px-10 lg:pl-20 lg:pr-14 lg:py-24 flex flex-col justify-center">
                 <div class="max-w-[550px] ml-auto mr-auto lg:mr-0 w-full">
 
-                    <div class="eyebrow-heading with-line">Begin the Conversation</div>
+                    <div class="eyebrow">Begin the Conversation</div>
 
-                    <h2 class="section-title mt-4">
+                    <h2 class="sec-title mt-4">
                         Speak to a doctor, not a <br class="hidden sm:block"> <span
                             class=" font-normal">salesperson.</span>
                     </h2>
 
-                    <p class="sub-heading mt-6 max-w-[500px]">
+                    <p class="sec-sub mt-6 max-w-[500px]">
                         Tell us a little about what you're looking to address. We'll match you with the right doctor and
                         call back within one business day.
                     </p>
@@ -1578,12 +1835,12 @@
 
             <!-- Left Side: Headers -->
             <div class="w-full lg:w-1/3 flex flex-col pt-4 items-start text-left">
-                <div class="eyebrow-heading">FAQ</div>
-                <h2 class="section-title mt-4">
+                <div class="eyebrow">FAQ</div>
+                <h2 class="sec-title mt-4">
                     Honest answers <br>
                     <span class="italic text-primary">to honest questions.</span>
                 </h2>
-                <p class="sub-heading mt-6 max-w-[320px] text-[#666666]">
+                <p class="sec-sub mt-6 max-w-[320px] text-[#666666]">
                     Still wondering? Our care team is one quick call away — no script, no pressure.
                 </p>
                 <a href="tel:+910000000000"
@@ -1704,8 +1961,11 @@
 
         <!-- Recent Blogs Section -->
         <section id="recent-blogs" class="bg-[var(--bg-primary-color)] py-14 sm:py-20 lg:py-24 px-5 sm:px-10">
-            <div class="max-w-[1440px] mx-auto flex flex-col items-center">
-                <h2 class="section-title mb-12 text-center">Recent Blogs</h2>
+            <div class="max-w-[1440px] mx-auto flex flex-col">
+                <div class="w-full text-left mb-12">
+                    <div class="eyebrow">RECENT BLOGS</div>
+                    <h2 class="sec-title">Our Latest Articles</h2>
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3 w-full justify-items-center">
 
                     <!-- Blog Card 1 -->
@@ -1714,7 +1974,8 @@
                             class="w-full h-[260px] object-cover" />
                         <div class="p-2 md:p-8 flex flex-col justify-center md:justify-between grow">
                             <div>
-                                <h3 class="sub-heading">HD PRP vs Regular PRP: What's the Difference & Why
+                                <h3 class="sub-heading text-left font-semibold">HD PRP vs Regular PRP: What's the
+                                    Difference & Why
                                     Dermaclinix Recommends It</h3>
                                 <p class="custom-text mt-4">What Is a True NoShave FUE Hair Transplant? In traditional
                                     FUE, small patches of the donor area ....</p>
@@ -1729,7 +1990,8 @@
                             class="w-full h-[260px] object-cover" />
                         <div class="p-2 md:p-8 flex flex-col justify-center md:justify-between grow">
                             <div>
-                                <h3 class="sub-heading">How HD PRP Enhances Hair Follicle Strength and Density</h3>
+                                <h3 class="sub-heading text-left font-semibold">How HD PRP Enhances Hair Follicle
+                                    Strength and Density</h3>
                                 <p class="custom-text mt-4">“I wanted to fix my thinning hair—but I couldn't imagine
                                     shaving it all off. Then I discovered unshaven....</p>
                             </div>
@@ -1743,7 +2005,8 @@
                             class="w-full h-[260px] object-cover" />
                         <div class="p-2 md:p-8 flex flex-col justify-center md:justify-between grow">
                             <div>
-                                <h3 class="sub-heading">What is PRP Therapy? A Complete Guide to Natural Hair
+                                <h3 class="sub-heading text-left font-semibold">What is PRP Therapy? A Complete Guide to
+                                    Natural Hair
                                     Regrowth</h3>
                                 <p class="custom-text mt-4">“I wanted to keep every strand of my hair—and I did. I
                                     walked in, walked out, and now.....</p>

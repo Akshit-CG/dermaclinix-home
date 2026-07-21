@@ -9,6 +9,23 @@
     --pink-text-color: #6D504B;
     --border-color: #F28979;
     --icon-bg: #F1EEE9;
+    --forest: #1B3A2D;
+    --forest-mid: #2C5440;
+    --forest-dark: #122619;
+    --ivory: #F7F3ED;
+    --ivory-deep: #EDE7DC;
+    --gold: #B8966A;
+    --gold-light: #D4B48A;
+    --gold-pale: #F5EDD8;
+    --gold-border: rgba(184, 150, 106, 0.22);
+    --charcoal: #1C1C1C;
+    --stone: #7A756E;
+    --cream: #FAF8F4;
+    --white: #FFFFFF;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+    --tr: 0.22s ease;
+
 
     /* font-sizes */
     --title-size-mobile: 24px;
@@ -16,19 +33,65 @@
 }
 
 
+section {
+    padding: 56px 24px
+}
+
+.eyebrow {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap
+}
+
+.eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 1px;
+    background: var(--gold);
+    flex-shrink: 0
+}
+
+.sec-title {
+    font-family: var(--serif);
+    font-size: clamp(26px, 6vw, 40px);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--charcoal);
+    margin-bottom: 12px
+}
+
+.sec-title em {
+    font-style: italic;
+    color: var(--gold)
+}
+
+.sec-sub {
+    font-size: 14px;
+    color: var(--stone);
+    line-height: 1.85;
+    margin-bottom: 28px
+}
 
 body {
     font-family: "Poppins", sans-serif;
 }
 
 
-.section-padded {
+/* .section-padded {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 65px 100px;
-}
+} */
 
 @media (max-width: 640px) {
     .section-padded {
@@ -85,6 +148,27 @@ body {
     height: 2px;
     background-color: #000000;
     flex-shrink: 0;
+}
+
+.eyebrow {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.hero-eyebrow::before {
+    content: '';
+    width: 22px;
+    height: 1px;
+    background: var(--gold);
+    flex-shrink: 0
 }
 
 .eyebrow-heading {
@@ -149,7 +233,7 @@ body {
     border-top: 1px solid #a6b0ba;
     border-bottom: 1px solid #a6b0ba;
     background: #fff;
-    height: 95px;
+    height: 70px;
 }
 
 .news-logo-slide-group {
@@ -181,15 +265,14 @@ body {
 
 .news-logo-img {
     width: auto;
-    /* max-width: 183px; */
-    /* height: 53px; */
+    height: 32px;
     object-fit: contain;
     display: block;
     flex: 0 0 auto;
 }
 
 .news-logo-html {
-    height: 43px;
+    height: 32px;
     display: inline-flex;
     align-items: center;
     flex: 0 0 auto;
@@ -248,7 +331,8 @@ body {
 
     .news-logo-img,
     .news-logo-html {
-        max-height: 40px;
+        height: 24px;
+        max-height: 24px;
     }
 
     /* .news-logo-img {
@@ -644,7 +728,7 @@ font-weight: 400; */
 }
 
 #principles .custom-text {
-    color: #1C1A1A;
+    font-size: 12px;
     line-height: 24px;
 }
 
@@ -674,8 +758,9 @@ font-weight: 400; */
 }
 
 .principle-icon {
-    width: 82px;
-    height: 82px;
+    width: 60px;
+    height: 60px;
+    padding: 15px;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
@@ -684,9 +769,9 @@ font-weight: 400; */
     background: linear-gradient(135deg, #F7D2CA 0%, #EBA99B 100%);
 }
 
-.principle-icon img {
-    width: 50px;
-    height: 50px;
+.principle-icon svg {
+    width: 40px;
+    height: 40px;
     fill: none;
     stroke: currentColor;
     stroke-width: 1.5;
@@ -710,7 +795,7 @@ font-weight: 400; */
     border-radius: 999px;
     padding: 5px 20px;
     background: #FFF9F1;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.2;
     font-weight: 400;
 }
@@ -720,7 +805,7 @@ font-weight: 400; */
         font-size: 13px;
     }
 
-    .principle-icon img {
+    .principle-icon svg {
         width: 30px;
         height: 30px;
 
@@ -732,6 +817,7 @@ font-weight: 400; */
     }
 
     .principle-icon {
+        padding: 7px;
         width: 48px;
         height: 48px;
     }
@@ -817,10 +903,9 @@ font-weight: 400; */
     justify-content: space-between;
     gap: 20px;
     border-bottom: 1px solid #E1DED7;
-    color: #181818;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 20.4px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 2.45px;
     text-transform: uppercase;
 }
