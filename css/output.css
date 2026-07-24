@@ -576,6 +576,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-col-reverse {
+    flex-direction: column-reverse;
+  }
   .flex-nowrap {
     flex-wrap: nowrap;
   }
@@ -1259,6 +1262,11 @@
       margin-top: calc(var(--spacing) * 6);
     }
   }
+  .max-sm\:flex {
+    @media (width < 40rem) {
+      display: flex;
+    }
+  }
   .max-sm\:h-\[310px\] {
     @media (width < 40rem) {
       height: 310px;
@@ -1274,9 +1282,9 @@
       width: 100%;
     }
   }
-  .max-sm\:flex-col {
+  .max-sm\:flex-col-reverse {
     @media (width < 40rem) {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
   }
   .max-sm\:flex-wrap {
@@ -1322,6 +1330,11 @@
   .sm\:-left-8 {
     @media (width >= 40rem) {
       left: calc(var(--spacing) * -8);
+    }
+  }
+  .sm\:mt-0 {
+    @media (width >= 40rem) {
+      margin-top: 0;
     }
   }
   .sm\:block {
@@ -1454,9 +1467,19 @@
       margin-right: 0;
     }
   }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
+    }
+  }
   .lg\:grid {
     @media (width >= 64rem) {
       display: grid;
+    }
+  }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
     }
   }
   .lg\:w-1\/2 {
@@ -1631,6 +1654,9 @@
   --title-size-mobile: 24px;
   --title-size-desktop: 32px;
 }
+body {
+  font-family: 'DM Sans', sans-serif;
+}
 section {
   padding: 56px 24px;
 }
@@ -1673,9 +1699,6 @@ section {
   color: var(--stone);
   line-height: 1.85;
   margin-bottom: 28px;
-}
-body {
-  font-family: "Poppins", sans-serif;
 }
 @media (max-width: 640px) {
   .section-padded {
@@ -1905,7 +1928,6 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  width: max-content;
   padding: 6px 12px;
   border-radius: 30px;
   background: #FBEAEC;
@@ -1918,7 +1940,7 @@ body {
   width: 11px;
 }
 .doctor-name {
-  margin: 28px 0 6px;
+  margin: 15px 0 6px;
   color: var(--heading-color);
   font-size: clamp(24px, 2.2vw, 30px);
   line-height: 1.18;

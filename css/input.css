@@ -32,6 +32,10 @@
     --title-size-desktop: 32px;
 }
 
+body {
+    /* font-family: "Poppins", sans-serif; */
+    font-family: 'DM Sans', sans-serif;
+}
 
 section {
     padding: 56px 24px
@@ -82,9 +86,7 @@ section {
     margin-bottom: 28px
 }
 
-body {
-    font-family: "Poppins", sans-serif;
-}
+
 
 
 /* .section-padded {
@@ -315,6 +317,10 @@ body {
 }
 
 @media (max-width: 640px) {
+    /* .doctor-tag {
+        width: 100%;
+    } */
+
     .news-logo-section {
         padding: 10px 0px;
     }
@@ -403,7 +409,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    width: max-content;
+    /* width: max-content; */
     padding: 6px 12px;
     border-radius: 30px;
     background: #FBEAEC;
@@ -423,7 +429,7 @@ body {
 =========================== */
 
 .doctor-name {
-    margin: 28px 0 6px;
+    margin: 15px 0 6px;
     color: var(--heading-color);
     font-size: clamp(24px, 2.2vw, 30px);
     line-height: 1.18;
@@ -1651,6 +1657,10 @@ font-weight: 400; */
 /* patient-voices */
 #patient-voices .tab-btn {
     font-size: 18px;
+}
+
+#patient-voices .video-card {
+    /* height: 450px; */
 }
 
 @media (max-width: 640px) {
