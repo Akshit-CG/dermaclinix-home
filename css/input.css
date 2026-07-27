@@ -196,13 +196,22 @@ section {
 .heroSwiper {
     --swiper-navigation-color: #fff;
 }
+
+/* Hero image sizing - 495x560px */
+.hero-box img {
+    width: 495px !important;
+    height: 560px !important;
+}
+
 .hero-content .sec-title{
     text-align: left;
+    font-size: 60px;
 }
 .hero-content .leading-snug {
 /* h-full flex items-center */
 height: 100%;
 display: flex;
+font-size: 18px;
 align-items: center;
 }
 .heroSwiper .swiper-button-prev,
