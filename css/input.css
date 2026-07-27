@@ -97,9 +97,10 @@ section {
 }
 
 @media (max-width: 640px) {
-    .section-padded {
-        padding: 40px 20px;
-    }
+    section {
+   padding: 40px 20px;
+}
+  
 
 }
 
