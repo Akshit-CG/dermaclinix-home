@@ -78,7 +78,7 @@ section {
 }
 
 .sec-title em {
-    font-style: italic;
+    font-style: normal;
     color: var(--primary-color)
 }
 
@@ -211,8 +211,9 @@ section {
 /* h-full flex items-center */
 height: 100%;
 display: flex;
+padding-top: 2px;
 font-size: 18px;
-align-items: center;
+/* align-items: center; */
 }
 .heroSwiper .swiper-button-prev,
 .heroSwiper .swiper-button-next {
@@ -1162,7 +1163,7 @@ font-weight: 400; */
 
 .measure-title-em {
     font-style: italic;
-    font-family: "Cormorant Garamond", serif;
+    /* font-family: "Cormorant Garamond", serif; */
     font-weight: 400;
     font-size: inherit;
 }
