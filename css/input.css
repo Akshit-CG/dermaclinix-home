@@ -101,6 +101,16 @@ section {
     section {
         padding: 40px 20px;
     }
+.sec-sub {
+  
+    font-size: 14px;
+  
+}
+.eyebrow {
+
+    font-size: 10px;
+
+}
 
 
 }
@@ -199,10 +209,17 @@ section {
 }
 
 /* Hero image sizing - 495x560px */
+.hero-box {
+    border-radius: 36px;
+    overflow: hidden;
+}
+
 .hero-box img {
     width: 495px !important;
     height: 560px !important;
+    border-radius: 60px;
 }
+    
 
 .hero-content .sec-title {
     text-align: left;
@@ -1677,7 +1694,9 @@ font-weight: 400; */
     grid-template-columns: repeat(5, 1fr);
     gap: 16px;
 }
-
+.media-cards-grid .sec-title{
+    font-size: 20px;
+}
 /* Card base */
 .media-card {
     position: relative;
