@@ -313,6 +313,9 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
@@ -650,9 +653,6 @@
   .rounded-\[20px\] {
     border-radius: 20px;
   }
-  .rounded-\[40px\] {
-    border-radius: 40px;
-  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -854,9 +854,6 @@
   }
   .py-14 {
     padding-block: calc(var(--spacing) * 14);
-  }
-  .py-\[18px\] {
-    padding-block: 18px;
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
@@ -1126,13 +1123,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: #c28271;
-      }
-    }
-  }
-  .hover\:bg-\[\#c98370\] {
-    &:hover {
-      @media (hover: hover) {
-        background-color: #c98370;
       }
     }
   }
@@ -1592,6 +1582,7 @@
   --bg-primary-color: #ffebe7;
   --pink-text-color: #6D504B;
   --border-color: #F28979;
+  --dark-pink-color: #6c251b;
   --icon-bg: #F1EEE9;
   --forest: #1B3A2D;
   --forest-mid: #2C5440;
@@ -1684,7 +1675,7 @@ section {
 .custom-text {
   color: var(--charcoal);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 30px;
   text-align: left;
 }
@@ -1953,7 +1944,7 @@ section {
 }
 .doctor-points img {
   width: 14px;
-  margin-top: 1px;
+  margin-top: 3px;
 }
 .stat-box {
   width: 74px;
@@ -2455,9 +2446,6 @@ section {
   font-weight: 400;
   font-size: inherit;
 }
-#measure-success .custom-text {
-  font-size: 17px;
-}
 #measure-success .eyebrow-heading {
   color: #000000;
 }
@@ -2477,20 +2465,34 @@ section {
 #measure-success .review .with-line {
   color: #666666;
 }
+#measure-success .measure-cards-grid .sec-title {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-top: 4px;
+}
+.measure-schedule .sec-title {
+  text-align: left;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 550;
+  margin-bottom: 0px;
+}
 .measure-cards-grid {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(2, 1fr);
 }
 .measure-card {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 28px 24px;
-  border: 1px solid #E1DED7;
+  background: var(--cream);
+  border: 1px solid var(--border-color);
   border-radius: 4px;
-  min-height: 210px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 12px;
+  align-items: start;
 }
 .measure-card-left {
   display: flex;
@@ -2510,23 +2512,21 @@ section {
   flex-shrink: 0;
 }
 .measure-icon-label {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
   line-height: 32px;
   letter-spacing: -0.24px;
-  color: #6B5E5C;
+  color: var(--primary-color);
   white-space: nowrap;
   text-align: center;
 }
 .measure-card-right {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 .measure-card-heading {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: 22px;
@@ -2536,7 +2536,6 @@ section {
   margin: 0;
 }
 .measure-card-desc {
-  font-family: "Poppins", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;
@@ -2555,17 +2554,14 @@ section {
   min-height: 123.25px;
   padding: 20px 24px;
   border-bottom: 1px solid #E1DED7;
-  gap: 32px;
 }
 .measure-schedule-row:last-child {
   border-bottom: none;
 }
 .measure-schedule-label {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: 2.5px;
-  color: #1C3A27;
+  color: var(--charcoal);
   text-transform: uppercase;
   line-height: 1.5;
   flex-shrink: 0;
@@ -2602,7 +2598,6 @@ section {
   }
   .measure-schedule-row {
     grid-template-columns: 110px 1fr;
-    gap: 20px;
     min-height: auto;
     padding: 18px 16px;
   }
@@ -2623,7 +2618,6 @@ section {
   }
   .measure-schedule-row {
     grid-template-columns: 1fr;
-    gap: 8px;
     padding: 16px;
   }
   .measure-schedule-label {
@@ -2644,9 +2638,6 @@ section {
   display: flex;
   flex-direction: column;
   gap: 14px;
-}
-.measure-notes .custom-text {
-  color: #1E1E1ECC;
 }
 .measure-note-item {
   display: flex;
@@ -2706,19 +2697,84 @@ section {
   line-height: 26px;
   color: #3D3534;
 }
+.journey-sec {
+  background: var(--ivory);
+}
 .journey-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 48px 64px;
+  grid-template-columns: 1fr;
+  gap: 0;
+  position: relative;
 }
 .journey-step {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 18px;
+  padding: 24px 0;
+  position: relative;
 }
-.journey-step-header {
+.journey-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 23px;
+  top: 48px;
+  bottom: -8px;
+  width: 1px;
+  background: var(--gold-border);
+}
+.journey-marker {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--ivory);
+  border: 1px solid var(--border-color);
   display: flex;
   align-items: center;
-  gap: 16px;
+  justify-content: center;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--gold-deep);
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+.journey-step.filled .journey-marker {
+  background: var(--border-color);
+  color: var(--ivory);
+  border-color: var(--border-color);
+}
+.journey-content {
+  padding-top: 6px;
+}
+.journey-tag {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.journey-title {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+  letter-spacing: -0.005em;
+}
+.journey-text {
+  font-size: 14px;
+  color: var(--charcoal);
+  line-height: 1.65;
+}
+@media (min-width:900px) {
+  .journey-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 48px;
+    row-gap: 0;
+  }
 }
 @media (max-width: 900px) {
   .journey-grid {
@@ -2731,7 +2787,7 @@ section {
   }
   .journey-grid {
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 15px;
   }
   #guest-journey .journey-grid .section-title {
     font-size: 22px;
@@ -2852,11 +2908,50 @@ section {
 #patient-voices .tab-btn {
   font-size: 18px;
 }
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  border-radius: 999px;
+  background: var(--primary-color);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  letter-spacing: 0.5px;
+}
+.link-button:hover {
+  background: var(--border-color);
+  text-decoration: none;
+  color: #ffffff;
+}
+.link-custom {
+  color: var(--charcoal);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  letter-spacing: 0.5px;
+}
+.link-custom:hover {
+  text-decoration: underline;
+  color: var(--border-color);
+}
 @media (max-width: 640px) {
   #patient-voices .tab-btn {
     font-size: 10px;
     padding: 1px;
     letter-spacing: 2px;
+  }
+  .link-button {
+    font-size: 14px;
+    padding: 10px 24px;
   }
 }
 #reviews h2 {

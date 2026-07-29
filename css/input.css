@@ -8,6 +8,7 @@
     --bg-primary-color: #ffebe7;
     --pink-text-color: #6D504B;
     --border-color: #F28979;
+    --dark-pink-color: #6c251b;
     --icon-bg: #F1EEE9;
     --forest: #1B3A2D;
     --forest-mid: #2C5440;
@@ -48,7 +49,7 @@ section {
     font-weight: 500;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-     /* text-align: center; */
+    /* text-align: center; */
     color: var(--primary-color);
     /* margin-bottom: 12px; */
     display: flex;
@@ -92,15 +93,15 @@ section {
 
 
 
-.bg-primary{
+.bg-primary {
     background-color: var(--bg-primary-color);
 }
 
 @media (max-width: 640px) {
     section {
-   padding: 40px 20px;
-}
-  
+        padding: 40px 20px;
+    }
+
 
 }
 
@@ -126,7 +127,7 @@ section {
 .custom-text {
     color: var(--charcoal);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
     text-align: left;
 }
@@ -203,18 +204,20 @@ section {
     height: 560px !important;
 }
 
-.hero-content .sec-title{
+.hero-content .sec-title {
     text-align: left;
     font-size: 60px;
 }
+
 .hero-content .leading-snug {
-/* h-full flex items-center */
-height: 100%;
-display: flex;
-padding-top: 2px;
-font-size: 18px;
-/* align-items: center; */
+    /* h-full flex items-center */
+    height: 100%;
+    display: flex;
+    padding-top: 2px;
+    font-size: 18px;
+    /* align-items: center; */
 }
+
 .heroSwiper .swiper-button-prev,
 .heroSwiper .swiper-button-next {
     width: 52px;
@@ -496,7 +499,7 @@ font-weight: 400; */
 
 .doctor-points img {
     width: 14px;
-    margin-top: 1px;
+    margin-top: 3px;
 }
 
 /* .doctor-points span {
@@ -1168,10 +1171,10 @@ font-weight: 400; */
     font-size: inherit;
 }
 
-#measure-success .custom-text {
-    font-size: 17px;
+/* #measure-success .custom-text {
+    font-size: 13px;
 
-}
+} */
 
 #measure-success .eyebrow-heading {
     color: #000000;
@@ -1197,6 +1200,24 @@ font-weight: 400; */
     color: #666666;
 }
 
+#measure-success .measure-cards-grid .sec-title {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 4px;
+}
+
+.measure-schedule .sec-title {
+    text-align: left;
+    /* color: #000000; */
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 550;
+    margin-bottom: 0px;
+
+}
+
 /* 4-card grid */
 .measure-cards-grid {
     display: grid;
@@ -1205,14 +1226,14 @@ font-weight: 400; */
 }
 
 .measure-card {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 28px 24px;
-    border: 1px solid #E1DED7;
+    background: var(--cream);
+    border: 1px solid var(--border-color);
     border-radius: 4px;
-    min-height: 210px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 12px;
+    align-items: start
 }
 
 /* remove right border overrides — no longer needed, each card has its own border */
@@ -1237,13 +1258,13 @@ font-weight: 400; */
 }
 
 .measure-icon-label {
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    /* font-family: 'Cormorant Garamond', Georgia, serif; */
+    font-size: 20px;
     line-height: 32px;
     letter-spacing: -0.24px;
-    color: #6B5E5C;
+    color: var(--primary-color);
     white-space: nowrap;
     text-align: center;
 }
@@ -1251,11 +1272,10 @@ font-weight: 400; */
 .measure-card-right {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 
 .measure-card-heading {
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: italic;
     font-size: 22px;
@@ -1266,7 +1286,6 @@ font-weight: 400; */
 }
 
 .measure-card-desc {
-    font-family: "Poppins", sans-serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 20px;
@@ -1288,7 +1307,7 @@ font-weight: 400; */
     min-height: 123.25px;
     padding: 20px 24px;
     border-bottom: 1px solid #E1DED7;
-    gap: 32px;
+    /* gap: 22px; */
 }
 
 .measure-schedule-row:last-child {
@@ -1296,11 +1315,9 @@ font-weight: 400; */
 }
 
 .measure-schedule-label {
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
-    letter-spacing: 2.5px;
-    color: #1C3A27;
+    color: var(--charcoal);
     text-transform: uppercase;
     line-height: 1.5;
     flex-shrink: 0;
@@ -1344,7 +1361,7 @@ font-weight: 400; */
 
     .measure-schedule-row {
         grid-template-columns: 110px 1fr;
-        gap: 20px;
+        /* gap: 15px; */
         min-height: auto;
         padding: 18px 16px;
     }
@@ -1369,7 +1386,7 @@ font-weight: 400; */
 
     .measure-schedule-row {
         grid-template-columns: 1fr;
-        gap: 8px;
+        /* gap: 8px; */
         padding: 16px;
     }
 
@@ -1397,9 +1414,6 @@ font-weight: 400; */
     gap: 14px;
 }
 
-.measure-notes .custom-text {
-    color: #1E1E1ECC;
-}
 
 .measure-note-item {
     display: flex;
@@ -1480,26 +1494,100 @@ font-weight: 400; */
     color: #3D3534;
 }
 
-/* 2×2 grid */
+/* journey */
+.journey-sec {
+    background: var(--ivory)
+}
+
 .journey-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 48px 64px;
+    grid-template-columns: 1fr;
+    gap: 0;
+    position: relative
 }
 
-/* Each step card */
 .journey-step {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 18px;
+    padding: 24px 0;
+    position: relative
 }
 
-/* Icon + eyebrow row */
-.journey-step-header {
+.journey-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 23px;
+    top: 48px;
+    bottom: -8px;
+    width: 1px;
+    background: var(--gold-border)
+}
+
+.journey-marker {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--ivory);
+    border: 1px solid var(--border-color);
     display: flex;
     align-items: center;
-    gap: 16px;
+    justify-content: center;
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--gold-deep);
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0
 }
 
+.journey-step.filled .journey-marker {
+    background: var(--border-color);
+    color: var(--ivory);
+    border-color: var(--border-color)
+}
+
+.journey-content {
+    padding-top: 6px
+}
+
+.journey-tag {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    font-weight: 500;
+    margin-bottom: 6px
+}
+
+.journey-title {
+    /* font-family: var(--serif); */
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.2;
+    color: var(--charcoal);
+    margin-bottom: 8px;
+    letter-spacing: -0.005em
+}
+
+.journey-text {
+    font-size: 14px;
+    color: var(--charcoal);
+    line-height: 1.65
+}
+
+@media (min-width:900px){
+/* 2×2 grid */
+.journey-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 48px;
+    row-gap: 0
+}
+
+
+}
 /* Responsive */
 @media (max-width: 900px) {
     .journey-grid {
@@ -1514,7 +1602,7 @@ font-weight: 400; */
 
     .journey-grid {
         grid-template-columns: 1fr;
-        gap: 36px;
+        gap: 15px;
     }
 
     #guest-journey .journey-grid .section-title {
@@ -1681,11 +1769,62 @@ font-weight: 400; */
     /* height: 450px; */
 }
 
+.link-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 32px;
+    border-radius: 999px;
+    background: var(--primary-color);
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.link-button:hover {
+    background: var(--border-color);
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.link-custom {
+    /* display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 32px;
+    border-radius: 999px;
+    background: var(--primary-color); */
+    color: var(--charcoal);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.link-custom:hover {
+    /* background: var(--border-color); */
+    text-decoration: underline;
+    color: var(--border-color);
+}
+
 @media (max-width: 640px) {
     #patient-voices .tab-btn {
         font-size: 10px;
         padding: 1px;
         letter-spacing: 2px;
+    }
+
+    .link-button {
+        font-size: 14px;
+        padding: 10px 24px;
     }
 }
 
