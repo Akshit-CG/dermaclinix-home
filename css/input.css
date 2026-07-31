@@ -101,16 +101,20 @@ section {
     section {
         padding: 40px 20px;
     }
-.sec-sub {
-  
-    font-size: 14px;
-  
+#faq-section .sec-title {
+    text-align: center;
 }
-.eyebrow {
+    .sec-sub {
 
-    font-size: 10px;
+        font-size: 14px;
 
-}
+    }
+
+    .eyebrow {
+
+        font-size: 10px;
+
+    }
 
 
 }
@@ -219,7 +223,7 @@ section {
     height: 560px !important;
     border-radius: 60px;
 }
-    
+
 
 .hero-content .sec-title {
     text-align: left;
@@ -1595,16 +1599,18 @@ font-weight: 400; */
     line-height: 1.65
 }
 
-@media (min-width:900px){
-/* 2×2 grid */
-.journey-grid {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 48px;
-    row-gap: 0
-}
+@media (min-width:900px) {
+
+    /* 2×2 grid */
+    .journey-grid {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 48px;
+        row-gap: 0
+    }
 
 
 }
+
 /* Responsive */
 @media (max-width: 900px) {
     .journey-grid {
@@ -1694,9 +1700,11 @@ font-weight: 400; */
     grid-template-columns: repeat(5, 1fr);
     gap: 16px;
 }
-.media-cards-grid .sec-title{
+
+.media-cards-grid .sec-title {
     font-size: 20px;
 }
+
 /* Card base */
 .media-card {
     position: relative;
@@ -1857,6 +1865,10 @@ font-weight: 400; */
     color: #ffffff;
 }
 
+#consultation-form .sec-title {
+    text-align: left;
+}
+
 #consultation-form .custom-text {
     color: white;
 }
@@ -1881,16 +1893,12 @@ font-weight: 400; */
     text-align: left;
 }
 
-#faq-section h2.section-title {
+#faq-section h6.sec-title {
     text-align: left;
-    --title-size-mobile: 24px;
-    --title-size-desktop: 42px;
 
 }
 
-#faq-section p.sub-heading {
-    text-align: left;
-}
+
 
 .faq-card {
     width: 100%;
@@ -1938,10 +1946,12 @@ font-weight: 400; */
 }
 
 /* Recent Blogs / Results Card */
-#recent-blogs .section-title {
+#recent-blogs .section-title  {
     text-align: center;
 }
-
+#recent-blogs .sub-heading{
+     text-align: left;
+}
 #recent-blogs .results-card {
     background-color: #ffffff;
     width: 100%;
@@ -1957,6 +1967,11 @@ font-weight: 400; */
     #recent-blogs .results-card {
         min-height: 619px;
     }
+
+    #consultation-form .sec-title {
+        text-align: left;
+    }
+
 }
 
 #recent-blogs h3.sub-heading {

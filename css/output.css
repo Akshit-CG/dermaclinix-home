@@ -265,6 +265,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-0 {
+    margin-top: 0;
+  }
   .mt-0\.5 {
     margin-top: calc(var(--spacing) * 0.5);
   }
@@ -352,6 +355,9 @@
   .inline-flex {
     display: inline-flex;
   }
+  .table {
+    display: table;
+  }
   .aspect-\[4\/4\.5\] {
     aspect-ratio: 4/4.5;
   }
@@ -360,6 +366,9 @@
   }
   .\!h-10 {
     height: calc(var(--spacing) * 10) !important;
+  }
+  .h-1 {
+    height: var(--spacing);
   }
   .h-1\.5 {
     height: calc(var(--spacing) * 1.5);
@@ -423,6 +432,9 @@
   }
   .\!w-10 {
     width: calc(var(--spacing) * 10) !important;
+  }
+  .w-1 {
+    width: var(--spacing);
   }
   .w-1\.5 {
     width: calc(var(--spacing) * 1.5);
@@ -520,11 +532,20 @@
   .flex-1 {
     flex: 1;
   }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
   .shrink-0 {
     flex-shrink: 0;
   }
+  .flex-grow {
+    flex-grow: 1;
+  }
   .grow {
     flex-grow: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .\!-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1 / 2 * 100%) * -1) !important;
@@ -535,6 +556,9 @@
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .resize-none {
     resize: none;
@@ -693,6 +717,9 @@
   .border-\[\#FFA996\] {
     border-color: #FFA996;
   }
+  .border-gray-200 {
+    border-color: var(--color-gray-200);
+  }
   .border-gray-200\/50 {
     border-color: color-mix(in srgb, oklch(92.8% 0.006 264.531) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -740,6 +767,9 @@
   }
   .bg-black {
     background-color: var(--color-black);
+  }
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
   }
   .bg-gray-200\/80 {
     background-color: color-mix(in srgb, oklch(92.8% 0.006 264.531) 80%, transparent);
@@ -833,6 +863,9 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
   }
   .py-3\.5 {
     padding-block: calc(var(--spacing) * 3.5);
@@ -1076,6 +1109,10 @@
       --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, #D99583 30%, transparent) var(--tw-shadow-alpha), transparent);
     }
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
@@ -1086,6 +1123,10 @@
   }
   .backdrop-blur-xl {
     --tw-backdrop-blur: blur(var(--blur-xl));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-filter {
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
@@ -1282,6 +1323,16 @@
       display: block;
     }
   }
+  .sm\:max-w-\[20px\] {
+    @media (width >= 40rem) {
+      max-width: 20px;
+    }
+  }
+  .sm\:max-w-\[200px\] {
+    @media (width >= 40rem) {
+      max-width: 200px;
+    }
+  }
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1330,6 +1381,11 @@
   .md\:mt-0 {
     @media (width >= 48rem) {
       margin-top: 0;
+    }
+  }
+  .md\:max-w-\[20px\] {
+    @media (width >= 48rem) {
+      max-width: 20px;
     }
   }
   .md\:grid-cols-2 {
@@ -1654,6 +1710,9 @@ section {
 @media (max-width: 640px) {
   section {
     padding: 40px 20px;
+  }
+  #faq-section .sec-title {
+    text-align: center;
   }
   .sec-sub {
     font-size: 14px;
@@ -2971,6 +3030,9 @@ section {
 #consultation-form .eyebrow-heading {
   color: #ffffff;
 }
+#consultation-form .sec-title {
+  text-align: left;
+}
 #consultation-form .custom-text {
   color: white;
 }
@@ -2988,12 +3050,7 @@ section {
 #faq-section {
   text-align: left;
 }
-#faq-section h2.section-title {
-  text-align: left;
-  --title-size-mobile: 24px;
-  --title-size-desktop: 42px;
-}
-#faq-section p.sub-heading {
+#faq-section h6.sec-title {
   text-align: left;
 }
 .faq-card {
@@ -3037,6 +3094,9 @@ section {
 #recent-blogs .section-title {
   text-align: center;
 }
+#recent-blogs .sub-heading {
+  text-align: left;
+}
 #recent-blogs .results-card {
   background-color: #ffffff;
   width: 100%;
@@ -3050,6 +3110,9 @@ section {
 @media (min-width: 768px) {
   #recent-blogs .results-card {
     min-height: 619px;
+  }
+  #consultation-form .sec-title {
+    text-align: left;
   }
 }
 #recent-blogs h3.sub-heading {
@@ -3291,6 +3354,11 @@ section {
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -3429,6 +3497,7 @@ section {
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
