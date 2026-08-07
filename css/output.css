@@ -12,8 +12,6 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --text-lg: 1.125rem;
-    --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --font-weight-normal: 400;
@@ -265,9 +263,6 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .mt-0 {
-    margin-top: 0;
-  }
   .mt-0\.5 {
     margin-top: calc(var(--spacing) * 0.5);
   }
@@ -355,9 +350,6 @@
   .inline-flex {
     display: inline-flex;
   }
-  .table {
-    display: table;
-  }
   .aspect-\[4\/4\.5\] {
     aspect-ratio: 4/4.5;
   }
@@ -366,9 +358,6 @@
   }
   .\!h-10 {
     height: calc(var(--spacing) * 10) !important;
-  }
-  .h-1 {
-    height: var(--spacing);
   }
   .h-1\.5 {
     height: calc(var(--spacing) * 1.5);
@@ -432,9 +421,6 @@
   }
   .\!w-10 {
     width: calc(var(--spacing) * 10) !important;
-  }
-  .w-1 {
-    width: var(--spacing);
   }
   .w-1\.5 {
     width: calc(var(--spacing) * 1.5);
@@ -532,20 +518,11 @@
   .flex-1 {
     flex: 1;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .shrink-0 {
     flex-shrink: 0;
   }
-  .flex-grow {
-    flex-grow: 1;
-  }
   .grow {
     flex-grow: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .\!-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1 / 2 * 100%) * -1) !important;
@@ -556,9 +533,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .resize-none {
     resize: none;
@@ -717,9 +691,6 @@
   .border-\[\#FFA996\] {
     border-color: #FFA996;
   }
-  .border-gray-200 {
-    border-color: var(--color-gray-200);
-  }
   .border-gray-200\/50 {
     border-color: color-mix(in srgb, oklch(92.8% 0.006 264.531) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -767,9 +738,6 @@
   }
   .bg-black {
     background-color: var(--color-black);
-  }
-  .bg-gray-200 {
-    background-color: var(--color-gray-200);
   }
   .bg-gray-200\/80 {
     background-color: color-mix(in srgb, oklch(92.8% 0.006 264.531) 80%, transparent);
@@ -864,9 +832,6 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
-  }
   .py-3\.5 {
     padding-block: calc(var(--spacing) * 3.5);
   }
@@ -935,10 +900,6 @@
   }
   .font-\[\'Cormorant_Garamond\'\] {
     font-family: 'Cormorant Garamond';
-  }
-  .text-lg {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
   }
   .text-\[10px\] {
     font-size: 10px;
@@ -1109,10 +1070,6 @@
       --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, #D99583 30%, transparent) var(--tw-shadow-alpha), transparent);
     }
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
@@ -1123,10 +1080,6 @@
   }
   .backdrop-blur-xl {
     --tw-backdrop-blur: blur(var(--blur-xl));
-    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-  }
-  .backdrop-filter {
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
@@ -1323,16 +1276,6 @@
       display: block;
     }
   }
-  .sm\:max-w-\[20px\] {
-    @media (width >= 40rem) {
-      max-width: 20px;
-    }
-  }
-  .sm\:max-w-\[200px\] {
-    @media (width >= 40rem) {
-      max-width: 200px;
-    }
-  }
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1383,11 +1326,6 @@
       margin-top: 0;
     }
   }
-  .md\:max-w-\[20px\] {
-    @media (width >= 48rem) {
-      max-width: 20px;
-    }
-  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1431,16 +1369,6 @@
   .md\:text-\[15px\] {
     @media (width >= 48rem) {
       font-size: 15px;
-    }
-  }
-  .md\:text-\[18px\] {
-    @media (width >= 48rem) {
-      font-size: 18px;
-    }
-  }
-  .md\:text-\[19px\] {
-    @media (width >= 48rem) {
-      font-size: 19px;
     }
   }
   .lg\:-right-2 {
@@ -1631,7 +1559,7 @@
 }
 :root {
   --heading-color: #2B1311;
-  --primary-color: #e39482;
+  --primary-color: #EC7E73;
   --bg-primary-color: #ffebe7;
   --pink-text-color: #6D504B;
   --border-color: #F28979;
@@ -1994,8 +1922,8 @@ section {
   margin: 20px 0 20px;
 }
 .doctor-points {
-  color: rgba(43, 19, 17, 0.8);
-  font-size: 14px;
+  color: var(--charcoal);
+  font-size: 16px;
   line-height: 20px;
   list-style: none;
   margin: 0;
@@ -2885,7 +2813,7 @@ section {
 }
 .media-card-desc {
   font-family: "Poppins", sans-serif;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 2px;
   color: #666666;
@@ -3027,11 +2955,12 @@ section {
 #reviews h2 {
   text-align: start;
 }
-#consultation-form .eyebrow-heading {
+#consultation-form .eyebrow , #consultation-form .sec-sub {
   color: #ffffff;
 }
 #consultation-form .sec-title {
   text-align: left;
+  color: white;
 }
 #consultation-form .custom-text {
   color: white;
@@ -3040,7 +2969,7 @@ section {
   background-color: #ECECEC;
   color: #000000;
 }
-#consultation-form .eyebrow-heading::before {
+#consultation-form .eyebrow::before {
   background-color: #ffffff;
 }
 #faq-section .eyebrow-heading {
@@ -3062,6 +2991,9 @@ section {
   background-color: #ffffff;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+#faq-section .faq-card .custom-text {
+  font-size: 18px;
 }
 .faq-card.active {
   border-color: rgba(194, 23, 37, 0.4);
@@ -3354,11 +3286,6 @@ section {
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -3497,7 +3424,6 @@ section {
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
